@@ -1,11 +1,15 @@
 @import url(/Users/listik/Desktop/projectMynanny/asssets/styles/normalize.css);
 /* Breakpoints */
 /* Colors */
+.faq {
+  background-color: #fff7ef;
+}
+
 .faq__inner {
   color: #292f36;
 }
 
-.faq__inner:last-child {
+.faq__list {
   border-bottom: 1px solid #292f36;
 }
 
@@ -31,6 +35,7 @@
   font-size: 22px;
   font-weight: 600;
   margin: 0;
+  cursor: pointer;
 }
 
 .faq__question:hover .faq__close {
@@ -44,10 +49,19 @@
 .faq__answer {
   font-size: 17px;
   font-weight: 400;
+  line-height: 1.55;
   max-height: 0;
   overflow: hidden;
   -webkit-transition: max-height 1000ms ease;
   transition: max-height 1000ms ease;
+}
+
+.faq__links {
+  color: #4dcdc4;
+}
+
+.faq__links:hover {
+  cursor: pointer;
 }
 
 .faq__close {
@@ -70,6 +84,10 @@
   stroke: #292f36;
   width: 24px;
   height: 24px;
+  -webkit-transition: -webkit-transform 300ms ease;
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
 }
 
 .faq__item > input {
@@ -77,6 +95,48 @@
 }
 
 .faq__check:checked ~ .faq__answer {
-  max-height: 430px;
+  max-height: 620px;
+  margin-bottom: 20px;
+}
+
+.faq__check:checked ~ .faq__question .faq__cross {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.faq__form {
+  padding: 60px 0 90px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq__button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 20px 60px;
+  border: none;
+  background-color: #4dcdc4;
+  -webkit-transition: background 0.4s ease;
+  transition: background 0.4s ease;
+}
+
+.faq__button:hover {
+  background-color: #2baba0;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+}
+
+.container__row {
+  width: 90%;
+  margin: auto;
+  max-width: 1160px;
 }
 /*# sourceMappingURL=main.css.map */
