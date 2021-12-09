@@ -1,5 +1,82 @@
 @import url(/Users/listik/Desktop/projectMynanny/asssets/styles/normalize.css);
-h1 {
-  color: red;
+/* Breakpoints */
+/* Colors */
+.faq__inner {
+  color: #292f36;
+}
+
+.faq__inner:last-child {
+  border-bottom: 1px solid #292f36;
+}
+
+.faq__header {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.faq__item {
+  border-top: 1px solid #292f36;
+}
+
+.faq__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.faq__question:hover .faq__close {
+  background-color: #292f36;
+}
+
+.faq__question:hover .faq__cross {
+  stroke: #4dcdc4;
+}
+
+.faq__answer {
+  font-size: 17px;
+  font-weight: 400;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 1000ms ease;
+  transition: max-height 1000ms ease;
+}
+
+.faq__close {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #4dcdc4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq__cross {
+  stroke: #292f36;
+  width: 24px;
+  height: 24px;
+}
+
+.faq__item > input {
+  display: none;
+}
+
+.faq__check:checked ~ .faq__answer {
+  max-height: 430px;
 }
 /*# sourceMappingURL=main.css.map */
