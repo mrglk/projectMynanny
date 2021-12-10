@@ -147,14 +147,4 @@
   background-color: #2baba0;
   cursor: pointer;
 }
-
-.container {
-  width: 100%;
-}
-
-.container__row {
-  width: 90%;
-  margin: auto;
-  max-width: 1160px;
-}
 /*# sourceMappingURL=main.css.map */
