@@ -56,6 +56,10 @@
     transition: max-height 1000ms ease;
 }
 
+.faq__text {
+    margin-bottom: 30px;
+}
+
 .faq__links {
     color: $defaultColor;
 
@@ -72,13 +76,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transition: background-color 300ms ease;
 }
 
 .faq__cross {
     stroke: $darkColor;
     width: 24px;
     height: 24px;
-    transition: transform 300ms ease;
+    transition: transform 300ms ease, stroke 300ms ease;
 }
 
 .faq__item>input {
@@ -87,7 +93,6 @@
 
 .faq__check:checked~.faq__answer {
     max-height: 620px;
-    margin-bottom: 20px;
 }
 
 .faq__check:checked~.faq__question .faq__cross {
@@ -109,7 +114,7 @@
     padding: 20px 60px;
     border: none;
     background-color: $defaultColor;
-    transition: background 0.4s ease;
+    transition: background-color 0.4s ease;
 
     &:hover {
         background-color: $defaultColor_hover;
