@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Breakpoints */
 /* Colors */
+.faq__hidden {
+  display: none;
+}
+
 .faq {
   background-color: #fff7ef;
 }
@@ -22,7 +26,7 @@
   padding-bottom: 70px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   .faq__header {
     font-size: 35px;
   }
@@ -33,6 +37,7 @@
 }
 
 .faq__question {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,11 +79,6 @@
   .faq__caption {
     font-size: 20px;
     padding: 15px 0 14px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .faq__caption {
     font-size: 18px;
     width: 80%;
   }
@@ -90,8 +90,14 @@
   line-height: 1.55;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 1000ms ease;
-  transition: max-height 1000ms ease;
+  -webkit-transition: max-height 300ms ease;
+  transition: max-height 300ms ease;
+}
+
+@media screen and (max-width: 640px) {
+  .faq__answer {
+    font-size: 15px;
+  }
 }
 
 .faq__text {
@@ -166,6 +172,19 @@
           transform: rotate(-45deg);
 }
 
+.faq__checkReset {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.faq__check:checked ~ .faq__question .faq__checkReset {
+  display: block;
+}
+
 .faq__form {
   padding: 60px 0 90px 0;
   display: -webkit-box;
@@ -215,10 +234,6 @@
   .faq__button {
     font-size: 14px;
   }
-}
-
-.removeMargin {
-  margin: 0;
 }
 
 .container {
