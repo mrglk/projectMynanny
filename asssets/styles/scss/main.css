@@ -1,5 +1,64 @@
-@import url(/Users/listik/Desktop/projectMynanny/asssets/styles/normalize.css);
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Breakpoints */
+/* Colors */
+/* Fonts */
+.container {
+  width: 100%;
+}
+
+.container__row {
+  margin: auto;
+  background-color: darkseagreen;
+  height: 1000px;
+}
+
+@media screen and (max-width: 480px) {
+  .container__row {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container__row {
+    width: 460px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .container__row {
+    width: 620px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .container__row {
+    width: 940px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__row {
+    width: 1160px;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body h1,
+body h2,
+body p {
+  margin: 0;
+}
+
+body h2 {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+body p {
+  font-weight: 400;
+  font-size: 17px;
 }
 /*# sourceMappingURL=main.css.map */

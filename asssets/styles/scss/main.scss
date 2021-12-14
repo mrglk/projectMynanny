@@ -14,11 +14,48 @@
 }
 
 .container__row {
-    width: 90%;
     margin: auto;
-    max-width: 1160px;
+    background-color: darkseagreen;
+    height: 1000px;
+
+    @media screen and (max-width: $smallMobile) {
+        width: 270px;
+    }
+
+    @media screen and (min-width: $smallMobile) {
+        width: 460px;
+    }
+
+    @media screen and (min-width: $mobile) {
+        width: 620px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 940px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 1160px;
+    }
+
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $defaultFont;
+
+    h1,
+    h2,
+    p {
+        margin: 0;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 45px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 17px;
+    }
 }
