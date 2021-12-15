@@ -1,11 +1,7 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* Breakpoints */
-/* Colors */
 .btn {
   display: inline-block;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #ffffff;
   font-size: 1.1rem;
   line-height: 1.55;
@@ -104,11 +100,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   cursor: pointer;
   margin: 0;
   padding: 5px 0 5px 0;
@@ -184,11 +180,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
 }
@@ -203,35 +199,35 @@
   transition: transform 300ms ease, stroke 300ms ease, -webkit-transform 300ms ease;
 }
 
-.faq__item > input {
+.faq__item>input {
   display: none;
 }
 
-.faq__check:checked ~ .faq__answer {
+.faq__check:checked~.faq__answer {
   max-height: 620px;
 }
 
 @media screen and (max-width: 1200px) {
-  .faq__check:checked ~ .faq__answer {
+  .faq__check:checked~.faq__answer {
     max-height: 800px;
   }
 }
 
 @media screen and (max-width: 640px) {
-  .faq__check:checked ~ .faq__answer {
+  .faq__check:checked~.faq__answer {
     max-height: 1350px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .faq__check:checked ~ .faq__answer {
+  .faq__check:checked~.faq__answer {
     max-height: 1900px;
   }
 }
 
-.faq__check:checked ~ .faq__question .faq__cross {
+.faq__check:checked~.faq__question .faq__cross {
   -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .faq__checkReset {
@@ -243,7 +239,7 @@
   height: 100%;
 }
 
-.faq__check:checked ~ .faq__question .faq__checkReset {
+.faq__check:checked~.faq__question .faq__checkReset {
   display: block;
 }
 
@@ -253,10 +249,10 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
@@ -270,6 +266,14 @@
   }
 }
 
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+}
+
+/* Breakpoints */
+/* Colors */
+/* Fonts */
 .container {
   width: 100%;
 }
@@ -280,7 +284,58 @@
   max-width: 1160px;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
+.container__content {
+  margin: auto;
 }
+
+@media screen and (max-width: 480px) {
+  .container__content {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container__content {
+    width: 460px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .container__content {
+    width: 620px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .container__content {
+    width: 940px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__content {
+    width: 1160px;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body h1,
+body h2,
+body p {
+  margin: 0;
+}
+
+body h2 {
+  font-weight: 600;
+  font-size: 45px;
+}
+
+body p {
+  font-weight: 400;
+  font-size: 17px;
+}
+
 /*# sourceMappingURL=main.css.map */
