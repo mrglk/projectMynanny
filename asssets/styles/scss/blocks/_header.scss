@@ -47,12 +47,15 @@
         display: none;
     }
 
+    .header__menu {
+        position: relative;
+    }
+
     .header__btn {
         display: flex;
         /* используем flex для центрирования содержимого */
         align-items: center;
         /* центрируем содержимое кнопки */
-        position: fixed;
         right: 20px;
         width: 26px;
         height: 26px;
@@ -95,6 +98,10 @@
         text-align: center;
         background-color: #ebebeb;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     /* элементы меню */
@@ -115,6 +122,7 @@
         &:hover {
             padding-bottom: 0;
             border-bottom: none;
+            text-decoration: none;
         }
     }
 

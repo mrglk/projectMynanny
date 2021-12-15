@@ -88,9 +88,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -124,6 +121,9 @@
   .mobile__hidden {
     display: none;
   }
+  .header__menu {
+    position: relative;
+  }
   .header__btn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -133,7 +133,6 @@
         -ms-flex-align: center;
             align-items: center;
     /* центрируем содержимое кнопки */
-    position: fixed;
     right: 20px;
     width: 26px;
     height: 26px;
@@ -173,6 +172,9 @@
     -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
             box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   }
+  .header__links:hover {
+    text-decoration: none;
+  }
   /* элементы меню */
   .header__item {
     display: block;
@@ -188,6 +190,7 @@
   .header__page:hover {
     padding-bottom: 0;
     border-bottom: none;
+    text-decoration: none;
   }
   .header__buttons {
     background-color: transparent;
@@ -216,11 +219,6 @@
     visibility: visible;
     left: 0;
   }
-  .header__check:checked ~ .header__logo {
-    display: block;
-    position: fixed;
-    visibility: visible;
-  }
   /* анимация */
   .header__btn > span,
   .header__btn > span::before,
@@ -236,10 +234,6 @@
     -webkit-transition-duration: .25s;
             transition-duration: .25s;
   }
-}
-
-.faq__hidden {
-  display: none;
 }
 
 .faq {
