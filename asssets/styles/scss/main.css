@@ -91,7 +91,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .header__item {
@@ -104,7 +104,7 @@
 }
 
 .header__page {
-  margin-right: 15px;
+  margin-right: 20px;
   color: #292f36;
 }
 
@@ -113,31 +113,37 @@
   border-bottom: 2px solid #4dcdc4;
 }
 
+.header__buttons {
+  margin-right: 5px;
+}
+
 .header__check {
   display: none;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1215px) {
   .mobile__hidden {
     display: none;
   }
   .header__menu {
     position: relative;
   }
+  .header__img {
+    z-index: 2;
+    position: relative;
+  }
   .header__btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* используем flex для центрирования содержимого */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /* центрируем содержимое кнопки */
     right: 20px;
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 2;
   }
   .header__btn > span,
   .header__btn > span::before,
@@ -157,7 +163,6 @@
     top: 8px;
   }
   .header__links {
-    display: block;
     position: fixed;
     visibility: hidden;
     top: 0;
@@ -171,35 +176,40 @@
     background-color: #ebebeb;
     -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
             box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    gap: 0;
   }
   .header__links:hover {
     text-decoration: none;
   }
-  /* элементы меню */
   .header__item {
     display: block;
-    padding: 12px 24px;
-    color: #333;
-    font-size: 24px;
+    color: #292f36;
+    font-size: 22px;
     font-weight: 400;
     text-decoration: none;
   }
   .header__item:hover {
     color: #4dcdc4;
   }
+  .header__page {
+    margin: 0;
+    padding: 10px;
+    border-bottom: none;
+  }
   .header__page:hover {
-    padding-bottom: 0;
+    padding: 10px;
     border-bottom: none;
     text-decoration: none;
   }
   .header__buttons {
+    margin: 0;
+    padding: 7px;
     background-color: transparent;
   }
   .header__buttons:hover {
     color: #4dcdc4;
-  }
-  .header__item:hover {
-    background-color: #CFD8DC;
+    background: transparent;
   }
   .header__check:checked ~ .header__btn > span {
     -webkit-transform: rotate(45deg);
@@ -207,8 +217,8 @@
   }
   .header__check:checked ~ .header__btn > span::before {
     top: 0;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   .header__check:checked ~ .header__btn > span::after {
     top: 0;
@@ -218,22 +228,36 @@
   .header__check:checked ~ .header__links {
     visibility: visible;
     left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: -50px;
   }
-  /* анимация */
   .header__btn > span,
   .header__btn > span::before,
   .header__btn > span::after {
-    -webkit-transition-duration: .25s;
-            transition-duration: .25s;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
   }
   .header__item {
-    -webkit-transition-duration: .25s;
-            transition-duration: .25s;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
   }
   .header__item {
-    -webkit-transition-duration: .25s;
-            transition-duration: .25s;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
   }
+}
+
+.faq__hidden {
+  display: none;
 }
 
 .faq {

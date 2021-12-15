@@ -12,7 +12,7 @@
 .header__menu {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .header__item {
@@ -25,7 +25,7 @@
 }
 
 .header__page {
-    margin-right: 15px;
+    margin-right: 20px;
     color: $darkColor;
 
     &:hover {
@@ -34,14 +34,15 @@
     }
 }
 
+.header__buttons {
+    margin-right: 5px;
+}
+
 .header__check {
     display: none;
 }
 
-
-
-
-@media (max-width: 1230px) {
+@media (max-width: 1215px) {
 
     .mobile__hidden {
         display: none;
@@ -51,16 +52,19 @@
         position: relative;
     }
 
+    .header__img {
+        z-index: 2;
+        position: relative;
+    }
+
     .header__btn {
         display: flex;
-        /* используем flex для центрирования содержимого */
         align-items: center;
-        /* центрируем содержимое кнопки */
         right: 20px;
         width: 26px;
         height: 26px;
         cursor: pointer;
-        z-index: 1;
+        z-index: 2;
     }
 
     .header__btn>span,
@@ -83,9 +87,7 @@
         top: 8px;
     }
 
-
     .header__links {
-        display: block;
         position: fixed;
         visibility: hidden;
         top: 0;
@@ -98,18 +100,18 @@
         text-align: center;
         background-color: #ebebeb;
         box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 1;
+        gap: 0;
 
         &:hover {
             text-decoration: none;
         }
     }
 
-    /* элементы меню */
     .header__item {
         display: block;
-        padding: 12px 24px;
-        color: #333;
-        font-size: 24px;
+        color: $darkColor;
+        font-size: 22px;
         font-weight: 400;
         text-decoration: none;
 
@@ -119,24 +121,28 @@
     }
 
     .header__page {
+        margin: 0;
+        padding: 10px;
+        border-bottom: none;
+
         &:hover {
-            padding-bottom: 0;
+            padding: 10px;
             border-bottom: none;
             text-decoration: none;
         }
     }
 
     .header__buttons {
+        margin: 0;
+        padding: 7px;
         background-color: transparent;
 
         &:hover {
             color: $defaultColor;
+            background: transparent;
         }
     }
 
-    .header__item:hover {
-        background-color: #CFD8DC;
-    }
 
     .header__check:checked~.header__btn>span {
         transform: rotate(45deg);
@@ -144,7 +150,7 @@
 
     .header__check:checked~.header__btn>span::before {
         top: 0;
-        transform: rotate(0);
+        transform: rotate(0deg);
     }
 
     .header__check:checked~.header__btn>span::after {
@@ -155,24 +161,24 @@
     .header__check:checked~.header__links {
         visibility: visible;
         left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -50px;
     }
-
-
-
-    /* анимация */
 
     .header__btn>span,
     .header__btn>span::before,
     .header__btn>span::after {
-        transition-duration: .25s;
+        transition-duration: .5s;
     }
 
     .header__item {
-        transition-duration: .25s;
+        transition-duration: .5s;
     }
 
     .header__item {
-        transition-duration: .25s;
+        transition-duration: .5s;
     }
 
 }
