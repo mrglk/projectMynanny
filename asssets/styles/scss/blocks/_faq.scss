@@ -168,27 +168,3 @@
         font-size: 20px;
     }
 }
-
-.faq__button {
-    font-size: 16px;
-    font-weight: 600;
-    color: $lightColor;
-    padding: 20px 60px;
-    border: none;
-    background-color: $defaultColor;
-    transition: background-color 0.4s ease;
-
-    &:hover {
-        background-color: $defaultColor_hover;
-        cursor: pointer;
-    }
-
-    @media screen and (max-width: $mobile) {
-        padding: 20px 30px;
-    }
-
-    @media screen and (max-width: $smallMobile) {
-        font-size: 14px;
-    }
-
-}
