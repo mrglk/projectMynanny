@@ -3,7 +3,7 @@
 }
 
 .faq {
-    background-color: $neutralColor;
+    background-color: $lightColor;
 }
 
 .faq__inner {
@@ -23,6 +23,7 @@
     padding-bottom: 70px;
 
     @media screen and (max-width: $mobile) {
+        padding-top: 70px;
         font-size: 35px;
     }
 }
