@@ -1,11 +1,13 @@
 .trainingSection__inner {
-    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
     background-color: $defaultColor;
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .trainingSection__textBlock {
+    max-width: 100%;
     padding-bottom: 30px;
 }
 
@@ -43,10 +45,25 @@
     margin-bottom: 30px;
 }
 
+.introBlock__title {
+    @media screen and (max-width: $desktop) {
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        font-size: 30px;
+    }
+}
+
 .introBlock__icon {
     width: 60px;
     height: 60px;
     margin-right: 20px;
+
+    @media screen and (max-width: $smallMobile) {
+        margin-right: 15px;
+        margin-left: -15px;
+    }
 }
 
 .textBlock__title {
@@ -102,7 +119,6 @@
     border-radius: 100%;
     background-color: $defaultColor;
     color: $darkColor;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 45px;
     font-weight: 700;
     text-align: center;
@@ -183,32 +199,72 @@
 .trainingSection__item {
     display: flex;
     justify-content: space-between;
-    margin: 40px 0 40px 0;
+
+    @media screen and (max-width: $tablet) {
+        flex-direction: column;
+    }
 }
 
 .colorBlock {
     box-sizing: border-box;
     padding: 40px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 70px 1fr;
     grid-template-rows: 40% 60%;
     gap: 10px;
+
+
+    @media screen and (max-width: $desktop) {
+        padding: 30px;
+        grid-template-rows: 30% 70%;
+    }
+
+    @media screen and (max-width: $mobile) {
+        padding: 10px;
+        grid-template-rows: 20% 80%;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.colorBlock__title {
+    @media screen and (max-width: $desktop) {
+        font-size: 35px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        font-size: 30px;
+    }
 }
 
 .colorBlock__text {
     grid-column: 2 / 3;
     line-height: 1.55;
     font-weight: 400;
+    padding-bottom: 5px;
 }
 
 .colorBlock__left {
-    width: 500px;
+    width: 42%;
     background-color: $accentColor;
+
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+    }
 }
 
 .colorBlock__right {
-    width: 620px;
+    width: 55%;
     background-color: $baseColor;
+
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+    }
 }
 
 .colorBlock__icon {

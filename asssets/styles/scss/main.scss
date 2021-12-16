@@ -23,7 +23,7 @@
     margin: auto;
 
     @media screen and (max-width: $smallMobile) {
-        width: 270px;
+        width: 280px;
     }
 
     @media screen and (min-width: $smallMobile) {
@@ -46,7 +46,7 @@
 body {
     font-family: $defaultFont;
     color: $darkColor;
-    
+
 
     h1,
     h2,
