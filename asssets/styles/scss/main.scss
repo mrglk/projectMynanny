@@ -3,6 +3,9 @@
 @import "mixins";
 @import "ui";
 @import "typography";
+@import "blocks/btn";
+@import "blocks/header";
+@import "blocks/faq";
 @import "pages/nannys";
 @import "pages/faq";
 @import "pages/partners";
@@ -17,6 +20,13 @@
     width: 90%;
     margin: auto;
     max-width: 1160px;
+}
+
+.container__row_wide {
+    width: 95%;
+    margin: auto;
+    max-width: 1600px;
+    min-height: 80px;
 }
 
 .container__content {
