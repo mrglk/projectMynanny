@@ -9,6 +9,11 @@
     gap: 10px;
 }
 
+.header__img {
+    width: 240px;
+    height: auto;
+}
+
 .header__menu {
     display: flex;
     align-items: center;
@@ -43,6 +48,10 @@
 }
 
 @media (max-width: 1215px) {
+
+    .header__img {
+        width: 151px;
+    }
 
     .mobile__hidden {
         display: none;
