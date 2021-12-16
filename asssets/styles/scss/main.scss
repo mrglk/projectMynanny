@@ -16,12 +16,6 @@
     width: 100%;
 }
 
-.container__row {
-    width: 90%;
-    margin: auto;
-    max-width: 1160px;
-}
-
 .container__row_wide {
     width: 95%;
     margin: auto;
@@ -29,7 +23,7 @@
     min-height: 80px;
 }
 
-.container__content {
+.container__row {
     margin: auto;
 
     @media screen and (max-width: $smallMobile) {
