@@ -82,6 +82,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 120px;
+    align-items: center;
 }
 
 .becomeSection__btn {
@@ -157,4 +158,12 @@
     .becomeSection__title {
         font-size: 40px;
     }
+}
+
+.faq_light {
+    background-color: $lightColor;
+}
+
+.faq_padding {
+    padding-bottom: 120px;
 }
