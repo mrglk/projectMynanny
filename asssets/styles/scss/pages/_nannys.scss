@@ -1,0 +1,115 @@
+.container__adaptive {
+    margin: auto;
+    max-width: 1200px;
+
+    @media screen and (max-width: $tablet) {
+        max-width: 640px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media screen and (min-width: 961px) and (max-width: $desktop) {
+        max-width: 960px;
+    }
+}
+
+
+.workingSection__title {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-left: 60px;
+}
+
+
+.workingSection__description {
+    margin-top: 120px;
+}
+
+.workingSection__inner {
+    display: inline-block;
+    margin: 30px;
+}
+
+.workingSection__number {
+    width: 70px;
+    height: 70px;
+}
+
+.workingSection__number_img {
+    width: 60px;
+    height: 60px;
+}
+
+.workingSection__text {
+    font-size: 17px;
+    line-height: 1.55;
+    font-weight: 400;
+}
+
+
+.container__adaptive {
+    margin: auto;
+    max-width: 1200px;
+
+    @media screen and (max-width: $tablet) {
+        max-width: 640px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media screen and (min-width: 961px) and (max-width: $desktop) {
+        max-width: 960px;
+    }
+}
+
+.hiringSection {
+    background-color: $defaultColor;
+}
+
+.hiringSection__title {
+    font-size: 24px;
+    text-align: left;
+    font-weight: 600;
+    color: $lightColor;
+}
+
+.hiringSection__inner {
+    display: inline-block;
+    margin: 30px;
+    text-align: center;
+
+}
+
+.hiringSection__points_one {
+    display: inline-block;
+    margin: 0;
+}
+
+.hiringSection__number {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.hiringSection__number_img {
+    width: 80px;
+    height: 80px;
+}
+
+.hiringSection__text {
+    color: $lightColor;
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 600;
+}
+
+.points {
+    width: 4px;
+    height: 4px;
+    border-radius: 30px;
+    background-color: $neutralColor;
+    display: inline-block;
+    margin: 10px;
+    margin-bottom: 60px;
+}
