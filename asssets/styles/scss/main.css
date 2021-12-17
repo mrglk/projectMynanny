@@ -198,7 +198,7 @@ body {
   overflow: auto;
 }
 /*брейкпоинты*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {}
 
 
 /*# sourceMappingURL=main.css.map */
