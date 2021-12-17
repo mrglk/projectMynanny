@@ -1052,7 +1052,7 @@
     justify-content: center;
 }
 
-.container__adaptive {
+.feedbackSection__container {
     margin: auto;
     max-width: 1200px;
 
@@ -1127,12 +1127,11 @@
 
 .workingSection__wrapper {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
     @media screen and (max-width: $mobile) {
         grid-template-columns: 1fr;
     }
-
 }
 
 .workingSection__title {
@@ -1178,11 +1177,11 @@
 
 .hiringSection_blockmain {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
     @media (max-width: $mobile) {
-        grid-template-columns: repeat (6, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
