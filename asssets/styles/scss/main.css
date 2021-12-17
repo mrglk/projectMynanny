@@ -130,7 +130,9 @@ body {
   display: grid;
   justify-content: center;
   row-gap: 10px;
+  padding-top: 15px;
 }
+
 #p3{
   justify-self: center;
 }
