@@ -589,6 +589,10 @@
   font-size: 52px;
 }
 
+.becomeSection__title_small {
+  font-size: 47px;
+}
+
 .becomeSection__text {
   font-size: 17px;
   font-weight: 400;
