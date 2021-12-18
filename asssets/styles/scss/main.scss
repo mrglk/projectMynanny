@@ -12,6 +12,23 @@
 @import "pages/contacts";
 
 
+body {
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: 1px 1px 10px rgba(78, 55, 55, 0.1);
+        background-color: $backgroundColor;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $defaultColor;
+        border-radius: 8px;
+        border: 3px solid $backgroundColor;
+    }
+}
+
 .container {
     width: 100%;
 }
