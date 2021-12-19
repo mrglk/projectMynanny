@@ -496,12 +496,23 @@
     opacity: 0;
     transition: opacity 0.3s;
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
+    @media screen and (max-width: $mobile) {
+        margin-left: -140px;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        margin-left: -10px;
+    }
+
+
+    &_even {
+        @media screen and (max-width: $mobile) {
+            margin-left: 10px;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            margin-left: -140px;
+        }
     }
 }
 

@@ -1141,12 +1141,28 @@
   transition: opacity 0.3s;
 }
 
-.tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
+@media screen and (max-width: 639px) {
+  .tooltiptext {
+    margin-left: -140px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .tooltiptext {
+    margin-left: -10px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .tooltiptext_even {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .tooltiptext_even {
+    margin-left: -140px;
+  }
 }
 
 .curve__text {
