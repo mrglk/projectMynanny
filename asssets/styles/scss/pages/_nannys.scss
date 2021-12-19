@@ -7,7 +7,6 @@
 }
 
 .trainingSection__textBlock {
-    max-width: 100%;
     padding-bottom: 30px;
 }
 
@@ -36,6 +35,14 @@
 
     @media screen and (max-width: $tablet) {
         padding-bottom: 270px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        padding-bottom: 300px;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        padding-bottom: 450px;
     }
 }
 
@@ -75,6 +82,10 @@
     line-height: 1.55;
     font-weight: 600;
     padding-bottom: 0.5em;
+
+    @media screen and (max-width: $smallMobile) {
+        font-size: 21px;
+    }
 }
 
 .textBlock__text {
@@ -90,6 +101,15 @@
     @media screen and (max-width: $desktop) {
         width: 500px;
     }
+
+    @media screen and (max-width: $mobile) {
+        width: 380px;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        width: 170px;
+        margin-top: 60px;
+    }
 }
 
 .curve__border {
@@ -103,11 +123,28 @@
         border-right: 2px solid $baseColor;
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
-        margin-left: 17%;
+        margin-left: 19%;
         margin-top: -2px;
 
         @media screen and (max-width: $tablet) {
             height: 220px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            height: 250px;
+            margin-left: 25%;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            height: 300px;
+            border-right: 2px solid transparent;
+            border-top: 2px solid $baseColor;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-left: 2px solid $baseColor;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            margin-left: -10%;
         }
 
         &:last-child {
@@ -117,11 +154,33 @@
                 border: 2px solid $baseColor;
                 border-left: 2px solid transparent;
             }
+
+            @media screen and (max-width: $smallMobile) {
+                height: 440px;
+                border-right: 2px solid transparent;
+                border-top: 2px solid $baseColor;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-left: 2px solid $baseColor;
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+                border-bottom: 2px solid transparent;
+                margin-left: -10%;
+            }
         }
 
         &:nth-child(2) {
             @media screen and (max-width: $tablet) {
                 height: 270px;
+            }
+
+            @media screen and (max-width: $mobile) {
+                height: 350px;
+            }
+
+            @media screen and (max-width: $smallMobile) {
+                border-top: 2px solid transparent;
+                height: 530px;
             }
         }
 
@@ -132,22 +191,66 @@
         border-left: 2px solid $baseColor;
         border-top-left-radius: 100px;
         border-bottom-left-radius: 100px;
-        margin-right: 18%;
+        width: 70%;
         margin-top: -2px;
 
-        &:last-child {
-            border-bottom: 2px solid transparent;
+
+        @media screen and (max-width: $smallMobile) {
+            border-right: 2px solid $baseColor;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            border-left: 2px solid transparent;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            margin-left: 37%;
+            width: 150px;
         }
 
         &:nth-child(3) {
             @media screen and (max-width: $tablet) {
                 height: 220px;
             }
+
+            @media screen and (max-width: $mobile) {
+                height: 250px;
+            }
+
+            @media screen and (max-width: $smallMobile) {
+                height: 340px;
+            }
         }
 
         &:nth-child(5) {
+            border-bottom: transparent;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 180px;
+                border-bottom: 2px solid $baseColor;
+                border-left: 2px solid $baseColor;
+                border-bottom-left-radius: 100px;
+                border-top-left-radius: 100px;
+                top: -2px;
+                right: 60%;
+
+                @media screen and (max-width: $tablet) {
+                    display: none;
+                }
+            }
+
             @media screen and (max-width: $tablet) {
                 height: 270px;
+                border-bottom: 2px solid $baseColor;
+            }
+
+            @media screen and (max-width: $mobile) {
+                height: 370px;
+            }
+
+            @media screen and (max-width: $smallMobile) {
+                height: 550px;
             }
         }
     }
@@ -159,6 +262,10 @@
         border-top: 2px solid $baseColor;
         top: -2px;
         right: 95%;
+
+        @media screen and (max-width: $smallMobile) {
+            display: none;
+        }
     }
 }
 
@@ -175,39 +282,121 @@
     box-sizing: border-box;
     padding: 5px;
 
-    &_first {
+    &_one {
         top: -30px;
         left: -120px;
+
+        @media screen and (max-width: $smallMobile) {
+            top: -25px;
+            left: -17%;
+        }
     }
 
-    &_top {
+    &_two {
+        left: 495px;
+        top: 40%;
+
+        @media screen and (max-width: $desktop) {
+            left: 370px;
+        }
+
+        @media screen and (max-width: $tablet) {
+            left: -100px;
+            top: 270px;
+            z-index: 2;
+        }
+
+        @media screen and (max-width: $mobile) {
+            top: 370px;
+            left: -120px;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            top: 470px;
+            left: -17%;
+        }
+    }
+
+    &_three {
         top: -30px;
+
+        @media screen and (max-width: $tablet) {
+            left: -100px;
+            top: -60px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            top: -80px;
+            left: -120px;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            top: -10px;
+            left: -17%;
+        }
     }
 
-    &_bottom {
+    &_four {
+        left: 495px;
+        top: 40%;
+
+        @media screen and (max-width: $desktop) {
+            left: 370px;
+        }
+
+        @media screen and (max-width: $tablet) {
+            left: -100px;
+            top: 220px;
+            z-index: 2;
+        }
+
+        @media screen and (max-width: $mobile) {
+            top: 270px;
+            left: -120px;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            left: 90%;
+        }
+    }
+
+    &_five {
         bottom: -30px;
         z-index: 2;
 
         @media screen and (max-width: $tablet) {
-            left: 4px;
-            bottom: -220px;
+            left: -100px;
+            bottom: -280px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            bottom: -350px;
+            left: -120px;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            left: -17%;
+            bottom: -600px;
         }
     }
 
-    &_right {
-        left: 510px;
-        top: 40%;
-
-        @media screen and (max-width: $desktop) {
-            left: 380px;
-        }
+    &_six {
+        top: -30px;
 
         @media screen and (max-width: $tablet) {
-            left: 4px;
-            top: 240px;
-            z-index: 2;
+            top: 190px;
+            left: -2%;
         }
 
+        @media screen and (max-width: $mobile) {
+            left: -20px;
+            top: 210px;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            left: -5%;
+            top: 400px;
+        }
     }
 }
 
@@ -218,21 +407,71 @@
     width: 26px;
     background-color: $lightColor;
     box-shadow: 0px 0px 20px 0px $darkColor;
+    z-index: 2;
+
+    &:nth-of-type(4) {
+        @media screen and (max-width: $tablet) {
+            top: 210px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            left: 96%;
+            top: 120px;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            top: 91%;
+            left: 2%;
+        }
+    }
 
     &_top {
         left: 40%;
         top: -13px;
+
+        @media screen and (max-width: $tablet) {
+            left: 70%;
+        }
+
+        @media screen and (max-width: $mobile) {
+            left: 96%;
+            top: 170px;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            left: -7%;
+            top: 50%;
+        }
     }
 
     &_left {
         top: 45%;
         left: -13px;
+
+        @media screen and (max-width: $smallMobile) {
+            top: 93%;
+            left: 85%;
+        }
     }
 
     &_bottom {
         left: 40%;
         bottom: -13px;
-        z-index: 2;
+
+        @media screen and (max-width: $tablet) {
+            left: 70%;
+            bottom: -290px;
+        }
+
+        @media screen and (max-width: $mobile) {
+            left: 96%;
+            bottom: -520px;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            left: -7%;
+            top: 360%;
+        }
     }
 
     &:hover .tooltiptext {
@@ -257,13 +496,23 @@
     opacity: 0;
     transition: opacity 0.3s;
 
+    @media screen and (max-width: $mobile) {
+        margin-left: -140px;
+    }
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        margin-left: -5px;
+    @media screen and (max-width: $smallMobile) {
+        margin-left: -10px;
+    }
+
+
+    &_even {
+        @media screen and (max-width: $mobile) {
+            margin-left: 10px;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            margin-left: -140px;
+        }
     }
 }
 
@@ -280,7 +529,19 @@
 
     @media screen and (max-width: $tablet) {
         width: 100%;
-        grid-template-columns: 10% 90%;
+        grid-template-columns: 13% 87%;
+    }
+
+    @media screen and (max-width: $mobile) {
+        width: 95%;
+        grid-template-columns: 17% 83%;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        top: 0;
+        left: -6%;
+        width: 130%;
+        grid-template-columns: 12% 88%;
     }
 }
 
@@ -289,6 +550,11 @@
 
     @media screen and (max-width: $desktop) {
         width: 95%;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        width: 100%;
+        grid-column: 2 / 3;
     }
 }
 
@@ -307,6 +573,15 @@
         top: 60px;
         left: 0;
     }
+
+    @media screen and (max-width: $mobile) {
+        top: 40px;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        grid-column: 1 / 3;
+        top: 30px;
+    }
 }
 
 .textBlock_three {
@@ -322,6 +597,15 @@
         grid-column: 1 / 3;
         top: 140px;
     }
+
+    @media screen and (max-width: $mobile) {
+        top: 90px;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        grid-column: 2 / 3;
+        top: 80px;
+    }
 }
 
 .textBlock_four {
@@ -336,8 +620,17 @@
 
     @media screen and (max-width: $tablet) {
         grid-column: 2 / 3;
-        top: 200px;
+        top: 190px;
         left: 0;
+    }
+
+    @media screen and (max-width: $mobile) {
+        top: 145px;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        grid-column: 1 / 3;
+        top: 140px;
     }
 }
 
@@ -353,7 +646,16 @@
 
     @media screen and (max-width: $tablet) {
         grid-column: 1 / 3;
-        top: 250px;
+        top: 240px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        top: 190px;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        grid-column: 2 / 3;
+        top: 200px;
     }
 }
 
@@ -368,7 +670,17 @@
 
     @media screen and (max-width: $tablet) {
         grid-column: 2 / 3;
-        top: 300px;
+        top: 320px;
+    }
+
+    @media screen and (max-width: $mobile) {
+        top: 250px;
+        grid-column: 1 / 3;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        grid-column: 1 / 3;
+        top: 280px;
     }
 }
 
