@@ -12,9 +12,10 @@
   body {
     font-family: 'Montserrat', sans-serif;
   }
-h1{
+.partTxt{
+    margin-top: 10px;
     color: #292f36;
-    font-size: 47px;
+    font-size: 45px;
   font-weight: 600;
   line-height: 1.23;
     text-align: center;
