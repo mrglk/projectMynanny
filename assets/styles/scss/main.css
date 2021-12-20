@@ -478,13 +478,12 @@
   font-weight: 600;
   line-height: 1.23;
   margin: 0;
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 70px;
 }
 
 @media screen and (max-width: 639px) {
   .faq__header {
-    padding-top: 70px;
     font-size: 35px;
   }
 }
