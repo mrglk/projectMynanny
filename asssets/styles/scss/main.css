@@ -14,6 +14,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  word-break: normal !important;
 }
 #mskSp,#number1,#nabChel,#number2,#Kazan,#number3,#time,#mail{
   color: #292f36;
@@ -198,7 +199,16 @@ body {
   overflow: auto;
 }
 /*брейкпоинты*/
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+  #mskSp,#number1,#nabChel,#number2,#Kazan,#number3,#time,#mail{
+    display: block;
+    text-align: center;
+    word-break: normal !important;
+    justify-self: normal;
+    box-sizing: content-box;
+
+  }
+}
 
 
 /*# sourceMappingURL=main.css.map */
