@@ -2118,6 +2118,60 @@
   font-weight: 400;
 }
 
+.hiringSection {
+  background-color: #4dcdc4;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.hiringSection_blockmain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+@media (max-width: 639px) {
+  .hiringSection_blockmain {
+    -ms-grid-columns: repeat 6, 1fr;
+        grid-template-columns: repeat 6, 1fr;
+  }
+}
+
+.hiringSection__title {
+  font-size: 24px;
+  text-align: left;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.hiringSection__inner {
+  display: inline-block;
+  margin: 40px;
+  text-align: center;
+}
+
+.hiringSection__number {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+
+.hiringSection__number_img {
+  width: 80px;
+  height: 80px;
+}
+
+.hiringSection__text {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 600;
+}
+
 .mediaSection {
   padding-top: 120px;
   padding-bottom: 70px;

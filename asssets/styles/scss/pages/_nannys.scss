@@ -1169,3 +1169,51 @@
     line-height: 1.55;
     font-weight: 400;
 }
+
+.hiringSection {
+    background-color: $defaultColor;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.hiringSection_blockmain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    @media (max-width: $mobile) {
+        grid-template-columns: repeat (6, 1fr);
+    }
+}
+
+.hiringSection__title {
+    font-size: 24px;
+    text-align: left;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.hiringSection__inner {
+    display: inline-block;
+    margin: 40px;
+    text-align: center;
+}
+
+.hiringSection__number {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+.hiringSection__number_img {
+    width: 80px;
+    height: 80px;
+}
+
+.hiringSection__text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 600;
+}
