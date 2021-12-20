@@ -1679,36 +1679,6 @@
   border-radius: 100%;
 }
 
-.container__adaptive {
-  margin: auto;
-  max-width: 1200px;
-}
-
-@media screen and (max-width: 959px) {
-  .container__adaptive {
-    max-width: 640px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media screen and (min-width: 961px) and (max-width: 1199px) {
-  .container__adaptive {
-    max-width: 960px;
-  }
-}
-
-.title {
-  font-weight: 600;
-  color: #292f36;
-  margin-bottom: 40px;
-}
-
-.text {
-  font-weight: 400;
-  color: #292f36;
-}
-
 .documentSection__description {
   margin-top: 120px;
 }
