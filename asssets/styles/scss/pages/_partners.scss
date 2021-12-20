@@ -1,81 +1,66 @@
-.container {
+.pcontainer {
     width: 100%;
+    background-color: #ffffff;
   }
   
-  .container__row_wide {
-    width: 95%;
-    margin: auto;
-    max-width: 1600px;
-    min-height: 80px;
-  }
   
-  .container__row {
-    margin: auto;
+  .pcontainer {
+    font-family: 'Montserrat', sans-serif;
   }
-  
-  @media screen and (max-width: 479px) {
-    .container__row {
-      width: 280px;
-    }
-  }
-  
-  @media screen and (min-width: 479px) {
-    .container__row {
-      width: 460px;
-    }
-  }
-  
-  @media screen and (min-width: 639px) {
-    .container__row {
-      width: 620px;
-    }
-  }
-  
-  @media screen and (min-width: 959px) {
-    .container__row {
-      width: 940px;
-    }
-  }
-  
-  @media screen and (min-width: 1199px) {
-    .container__row {
-      width: 1160px;
-    }
-  }
-  
-  body {
-    font-family: "Montserrat", sans-serif;
+.partTxt{
+
+    margin-top: 90px;
     color: #292f36;
-  }
-  
-  body::-webkit-scrollbar {
-    width: 12px;
-  }
-  
-  body::-webkit-scrollbar-track {
-    -webkit-box-shadow: 1px 1px 10px rgba(78, 55, 55, 0.1);
-            box-shadow: 1px 1px 10px rgba(78, 55, 55, 0.1);
-    background-color: #f2f2f5;
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #4dcdc4;
-    border-radius: 8px;
-    border: 3px solid #f2f2f5;
-  }
-  
-  h1,
-  h2,
-  p {
-    margin: 0;
-  }
-  
-  h2 {
-    font-weight: 600;
     font-size: 45px;
-  }
+  font-weight: 600;
+  line-height: 1.23;
+    text-align: center;
+
+}
+
+.pmain{
+    text-align: center;
+    flex-wrap: wrap;
+    
+    display: flex;
+    justify-content: center;
+    
+    padding-left: 40px;
+        padding-right: 40px;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    background-color: #ffffff;
+    
+}
+@media screen and (max-width: 960px){
+    .pmain{
+        max-width: 640px
+    }
+
+}
+@media screen and (max-width: 1200px){
+    .pmain{
+        max-width: 1200px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+#img1,#img2,#img3,#img4,#img5,#img6{
   
-  p {
-    font-weight: 400;
-    font-size: 17px;
-  }
+    max-width: 295px;
+}
+@media screen and (max-width: 960px){
+    #img1,#img2,#img3,#img4,#img5,#img6{
+        width: 33.333%;
+        float: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+}
+@media screen and (max-width: 1200px){
+    #img1,#img2,#img3,#img4,#img5,#img6{
+        padding: 10px;
+        margin-left: 10px;
+    margin-right: 10px;
+    } 
+}
