@@ -5,14 +5,18 @@
 @import "typography";
 @import "blocks/btn";
 @import "blocks/header";
+@import "blocks/footer";
 @import "blocks/faq";
 @import "pages/nannys";
 @import "pages/faq";
 @import "pages/partners";
 @import "pages/contacts";
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> cc62b590840a635653d4aef560af36d28b6aa137
 .container {
     width: 100%;
 }
@@ -28,7 +32,7 @@
     margin: auto;
 
     @media screen and (max-width: $smallMobile) {
-        width: 270px;
+        width: 280px;
     }
 
     @media screen and (min-width: $smallMobile) {
@@ -52,20 +56,35 @@ body {
     font-family: $defaultFont;
     color: $darkColor;
 
-
-    h1,
-    h2,
-    p {
-        margin: 0;
+    &::-webkit-scrollbar {
+        width: 12px;
     }
 
-    h2 {
-        font-weight: 600;
-        font-size: 45px;
+    &::-webkit-scrollbar-track {
+        box-shadow: 1px 1px 10px rgba(78, 55, 55, 0.1);
+        background-color: $backgroundColor;
     }
 
-    p {
-        font-weight: 400;
-        font-size: 17px;
+    &::-webkit-scrollbar-thumb {
+        background-color: $defaultColor;
+        border-radius: 8px;
+        border: 3px solid $backgroundColor;
     }
+}
+
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 45px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 17px;
 }
