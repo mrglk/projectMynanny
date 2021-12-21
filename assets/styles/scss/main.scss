@@ -48,6 +48,7 @@
 }
 
 body {
+    height: 100%;
     font-family: $defaultFont;
     color: $darkColor;
 
@@ -65,6 +66,10 @@ body {
         border-radius: 8px;
         border: 3px solid $backgroundColor;
     }
+}
+
+html {
+    height: 100%;
 }
 
 
