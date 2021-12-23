@@ -35,6 +35,11 @@
     }
 }
 
+.header__page_active {
+    padding-bottom: 3px;
+    border-bottom: 2px solid $defaultColor;
+}
+
 .header__buttons {
     margin-right: 5px;
 }
