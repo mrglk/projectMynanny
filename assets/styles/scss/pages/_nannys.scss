@@ -12,6 +12,10 @@
 
 .trainingSection__title {
     margin-bottom: 30px;
+
+    @media screen and (max-width: $smallMobile) {
+        font-size: 40px;
+    }
 }
 
 .trainingSection__text {
@@ -34,7 +38,7 @@
     padding: 40px 40px 60px 40px;
 
     @media screen and (max-width: $tablet) {
-        padding-bottom: 270px;
+        padding-bottom: 290px;
     }
 
     @media screen and (max-width: $mobile) {
@@ -42,12 +46,12 @@
     }
 
     @media screen and (max-width: $smallMobile) {
-        padding-bottom: 450px;
+        padding-bottom: 550px;
     }
 }
 
 .introBlock {
-    max-width: 650px;
+    max-width: 750px;
 }
 
 .introBlock__titleBlock {
@@ -102,6 +106,10 @@
         width: 500px;
     }
 
+    @media screen and (max-width: $tablet) {
+        margin-left: 0;
+    }
+
     @media screen and (max-width: $mobile) {
         width: 380px;
     }
@@ -136,7 +144,7 @@
         }
 
         @media screen and (max-width: $smallMobile) {
-            height: 300px;
+            height: 380px;
             border-right: 2px solid transparent;
             border-top: 2px solid $baseColor;
             border-top-right-radius: 0;
@@ -156,7 +164,7 @@
             }
 
             @media screen and (max-width: $smallMobile) {
-                height: 440px;
+                height: 470px;
                 border-right: 2px solid transparent;
                 border-top: 2px solid $baseColor;
                 border-top-right-radius: 0;
@@ -170,17 +178,21 @@
         }
 
         &:nth-child(2) {
+            @media screen and (max-width: $desktop) {
+                height: 290px;
+            }
+
             @media screen and (max-width: $tablet) {
-                height: 270px;
+                height: 300px;
             }
 
             @media screen and (max-width: $mobile) {
-                height: 350px;
+                height: 370px;
             }
 
             @media screen and (max-width: $smallMobile) {
                 border-top: 2px solid transparent;
-                height: 530px;
+                height: 550px;
             }
         }
 
@@ -207,16 +219,20 @@
         }
 
         &:nth-child(3) {
+            @media screen and (max-width: $desktop) {
+                height: 200px;
+            }
+
             @media screen and (max-width: $tablet) {
                 height: 220px;
             }
 
             @media screen and (max-width: $mobile) {
-                height: 250px;
+                height: 300px;
             }
 
             @media screen and (max-width: $smallMobile) {
-                height: 340px;
+                height: 390px;
             }
         }
 
@@ -226,14 +242,14 @@
             &::after {
                 content: "";
                 position: absolute;
-                width: 40%;
+                width: 30%;
                 height: 180px;
                 border-bottom: 2px solid $baseColor;
                 border-left: 2px solid $baseColor;
                 border-bottom-left-radius: 100px;
                 border-top-left-radius: 100px;
                 top: -2px;
-                right: 60%;
+                right: 70%;
 
                 @media screen and (max-width: $tablet) {
                     display: none;
@@ -241,16 +257,16 @@
             }
 
             @media screen and (max-width: $tablet) {
-                height: 270px;
+                height: 300px;
                 border-bottom: 2px solid $baseColor;
             }
 
             @media screen and (max-width: $mobile) {
-                height: 370px;
+                height: 430px;
             }
 
             @media screen and (max-width: $smallMobile) {
-                height: 550px;
+                height: 610px;
             }
         }
     }
@@ -282,13 +298,20 @@
     box-sizing: border-box;
     padding: 5px;
 
+    @media screen and (max-width: $smallMobile) {
+        width: 40px;
+        height: 40px;
+        font-size: 35px;
+        padding: 1px;
+    }
+
     &_one {
         top: -30px;
         left: -120px;
 
         @media screen and (max-width: $smallMobile) {
-            top: -25px;
-            left: -17%;
+            top: 0;
+            left: -11%;
         }
     }
 
@@ -302,23 +325,24 @@
 
         @media screen and (max-width: $tablet) {
             left: -100px;
-            top: 270px;
+            top: 300px;
             z-index: 2;
         }
 
         @media screen and (max-width: $mobile) {
-            top: 370px;
+            top: 390px;
             left: -120px;
         }
 
         @media screen and (max-width: $smallMobile) {
-            top: 470px;
-            left: -17%;
+            top: 510px;
+            left: -10%;
         }
     }
 
     &_three {
         top: -30px;
+        left: -5%;
 
         @media screen and (max-width: $tablet) {
             left: -100px;
@@ -332,7 +356,7 @@
 
         @media screen and (max-width: $smallMobile) {
             top: -10px;
-            left: -17%;
+            left: -10%;
         }
     }
 
@@ -356,12 +380,14 @@
         }
 
         @media screen and (max-width: $smallMobile) {
-            left: 90%;
+            left: 110%;
+            top: 370px;
         }
     }
 
     &_five {
         bottom: -30px;
+        left: -5%;
         z-index: 2;
 
         @media screen and (max-width: $tablet) {
@@ -370,18 +396,19 @@
         }
 
         @media screen and (max-width: $mobile) {
-            bottom: -350px;
+            bottom: -380px;
             left: -120px;
         }
 
         @media screen and (max-width: $smallMobile) {
-            left: -17%;
-            bottom: -600px;
+            left: -10%;
+            bottom: -650px;
         }
     }
 
     &_six {
         top: -30px;
+        left: -5%;
 
         @media screen and (max-width: $tablet) {
             top: 190px;
@@ -395,7 +422,7 @@
 
         @media screen and (max-width: $smallMobile) {
             left: -5%;
-            top: 400px;
+            top: 440px;
         }
     }
 }
@@ -421,7 +448,7 @@
 
         @media screen and (max-width: $smallMobile) {
             top: 91%;
-            left: 2%;
+            left: -2%;
         }
     }
 
@@ -449,7 +476,7 @@
         left: -13px;
 
         @media screen and (max-width: $smallMobile) {
-            top: 93%;
+            top: 94%;
             left: 85%;
         }
     }
@@ -460,17 +487,17 @@
 
         @media screen and (max-width: $tablet) {
             left: 70%;
-            bottom: -290px;
+            bottom: -320px;
         }
 
         @media screen and (max-width: $mobile) {
             left: 96%;
-            bottom: -520px;
+            bottom: -580px;
         }
 
         @media screen and (max-width: $smallMobile) {
             left: -7%;
-            top: 360%;
+            top: 320%;
         }
     }
 
@@ -518,7 +545,7 @@
 
 .curve__text {
     position: absolute;
-    top: 5%;
+    top: 4%;
     width: 150%;
     display: grid;
     grid-template-columns: 10% 55% 35%;
@@ -528,17 +555,19 @@
     }
 
     @media screen and (max-width: $tablet) {
+        top: 3%;
         width: 100%;
         grid-template-columns: 13% 87%;
     }
 
     @media screen and (max-width: $mobile) {
+        top: 2%;
         width: 95%;
         grid-template-columns: 17% 83%;
     }
 
     @media screen and (max-width: $smallMobile) {
-        top: -0.5%;
+        top: 0;
         left: -6%;
         width: 130%;
         grid-template-columns: 12% 88%;
@@ -561,33 +590,34 @@
 .textBlock_two {
     grid-column: 3 / 4;
     position: relative;
-    top: 50px;
+    top: 60px;
     left: 60px;
 
     @media screen and (max-width: $desktop) {
-        top: 75px;
+        top: 85px;
     }
 
     @media screen and (max-width: $tablet) {
         grid-column: 2 / 3;
-        top: 60px;
+        top: 45px;
         left: 0;
     }
 
     @media screen and (max-width: $mobile) {
-        top: 40px;
+        top: 35px;
     }
 
     @media screen and (max-width: $smallMobile) {
         grid-column: 1 / 3;
-        top: 40px;
+        top: 35px;
     }
 }
 
 .textBlock_three {
     grid-column: 2 / 3;
     position: relative;
-    top: 55px;
+    top: 38px;
+    width: 110%;
 
     @media screen and (max-width: $desktop) {
         top: -25px;
@@ -595,67 +625,70 @@
 
     @media screen and (max-width: $tablet) {
         grid-column: 1 / 3;
-        top: 140px;
+        width: 100%;
+        top: 100px;
     }
 
     @media screen and (max-width: $mobile) {
-        top: 90px;
+        top: 80px;
+        width: 90%;
     }
 
     @media screen and (max-width: $smallMobile) {
         grid-column: 2 / 3;
-        top: 90px;
+        top: 60px;
     }
 }
 
 .textBlock_four {
     grid-column: 3 / 4;
     position: relative;
-    top: 330px;
+    top: 310px;
     left: 60px;
 
     @media screen and (max-width: $desktop) {
-        top: 260px;
+        top: 275px;
     }
 
     @media screen and (max-width: $tablet) {
         grid-column: 2 / 3;
-        top: 190px;
+        top: 160px;
         left: 0;
     }
 
     @media screen and (max-width: $mobile) {
-        top: 145px;
+        top: 120px;
     }
 
     @media screen and (max-width: $smallMobile) {
         grid-column: 1 / 3;
-        top: 145px;
+        top: 85px;
     }
 }
 
 .textBlock_five {
     grid-column: 2 / 3;
     position: relative;
-    bottom: 70px;
+    bottom: 90px;
     width: 90%;
 
     @media screen and (max-width: $desktop) {
-        bottom: 200px;
+        bottom: 240px;
     }
 
     @media screen and (max-width: $tablet) {
         grid-column: 1 / 3;
-        top: 240px;
+        top: 210px;
+        width: 100%;
     }
 
     @media screen and (max-width: $mobile) {
-        top: 190px;
+        top: 160px;
     }
 
     @media screen and (max-width: $smallMobile) {
         grid-column: 2 / 3;
-        top: 200px;
+        top: 135px;
     }
 }
 
@@ -665,22 +698,22 @@
     top: 220px;
 
     @media screen and (max-width: $desktop) {
-        top: 80px;
+        top: 30px;
     }
 
     @media screen and (max-width: $tablet) {
         grid-column: 2 / 3;
-        top: 320px;
+        top: 290px;
     }
 
     @media screen and (max-width: $mobile) {
-        top: 250px;
+        top: 230px;
         grid-column: 1 / 3;
     }
 
     @media screen and (max-width: $smallMobile) {
         grid-column: 1 / 3;
-        top: 280px;
+        top: 210px;
     }
 }
 
@@ -695,23 +728,13 @@
 
 .colorBlock {
     box-sizing: border-box;
-    padding: 40px;
+    padding: 20px;
     margin-top: 40px;
     display: grid;
+    align-content: start;
     grid-template-columns: 70px 1fr;
-    grid-template-rows: 40% 60%;
-    gap: 10px;
-
-
-    @media screen and (max-width: $desktop) {
-        padding: 30px;
-        grid-template-rows: 30% 70%;
-    }
-
-    @media screen and (max-width: $mobile) {
-        padding: 10px;
-        grid-template-rows: 20% 80%;
-    }
+    grid-template-rows: auto;
+    gap: 5px;
 
     @media screen and (max-width: $smallMobile) {
         padding: 10px;
