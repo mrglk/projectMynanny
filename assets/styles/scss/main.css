@@ -1776,15 +1776,18 @@
   border: 0;
 }
 
+@media screen and (max-width: 1199px) {
+  .br__none {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 959px) {
   .documentSection__inner {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-  }
-  .br__none {
-    display: none;
   }
   .documentSection__item {
     display: -ms-grid;

@@ -856,14 +856,16 @@
     border: 0;
 }
 
+@media screen and (max-width:$desktop) {
+    .br__none {
+        display: none;
+    }
+}
+
 @media screen and (max-width:$tablet) {
     .documentSection__inner {
         display: grid;
         grid-template-columns: 1fr;
-    }
-
-    .br__none {
-        display: none;
     }
 
     .documentSection__item {
