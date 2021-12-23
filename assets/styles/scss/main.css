@@ -474,6 +474,10 @@
   }
 }
 
+.faq__header_padding {
+  padding-top: 120px;
+}
+
 .faq__item {
   border-top: 1px solid #292f36;
 }
