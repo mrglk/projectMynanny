@@ -1154,6 +1154,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
+    @media screen and (max-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+    }
+
     @media screen and (max-width: $mobile) {
         grid-template-columns: 1fr;
     }

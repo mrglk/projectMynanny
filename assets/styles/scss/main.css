@@ -2097,6 +2097,13 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+@media screen and (max-width: 959px) {
+  .workingSection__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 639px) {
   .workingSection__wrapper {
     -ms-grid-columns: 1fr;
