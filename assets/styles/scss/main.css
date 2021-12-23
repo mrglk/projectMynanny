@@ -1,18 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Montserrat"), url("../asssets/fonts/Montserrat-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: local("Montserrat"), url("../asssets/fonts/Montserrat-SemiBold.ttf") format("ttf");
-}
-
 /* Breakpoints */
 /* Colors */
 .btn {
@@ -114,7 +100,7 @@
 }
 
 .header__page {
-  margin-right: 20px;
+  margin-right: 12px;
   color: #292f36;
 }
 
@@ -1739,7 +1725,7 @@
 }
 
 .becomeSection__title_small {
-  font-size: 47px;
+  font-size: 45px;
 }
 
 .becomeSection__text {
