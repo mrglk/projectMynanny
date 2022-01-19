@@ -1,0 +1,325 @@
+.container {
+    color: $darkColor;
+}
+
+.container__row {
+    width: 100%;
+    margin: auto;
+}
+
+.block-whatwedo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 12% 10% 80%;
+
+    grid-gap: 3%;
+
+    @media (max-width: $tablet) {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 20% 5% 80%;
+
+
+    }
+
+    @media screen and (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1% 1% 40% 45%;
+        grid-gap: 8%;
+
+    }
+
+    @media (max-width: $smallMobile) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1% 1% 40% 45%;
+        grid-gap: 7%;
+    }
+
+
+
+
+}
+
+.block-whatwedo__h1 {
+    grid-area: 1/1/2/3;
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    @media (max-width:$desktop) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1.5rem;
+
+    }
+
+    @media (max-width: $smallMobile) {
+
+        font-size: 1.3rem;
+    }
+
+}
+
+.block-whatwedo__h2 {
+    grid-area: 2/1/3/3;
+    font-size: 1.5rem;
+
+    @media (max-width:$desktop) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 1.3rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1.1rem;
+
+    }
+
+    @media (max-width: $smallMobile) {
+
+        font-size: 0.9rem;
+    }
+
+}
+
+.single-visits {
+    grid-area: 3/1/4/2;
+    background-color: $backgroundColor;
+}
+
+.regular-visits {
+    grid-area: 3/2/4/3;
+    background-color: $backgroundColor;
+
+    @media screen and (max-width: $mobile) {
+        grid-area: 4/1/5/2;
+        margin-top: 7%;
+    }
+}
+
+.single-visits,
+.regular-visits {
+    display: grid;
+    grid-gap: 10%;
+    padding: 10%;
+    height: 100%;
+    grid-column: 1fr;
+    grid-template-rows: 20% 10% 60%;
+
+
+    @media (max-width: $tablet) {
+        grid-template-rows: 12% 10% 75%;
+    }
+
+    @media screen and (max-width: $mobile) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 10% 75%;
+        grid-gap: 10%;
+
+    }
+
+    @media (max-width: $smallMobile) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 9% 8% 80%;
+        grid-gap: 10%;
+    }
+
+}
+
+.img-heart {
+    @media (max-width:$desktop) {
+        width: 4rem;
+    }
+
+    @media (max-width: $tablet) {
+        width: 3.5rem;
+    }
+
+    @media (max-width: $mobile) {
+        width: 3rem;
+
+    }
+
+    @media (max-width: $smallMobile) {
+
+        width: 2.5rem;
+    }
+}
+
+.single-visis__header,
+.regular-visits__header {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 600;
+    grid-area: 1/1/2/2;
+
+    @media (max-width:$desktop) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 1.7rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1.6rem;
+
+    }
+
+    @media (max-width: $smallMobile) {
+
+        font-size: 1.5rem;
+    }
+
+
+}
+
+
+.single-visits__h3,
+.regular-visits__h3 {
+    margin-left: 1rem;
+    font-size: 2rem;
+
+
+    @media (max-width:$desktop) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 1.8rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1.5rem;
+
+    }
+
+    @media (max-width: $smallMobile) {
+
+        font-size: 1.3rem;
+    }
+
+}
+
+.single-visits__p,
+.regular-visits__p {
+    font-size: 1.3rem;
+    font-weight: 450;
+    grid-area: 2/1/3/2;
+
+    @media (max-width:$desktop) {
+        font-size: 1.2rem;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 1rem;
+
+    }
+
+    @media (max-width: $smallMobile) {
+
+        font-size: 0.9rem;
+    }
+
+}
+
+.regular-visits__list,
+.single-visits__list {
+    font-weight: 450;
+
+    &_h3 {
+        font-size: 1.2rem;
+
+
+        @media (max-width:$desktop) {
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: $tablet) {
+            font-size: 1rem;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 0.9rem;
+
+        }
+
+        @media (max-width: $smallMobile) {
+
+            font-size: 0.8rem;
+        }
+    }
+
+    &_point {
+        font-size: 1rem;
+
+        @media (max-width:$desktop) {
+            font-size: 1rem;
+        }
+
+        @media (max-width: $tablet) {
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 0.85rem;
+
+        }
+
+        @media (max-width: $smallMobile) {
+
+            font-size: 0.7rem;
+        }
+    }
+
+
+}
+
+ul {
+    list-style: none;
+}
+
+.single-visits__list_point li {
+    &::before {
+        content: "\2022";
+        color: $baseColor;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+}
+
+.single-visits__list_h3 {
+    color: $baseColor;
+}
+
+.regular-visits__list_point li {
+    &::before {
+        content: "\2022";
+        color: $defaultColor;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+}
+
+li {
+    margin-bottom: 3%;
+
+}
+
+.regular-visits__list_h3 {
+    color: $defaultColor;
+}

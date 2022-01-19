@@ -1,0 +1,167 @@
+.block-conditions__background_color {
+    background-color: $backgroundColor;
+    padding-bottom: 4.68rem;
+    padding-top: 4.68rem;
+
+}
+
+.block-conditions__background_defcolor {
+    background-color: $defaultColor;
+    padding-bottom: 4.68rem;
+    padding-top: 4.68rem;
+
+}
+
+.block-conditions {
+    text-align: left;
+    width: 100vw;
+}
+
+.block-conditions__h2 {
+    font-weight: 600;
+    color: $darkColor;
+    padding-bottom: 0.18rem;
+    margin: 0;
+
+
+    @media (min-width:$desktop) {
+
+        font-size: 3.1rem;
+
+    }
+
+    @media (min-width: $tablet) and (max-width:$desktop) {
+
+        font-size: 3rem;
+
+    }
+
+    @media (min-width:$mobile) and (max-width:$tablet) {
+
+        font-size: 1.87rem;
+    }
+
+    @media (max-width:$mobile) {
+
+        font-size: 1.75rem;
+
+    }
+}
+
+
+.block-conditions__h4 {
+    font-size: 1.12rem;
+    font-weight: 600;
+    padding-top: 4.68rem;
+    padding-bottom: 1.87rem;
+    line-height: 1.55;
+    margin: 0;
+}
+
+
+.block-conditions__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.block-conditions__list li::marker {
+    content: '\2022';
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.block-conditions__list-item {
+    padding-left: 1%;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+
+}
+
+
+
+
+.block-conditions_text {
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+
+}
+
+.block-conditions__indent-large {
+    margin-bottom: 4%;
+
+}
+
+.block-conditions__indent-small {
+    margin-bottom: 0;
+}
+
+.block-conditions__text_darkColor {
+    color: $darkColor;
+
+}
+
+.block-conditions__text_lightColor {
+    color: $lightColor;
+}
+
+.block-conditions__table-border {
+    border: 2px solid $lightColor;
+    margin: 0 -30px;
+}
+
+.block-conditions__table-indent {
+    padding: 3rem 2.5rem;
+}
+
+.block-conditions__wapper {
+    background-color: #ff6c70;
+    padding: 3% 3%;
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 5% 95%;
+    margin-bottom: 6rem;
+
+}
+
+.block-conditions__list_indent-large {
+    margin-bottom: 4.38rem;
+}
+
+.block-conditions__wrapper-icon {
+    grid-column: 1/2;
+}
+
+.block-conditions__wrapper-icon svg {
+    max-width: 100%;
+}
+
+.block-conditions__wrapper-text {
+    grid-column: 2/3;
+}
+
+.block-conditions__link {
+    color: $defaultColor;
+    cursor: pointer;
+
+}
+
+.block-conditions_text a {
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.block-conditions__link_decoration {
+    padding-bottom: 1%;
+    border-bottom: 2px solid $lightColor;
+
+}

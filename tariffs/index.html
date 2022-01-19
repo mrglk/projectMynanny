@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Тарифы</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/styles/normalize.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/styles/scss/main.css">
+</head>
+
+<body>
+
+    <header class="header container">
+        <div class="header__inner container__row_wide">
+            <div class="header__logo">
+                <a href="#"><img class="header__img" src="../assets/images/nanny-logo.svg" alt="Логотип"></a>
+            </div>
+            <div class="header__menu">
+                <input class="header__check" id="header__toggle" type="checkbox" />
+                <label class="header__btn" for="header__toggle">
+                    <span></span>
+                </label>
+                <nav class="header__links">
+                    <div>
+                        <a class="header__item header__page" href="../index.html">Главная</a>
+                        <a class="header__item header__page header__page_active" href="index.html">Тарифы</a>
+                        <a class="header__item header__page" href="../ourteam/index.html">Наша команда</a>
+                        <a class="header__item header__page" href="index.html">Стать няней</a>
+                        <a class="header__item header__page" href="../faq/index.html">FAQ</a>
+                        <a class="header__item header__page" href="../partners/index.html">Партнеры</a>
+                        <a class="header__item header__page" href="../contacts/index.html">Контакты</a>
+                        <a class="header__item header__buttons btn btn_defaultcolor btn_small" href="#">Найти няню</a>
+                        <a class="header__item header__buttons btn btn_lightColor-darkСolor btn_small"
+                            href="https://app.star-c.ru/">Войти <span class="mobile__hidden">→</span></a>
+                    </div>
+                    <div class="header__social desktop__hidden">
+                        <a href="https://www.facebook.com/mynannypro/">
+                            <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                enable-background="new 0 0 48 48" xml:space="preserve">
+                                <path style="fill:#4dcdc4;"
+                                    d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/mynanny.pro/">
+                            <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                                xml:space="preserve">
+                                <path style="fill:#4dcdc4;"
+                                    d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z">
+                                </path>
+                                <path style="fill:#4dcdc4;"
+                                    d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z">
+                                </path>
+                                <path style="fill:#4dcdc4;"
+                                    d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="container blockdif">
+            <div class="container__row">
+                <div class="block-tariffs" id="tariffs">
+                    <div class="block-tariffs__header">Тарифы</div>
+                    <div class="block-tariffs__p">Стоимость часа зависит от города и количества часов в неделю.
+                    </div>
+                    <div class="cities">
+                        <input class="moscow" type="radio" name="tab-btn" id="tab-btn-1" value="" checked="checked">
+                        <label for="tab-btn-1">Москва</label>
+                        <input class="piter" type="radio" name="tab-btn" id="tab-btn-2" value="">
+                        <label for="tab-btn-2">Санкт-Петербург</label>
+                        <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                        <label for="tab-btn-3">Набережные Челны</label>
+                        <input type="radio" name="tab-btn" id="tab-btn-4" value="">
+                        <label for="tab-btn-4">Казань</label>
+                        <div id="content-1">
+                            <div class="table-hours-tables">
+                                <table class="table-hours">
+                                    <caption class="table-hours__header">
+                                        <img class="table-hours__header_img" src="../assets/images/img_page2/one.svg"
+                                            width="50rem" height="height" alt="circle">
+                                        <p class="table-hours__header_p">Тариф без пакета «Почасовой» от 3 часов в
+                                            неделю:
+                                        </p>
+                                    </caption>
+                                    <tr class="table-hours__columns">
+                                        <th class="table-hours__columns_item" colspan="1">Стоимость пакета</th>
+                                        <td class="table-hours__columns_item" colspan="1">Цена часа</td>
+                                        <th class="table-hours__columns_item" colspan="1">Срок действия</th>
+                                        <th class="table-hours__columns_item" colspan="1">Заморозка</th>
+                                        <th class="table-hours__columns_item" colspan="1">Бесплатная отмена визитов</th>
+                                        <th class="table-hours__columns_item" colspan="1">Частичная оплата</th>
+                                        <th class="table-hours__columns_item" colspan="1">2-ой ребенок</th>
+                                    </tr>
+                                    <tr class="table-hours__rows">
+                                        <td class="table-hours__rows_item">-</td>
+                                        <td class="table-hours__rows_item">580 &#8381</td>
+                                        <td class="table-hours__rows_item">-</td>
+                                        <td class="table-hours__rows_item">-</td>
+                                        <td class="table-hours__rows_item">-</td>
+                                        <td class="table-hours__rows_item">-</td>
+                                        <td class="table-hours__rows_item">120 &#8381</td>
+                                    </tr>
+                                </table>
+                                <table class="table-hours-tablet">
+                                    <caption class="table-hours-tablet__header">
+                                        <img class="table-hours-tablet__header_img"
+                                            src="../assets/images/img_page2/one.svg" width="50rem" height="height"
+                                            alt="circle">
+                                        <p class="table-hours-tablet__header_p">Тариф без пакета «Почасовой» от 3 часов
+                                            в
+                                            неделю:</p>
+                                    </caption>
+                                    <tr class="table-hours-tablet__columns">
+                                        <th class="table-hours-tablet__columns_item" colspan="1">Стоимость пакета</th>
+                                        <td class="table-hours-tablet__rows_item">-</td>
+                                    </tr>
+                                    <tr class="table-hours-tablet__columns">
+                                        <th class="table-hours-tablet__columns_item" colspan="1">Цена часа</th>
+                                        <td class="table-hours-tablet__rows_item">580 &#8381</td>
+                                    </tr>
+                                    <tr class="table-hours-tablet__columns">
+                                        <th class="table-hours-tablet__columns_item" colspan="1">Срок действия</th>
+                                        <td class="table-hours-tablet__rows_item">-</td>
+                                    </tr>
+
+                                    <tr class="table-hours-tablet__columns">
+                                        <th class="table-hours-tablet__columns_item" colspan="1">Заморозка</th>
+                                        <td class="table-hours-tablet__rows_item">-</td>
+                                    </tr>
+
+                                    <tr class="table-hours-tablet__columns">
+                                        <th class="table-hours-tablet__columns_item" colspan="1">Бесплатная отмена
+                                            визитов
+                                        </th>
+                                        <td class="table-hours-tablet__rows_item">-</td>
+                                    </tr>
+
+                                    <tr class="table-hours-tablet__columns">
+                                        <th class="table-hours-tablet__columns_item" colspan="1">Частичная оплата</th>
+                                        <td class="table-hours-tablet__rows_item">-</td>
+                                    </tr>
+
+                                    <tr class="table-hours-tablet__columns">
+                                        <th class="table-hours-tablet__columns_item" colspan="1">2-ой ребенок</th>
+                                        <td class="table-hours-tablet__rows_item">-</td>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+                            <div class="new-hours-tables">
+                                <table class="new-hours">
+                                    <caption class="new-hours__header">
+                                        <img class="new-hours__header_img" src="../assets/images/img_page2/new.svg"
+                                            width="50rem" height="height" alt="circle">
+                                        <p class="new-hours__header_p">Новые пакеты часов:</p>
+                                    </caption>
+                                    <thead>
+                                        <tr class="new-hours__columns">
+                                            <th class="new-hours__columns_item" colspan="1">Тариф</th>
+                                            <th class="new-hours__columns_item" colspan="1">Стоимость пакета</th>
+                                            <th class="new-hours__columns_item" colspan="1">Цена часа</th>
+                                            <th class="new-hours__columns_item" colspan="1">Срок действия</th>
+                                            <th class="new-hours__columns_item" colspan="1">Заморозка</th>
+                                            <th class="new-hours__columns_item" colspan="1">Бесплатная отмена визитов
+                                            </th>
+                                            <th class="new-hours__columns_item" colspan="1">Частичная оплата</th>
+                                            <th class="new-hours__columns_item" colspan="1">2-ой ребенок</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="new-hours__tbody">
+                                        <tr>
+                                            <td class="new-hours__data">10 часов</td>
+                                            <td class="new-hours__data">5 400 &#8381</td>
+                                            <td class="new-hours__data">540 &#8381</td>
+                                            <td class="new-hours__data">15 дней</td>
+                                            <td class="new-hours__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours__data">120 &#8381</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="new-hours__data">20 часов</td>
+                                            <td class="new-hours__data">10 400 &#8381</td>
+                                            <td class="new-hours__data">540 &#8381</td>
+                                            <td class="new-hours__data">25 дней</td>
+                                            <td class="new-hours__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours__data">120 &#8381</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="new-hours__data">40 часов</td>
+                                            <td class="new-hours__data">20 000 &#8381</td>
+                                            <td class="new-hours__data">500 &#8381</td>
+                                            <td class="new-hours__data">30 дней</td>
+                                            <td class="new-hours__data">5 дней</td>
+                                            <td class="new-hours__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours__data">120 &#8381</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="new-hours__data">80 часов</td>
+                                            <td class="new-hours__data">38 400 &#8381</td>
+                                            <td class="new-hours__data">480 &#8381</td>
+                                            <td class="new-hours__data">40 дней</td>
+                                            <td class="new-hours__data">10 дней</td>
+                                            <td class="new-hours__data">1 раз</td>
+                                            <td class="new-hours__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours__data">120 &#8381</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="new-hours__data">120 часов</td>
+                                            <td class="new-hours__data">55 200 &#8381</td>
+                                            <td class="new-hours__data">460 &#8381</td>
+                                            <td class="new-hours__data">50 дней</td>
+                                            <td class="new-hours__data">15 дней</td>
+                                            <td class="new-hours__data">1 раз</td>
+                                            <td class="new-hours__data">50/50</td>
+                                            <td class="new-hours__data">120 &#8381</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="new-hours__data">160 часов</td>
+                                            <td class="new-hours__data">70 400 &#8381</td>
+                                            <td class="new-hours__data">440 &#8381</td>
+                                            <td class="new-hours__data">60 дней</td>
+                                            <td class="new-hours__data">20 дней</td>
+                                            <td class="new-hours__data">2 раз</td>
+                                            <td class="new-hours__data">50/50</td>
+                                            <td class="new-hours__data">120 &#8381</td>
+                                        </tr>
+                                    <tbody>
+                                </table>
+                                <table class="new-hours-tablet">
+                                    <caption class="new-hours-tablet__header">
+                                        <img class="new-hours-tablet__header_img"
+                                            src="../assets/images/img_page2/new.svg" width="50rem" height="height"
+                                            alt="circle">
+                                        <p class="new-hours-tablet__header_p">Новые пакеты часов:</p>
+                                    </caption>
+                                    <tbody class="new-hours-tablet__tbody">
+                                        <tr>
+                                            <th class="new-hours-tablet__columns" colspan="1">Тариф</th>
+                                            <td class="new-hours-tablet__data">10 часов</td>
+                                            <td class="new-hours-tablet__data">20 часов</td>
+                                            <td class="new-hours-tablet__data">40 часов</td>
+                                            <td class="new-hours-tablet__data">80 часов</td>
+                                            <td class="new-hours-tablet__data">120 часов</td>
+                                            <td class="new-hours-tablet__data">160 часов</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-tablet__columns" colspan="1">Стоимость пакета</th>
+                                            <td class="new-hours-tablet__data">5 400 &#8381</td>
+                                            <td class="new-hours-tablet__data">10 400 &#8381</td>
+                                            <td class="new-hours-tablet__data">20 000 &#8381</td>
+                                            <td class="new-hours-tablet__data">38 400 &#8381</td>
+                                            <td class="new-hours-tablet__data">55 200 &#8381</td>
+                                            <td class="new-hours-tablet__data">70 400 &#8381</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-tablet__columns" colspan="1">Цена часа</th>
+                                            <td class="new-hours-tablet__data">540 &#8381</td>
+                                            <td class="new-hours-tablet__data">520 &#8381</td>
+                                            <td class="new-hours-tablet__data">500 &#8381</td>
+                                            <td class="new-hours-tablet__data">480 &#8381</td>
+                                            <td class="new-hours-tablet__data">460 &#8381</td>
+                                            <td class="new-hours-tablet__data">440 &#8381</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-tablet__columns" colspan="1">Срок действия</th>
+                                            <td class="new-hours-tablet__data">15 дней</td>
+                                            <td class="new-hours-tablet__data">25 дней</td>
+                                            <td class="new-hours-tablet__data">30 дней</td>
+                                            <td class="new-hours-tablet__data">40 дней</td>
+                                            <td class="new-hours-tablet__data">50 дней</td>
+                                            <td class="new-hours-tablet__data">60 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-tablet__columns" colspan="1">Заморозка</th>
+                                            <td class="new-hours-tablet__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours-tablet__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                            <td class="new-hours-tablet__data">5 дней</td>
+                                            <td class="new-hours-tablet__data">10 дней</td>
+                                            <td class="new-hours-tablet__data">15 дней</td>
+                                            <td class="new-hours-tablet__data">20 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-tablet__columns" colspan="1">Бесплатная отмена визитов
+                                            </th>
+                                            <td class="new-hours-tablet__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours-tablet__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours-tablet__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                            <td class="new-hours-tablet__data">1 раз</td>
+                                            <td class="new-hours-tablet__data">1 раз</td>
+                                            <td class="new-hours-tablet__data">2 раза</td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-tablet__columns" colspan="1">Частичная оплата</th>
+                                            <td class="new-hours-tablet__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours-tablet__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours-tablet__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours-tablet__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+                                            <td class="new-hours-tablet__data">50/50</td>
+                                            <td class="new-hours-tablet__data">50/50</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-tablet__columns" colspan="1">2-ой ребенок</th>
+                                            <td class="new-hours-tablet__data">120 &#8381</td>
+                                            <td class="new-hours-tablet__data">120 &#8381</td>
+                                            <td class="new-hours-tablet__data">120 &#8381</td>
+                                            <td class="new-hours-tablet__data">120 &#8381</td>
+                                            <td class="new-hours-tablet__data">120 &#8381</td>
+                                            <td class="new-hours-tablet__data">120 &#8381</td>
+                                        </tr>
+                                    <tbody>
+                                </table>
+
+                                <table class="new-hours-mobile">
+                                    <caption class="new-hours-mobile__header">
+                                        <img class="new-hours-mobile__header_img"
+                                            src="../assets/images/img_page2/new.svg" width="50rem" height="height"
+                                            alt="circle">
+                                        <p class="new-hours-mobile__header_p">Новые пакеты часов:</p>
+                                    </caption>
+                                    <tbody class="new-hours-mobile__tbody">
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Тариф</th>
+                                            <td class="new-hours-mobile__data">10 часов</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Стоимость пакета</th>
+                                            <td class="new-hours-mobile__data">5 400 &#8381</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Цена часа</th>
+                                            <td class="new-hours-mobile__data">540 &#8381</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Срок действия</th>
+                                            <td class="new-hours-mobile__data">15 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Заморозка</th>
+                                            <td class="new-hours-mobile__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Бесплатная отмена визитов
+                                            </th>
+                                            <td class="new-hours-mobile__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Частичная оплата</th>
+                                            <td class="new-hours-mobile__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">2-ой ребенок</th>
+                                            <td class="new-hours-mobile__data">120 &#8381</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1"> </th>
+                                            <td class="new-hours-mobile__data"> </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Тариф</th>
+                                            <td class="new-hours-mobile__data">20 часов</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Стоимость пакета</th>
+                                            <td class="new-hours-mobile__data">10 400 &#8381</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Цена часа</th>
+                                            <td class="new-hours-mobile__data">520 &#8381</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Срок действия</th>
+                                            <td class="new-hours-mobile__data">25 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Заморозка</th>
+                                            <td class="new-hours-mobile__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Бесплатная отмена визитов
+                                            </th>
+                                            <td class="new-hours-mobile__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Частичная оплата</th>
+                                            <td class="new-hours-mobile__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">2-ой ребенок</th>
+                                            <td class="new-hours-mobile__data">120 &#8381</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1"> </th>
+                                            <td class="new-hours-mobile__data"> </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Тариф</th>
+                                            <td class="new-hours-mobile__data">40 часов</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Стоимость пакета</th>
+                                            <td class="new-hours-mobile__data">20 000 &#8381</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Цена часа</th>
+                                            <td class="new-hours-mobile__data">500 &#8381</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Срок действия</th>
+                                            <td class="new-hours-mobile__data">30 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Заморозка</th>
+                                            <td class="new-hours-mobile__data">5 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Бесплатная отмена визитов
+                                            </th>
+                                            <td class="new-hours-mobile__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Частичная оплата</th>
+                                            <td class="new-hours-mobile__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">2-ой ребенок</th>
+                                            <td class="new-hours-mobile__data">120 &#8381</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1"> </th>
+                                            <td class="new-hours-mobile__data"> </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Тариф</th>
+                                            <td class="new-hours-mobile__data">80 часов</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Стоимость пакета</th>
+                                            <td class="new-hours-mobile__data">38 400 &#8381</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Цена часа</th>
+                                            <td class="new-hours-mobile__data">480 &#8381</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Срок действия</th>
+                                            <td class="new-hours-mobile__data">40 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Заморозка</th>
+                                            <td class="new-hours-mobile__data">10 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Бесплатная отмена визитов
+                                            </th>
+                                            <td class="new-hours-mobile__data">1 раз</td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Частичная оплата</th>
+                                            <td class="new-hours-mobile__data">
+                                                <img class="cross-image" src="../assets/images/img_page2/cross.png"
+                                                    alt="cross"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">2-ой ребенок</th>
+                                            <td class="new-hours-mobile__data">120 &#8381</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1"> </th>
+                                            <td class="new-hours-mobile__data"> </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Тариф</th>
+                                            <td class="new-hours-mobile__data">120 часов</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Стоимость пакета</th>
+                                            <td class="new-hours-mobile__data">55 200 &#8381</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Цена часа</th>
+                                            <td class="new-hours-mobile__data">460 &#8381</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Срок действия</th>
+                                            <td class="new-hours-mobile__data">50 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Заморозка</th>
+                                            <td class="new-hours-mobile__data">15 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Бесплатная отмена визитов
+                                            </th>
+                                            <td class="new-hours-mobile__data">1 раз</td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Частичная оплата</th>
+                                            <td class="new-hours-mobile__data">50/50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">2-ой ребенок</th>
+                                            <td class="new-hours-mobile__data">120 &#8381</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1"> </th>
+                                            <td class="new-hours-mobile__data"> </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Тариф</th>
+                                            <td class="new-hours-mobile__data">160 часов</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Стоимость пакета</th>
+                                            <td class="new-hours-mobile__data">70 400 &#8381</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Цена часа</th>
+                                            <td class="new-hours-mobile__data">440 &#8381</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Срок действия</th>
+                                            <td class="new-hours-mobile__data">60 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Заморозка</th>
+                                            <td class="new-hours-mobile__data">20 дней</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Бесплатная отмена визитов
+                                            </th>
+                                            <td class="new-hours-mobile__data">2 раза</td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">Частичная оплата</th>
+                                            <td class="new-hours-mobile__data">50/50</td>
+
+                                        </tr>
+                                        <tr>
+                                            <th class="new-hours-mobile__columns" colspan="1">2-ой ребенок</th>
+                                            <td class="new-hours-mobile__data">120 &#8381</td>
+                                        </tr>
+                                    <tbody>
+                                </table>
+                                <a href="#" class="buton buton_defaultcolor-accentСolor"> Найти няню</a>
+                            </div>
+                        </div>
+                        <div id="content-2">
+                            <div class="cards-tariffs">
+                                <div class="full">
+                                    <div class="full-header">
+                                        <img class="full-header__img" src="../assets/images/img_page2/full.svg"
+                                            alt="circle">
+                                        <div class="full-header__h">Полный</div>
+                                    </div>
+                                    <div class="full-p1">
+                                        <div class="full-p1__text">от 40 часов</div>
+                                        <div class="full-p1__price">300 &#8381/час</div>
+                                    </div>
+                                    <div class="full-p2">
+                                        <div class="full-p2__text">в неделю</div>
+                                        <div class="full-p2__price">от 48 000&#8381/месяц</div>
+                                    </div>
+                                </div>
+                                <div class="part">
+                                    <div class="part-header">
+                                        <img class="part-header__img" src="../assets/images/img_page2/part.svg"
+                                            alt="circle">
+                                        <div class="part-header__h">Частичный</div>
+                                    </div>
+                                    <div class="part-p1">
+                                        <div class="part-p1__text">от 24 до 39 часов</div>
+                                        <div class="part-p1__price">325 &#8381/час</div>
+                                    </div>
+                                    <div class="part-p2">
+                                        <div class="part-p2__text">в неделю</div>
+                                        <div class="part-p2__price">от 31 200&#8381/месяц</div>
+                                    </div>
+                                </div>
+                                <div class="onetime">
+                                    <div class="onetime-header">
+                                        <img class="onetime-header__img" src="../assets/images/img_page2/one.svg"
+                                            alt="circle">
+                                        <div class="onetime-header__h">Разовые визиты</div>
+                                    </div>
+                                    <div class="onetime-p1">
+                                        <div class="onetime-p1__text">от 3 часов в день</div>
+                                        <div class="onetime-p1__price">350 &#8381/час</div>
+                                    </div>
+                                    <div class="onetime-p2">
+                                        <div class="onetime-p2__text"></div>
+                                        <div class="onetime-p2__price">от 1 050&#8381/день</div>
+                                    </div>
+                                </div>
+                                <div class="byhours">
+                                    <div class="byhours-header">
+                                        <img class="byhours-header__img" src="../assets/images/img_page2/hour.svg"
+                                            alt="circle">
+                                        <div class="byhours-header__h">Почасовой</div>
+                                    </div>
+                                    <div class="byhours-p1">
+                                        <div class="byhours-p1__text">от 3 до 23 часов</div>
+                                        <div class="byhours-p1__price">350 &#8381/час</div>
+                                    </div>
+                                    <div class="byhours-p2">
+                                        <div class="byhours-p2__text">в неделю</div>
+                                        <div class="byhours-p2__price">от 4 200&#8381/месяц</div>
+                                    </div>
+                                </div>
+                                <div class="night">
+                                    <div class="night-header">
+                                        <img class="night-header__img" src="../assets/images/img_page2/moon.svg"
+                                            alt="circle">
+                                        <div class="night-header__h">Ночные визиты (с 22:00 до 8:00)</div>
+                                    </div>
+                                    <div class="night-p1">
+                                        <div class="night-p1__price">400 &#8381/час</div>
+                                        <div class="night-p1__price">2 250 &#8381/ночь</div>
+                                    </div>
+                                    <div class="night-p2">
+                                        <div class="night-p2__text">до 4 часов</div>
+                                        <div class="night-p2__price">от 5 до 10 часов</div>
+                                    </div>
+                                </div>
+                                <div class="child">
+                                    <div class="child-header">Второй ребенок <span
+                                            style="background: #ffe66d">+50&#8381/час</span></div>
+                                    <div class="child-p1">*График и стоимость большего количества рабочих часов в
+                                        неделю,
+                                        работа по выходным и в ночное<span style="background: #ffe66d"> время
+                                            обсуждается
+                                            отдельно</span></div>
+                                </div>
+                            </div>
+                            <a href="#" class="buton buton_defaultcolor-accentСolor"> Найти няню</a>
+                        </div>
+
+                        <div id="content-3">
+                            <div class="cards-tariffs">
+                                <div class="full">
+                                    <div class="full-header">
+                                        <img class="full-header__img" src="../assets/images/img_page2/full.svg"
+                                            alt="circle">
+                                        <div class="full-header__h">Полный</div>
+                                    </div>
+                                    <div class="full-p1">
+                                        <div class="full-p1__text">от 40 часов</div>
+                                        <div class="full-p1__price">300 &#8381/час</div>
+                                    </div>
+                                    <div class="full-p2">
+                                        <div class="full-p2__text">в неделю</div>
+                                        <div class="full-p2__price">от 48 000&#8381/месяц</div>
+                                    </div>
+                                </div>
+                                <div class="part">
+                                    <div class="part-header">
+                                        <img class="part-header__img" src="../assets/images/img_page2/part.svg"
+                                            alt="circle">
+                                        <div class="part-header__h">Частичный</div>
+                                    </div>
+                                    <div class="part-p1">
+                                        <div class="part-p1__text">от 24 до 39 часов</div>
+                                        <div class="part-p1__price">325 &#8381/час</div>
+                                    </div>
+                                    <div class="part-p2">
+                                        <div class="part-p2__text">в неделю</div>
+                                        <div class="part-p2__price">от 31 200&#8381/месяц</div>
+                                    </div>
+                                </div>
+                                <div class="onetime">
+                                    <div class="onetime-header">
+                                        <img class="onetime-header__img" src="../assets/images/img_page2/one.svg"
+                                            alt="circle">
+                                        <div class="onetime-header__h">Разовые визиты</div>
+                                    </div>
+                                    <div class="onetime-p1">
+                                        <div class="onetime-p1__text">от 3 часов в день</div>
+                                        <div class="onetime-p1__price">350 &#8381/час</div>
+                                    </div>
+                                    <div class="onetime-p2">
+                                        <div class="onetime-p2__text"></div>
+                                        <div class="onetime-p2__price">от 1 050&#8381/день</div>
+                                    </div>
+                                </div>
+                                <div class="byhours">
+                                    <div class="byhours-header">
+                                        <img class="byhours-header__img" src="../assets/images/img_page2/hour.svg"
+                                            alt="circle">
+                                        <div class="byhours-header__h">Почасовой</div>
+                                    </div>
+                                    <div class="byhours-p1">
+                                        <div class="byhours-p1__text">от 3 до 23 часов</div>
+                                        <div class="byhours-p1__price">350 &#8381/час</div>
+                                    </div>
+                                    <div class="byhours-p2">
+                                        <div class="byhours-p2__text">в неделю</div>
+                                        <div class="byhours-p2__price">от 4 200&#8381/месяц</div>
+                                    </div>
+                                </div>
+                                <div class="night">
+                                    <div class="night-header">
+                                        <img class="night-header__img" src="../assets/images/img_page2/moon.svg"
+                                            alt="circle">
+                                        <div class="night-header__h">Ночные визиты (с 22:00 до 8:00)</div>
+                                    </div>
+                                    <div class="night-p1">
+                                        <div class="night-p1__text">c 22:00 до 08:00</div>
+                                        <div class="night-p1__price">400 &#8381/час</div>
+                                    </div>
+                                    <div class="night-p2">
+                                        <div class="night-p2__text">утра</div>
+                                        <div class="night-p2__price">от 1200&#8381/ночь</div>
+                                    </div>
+                                </div>
+                                <div class="child">
+                                    <div class="child-header">Второй ребенок <span
+                                            style="background: #ffe66d">+50&#8381/час</span></div>
+                                    <div class="child-p1">*График и стоимость большего количества рабочих часов в
+                                        неделю,
+                                        работа по выходным и в ночное<span style="background: #ffe66d"> время
+                                            обсуждается
+                                            отдельно</span></div>
+                                </div>
+                            </div>
+                            <a href="#" class="buton buton_defaultcolor-accentСolor"> Найти няню</a>
+                        </div>
+
+                        <div id="content-4">
+                            <div class="cards-tariffs">
+                                <div class="full">
+                                    <div class="full-header">
+                                        <img class="full-header__img" src="../assets/images/img_page2/full.svg"
+                                            alt="circle">
+                                        <div class="full-header__h">Полный</div>
+                                    </div>
+                                    <div class="full-p1">
+                                        <div class="full-p1__text">от 40 часов</div>
+                                        <div class="full-p1__price">300 &#8381/час</div>
+                                    </div>
+                                    <div class="full-p2">
+                                        <div class="full-p2__text">в неделю</div>
+                                        <div class="full-p2__price">от 48 000&#8381/месяц</div>
+                                    </div>
+                                </div>
+                                <div class="part">
+                                    <div class="part-header">
+                                        <img class="part-header__img" src="../assets/images/img_page2/part.svg"
+                                            alt="circle">
+                                        <div class="part-header__h">Частичный</div>
+                                    </div>
+                                    <div class="part-p1">
+                                        <div class="part-p1__text">от 24 до 39 часов</div>
+                                        <div class="part-p1__price">325 &#8381/час</div>
+                                    </div>
+                                    <div class="part-p2">
+                                        <div class="part-p2__text">в неделю</div>
+                                        <div class="part-p2__price">от 31 200&#8381/месяц</div>
+                                    </div>
+                                </div>
+                                <div class="onetime">
+                                    <div class="onetime-header">
+                                        <img class="onetime-header__img" src="../assets/images/img_page2/one.svg"
+                                            alt="circle">
+                                        <div class="onetime-header__h">Разовые визиты</div>
+                                    </div>
+                                    <div class="onetime-p1">
+                                        <div class="onetime-p1__text">от 3 часов в день</div>
+                                        <div class="onetime-p1__price">350 &#8381/час</div>
+                                    </div>
+                                    <div class="onetime-p2">
+                                        <div class="onetime-p2__text"></div>
+                                        <div class="onetime-p2__price">от 1 050&#8381/день</div>
+                                    </div>
+                                </div>
+                                <div class="byhours">
+                                    <div class="byhours-header">
+                                        <img class="byhours-header__img" src="../assets/images/img_page2/hour.svg"
+                                            alt="circle">
+                                        <div class="byhours-header__h">Почасовой</div>
+                                    </div>
+                                    <div class="byhours-p1">
+                                        <div class="byhours-p1__text">от 3 до 23 часов</div>
+                                        <div class="byhours-p1__price">350 &#8381/час</div>
+                                    </div>
+                                    <div class="byhours-p2">
+                                        <div class="byhours-p2__text">в неделю</div>
+                                        <div class="byhours-p2__price">от 4 200&#8381/месяц</div>
+                                    </div>
+                                </div>
+                                <div class="night">
+                                    <div class="night-header">
+                                        <img class="night-header__img" src="../assets/images/img_page2/moon.svg"
+                                            alt="circle">
+                                        <div class="night-header__h">Ночные визиты (с 22:00 до 8:00)</div>
+                                    </div>
+                                    <div class="night-p1">
+                                        <div class="night-p1__text">c 22:00 до 08:00</div>
+                                        <div class="night-p1__price">400 &#8381/час</div>
+                                    </div>
+                                    <div class="night-p2">
+                                        <div class="night-p2__text">утра</div>
+                                        <div class="night-p2__price">от 1200&#8381/ночь</div>
+                                    </div>
+                                </div>
+                                <div class="child">
+                                    <div class="child-header">Второй ребенок <span
+                                            style="background: #ffe66d">+50&#8381/час</span></div>
+                                    <div class="child-p1">*График и стоимость большего количества рабочих часов в
+                                        неделю,
+                                        работа по выходным и в ночное<span style="background: #ffe66d"> время
+                                            обсуждается
+                                            отдельно</span></div>
+                                </div>
+
+                            </div>
+                            <a href="#" class="buton buton_defaultcolor-accentСolor"> Найти няню</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="block-conditions" id="conditions">
+                <div class="block-conditions__background_color ">
+                    <div class="container__row">
+                        <h2 class="block-conditions__h2">Правила оформления, отмены и оплаты визитов</h2>
+                        <h4 class="block-conditions__h4 block-conditions__text_darkColor ">Планирование визитов</h4>
+                        <ul class="block-conditions__list">
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large   .block-conditions__text_darkColor ">
+                                График визитов согласовывается с координатором Сервиса.</li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large   .block-conditions__text_darkColor ">
+                                Первый визит и знакомство с няней проходит бесплатно, если время визита не превышает 4
+                                часов. При большем количестве времени такой визит няни считается рабочим днем и
+                                оплачивается
+                                по тарифу, рассчитанному из общего количества часов в семье за неделю.</li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large   .block-conditions__text_darkColor ">
+                                График визитов нужно планировать на неделю вперед, до конца текущей недели. Это
+                                позволяет
+                                нам заранее рассчитывать занятость нянь и находить свободных нянь на замены, срочные
+                                дополнительные или разовые визиты.</li>
+                        </ul>
+                        <h4 class="block-conditions__h4 block-conditions__text_darkColor ">Планирование поездки с няней
+                        </h4>
+                        <p
+                            class="block-conditions_text block-conditions__text_darkColor   block-conditions__indent-large">
+                            Сопровождение в поездке, даже вы берете няню с собой в отпуск, — это командировка для няни.
+                            Работать в новых условиях и незнакомой обстановке может быть даже сложнее. </p>
+                        <p
+                            class="block-conditions_text block-conditions__text_darkColor  block-conditions__indent-large">
+                            Родители берут на себя оплату билетов, проживания, питания, медицинской страховки (если
+                            необходима), ПЦР-тестов (если необходимы), визы (если необходима) для няни. </p>
+                        <p
+                            class="block-conditions_text block-conditions__text_darkColor  block-conditions__indent-small">
+                            Перед поездкой родители, няня и координатор обсуждают и фиксируют условия работы няни в
+                            поездке,
+                            а именно: </p>
+                        <ul class="block-conditions__list block-conditions__indent-large">
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-small block-conditions__text_darkColor ">
+                                график работы, свободное время или выходные </li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-small block-conditions__text_darkColor ">
+                                проживание (отдельно или с ребенком) </li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-small block-conditions__text_darkColor ">
+                                питание с семьей или отдельно (в отеле, кафе или нужно покупать продукты и готовить
+                                самостоятельно) </li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-small block-conditions__text_darkColor ">
+                                программа поездки (куда планируете сходить с няней, какая одежда будет уместна и т. п.)
+                            </li>
+                        </ul>
+                        <p
+                            class="block-conditions_text block-conditions__text_darkColor  block-conditions__indent-large">
+                            Если вы ищете няню для сопровождения в поездке, мы рекомендуем познакомиться с няней
+                            заранее. Вы
+                            можете воспользоваться бесплатным визитом-знакомством до 4 часов и пригласить няню на
+                            один-два
+                            дня, чтобы убедиться, что вам будет комфортно в поездке. </p>
+
+                    </div>
+                </div>
+                <div class="block-conditions__background_defcolor">
+                    <div class="container__row">
+                        <h4 class="block-conditions__h4 block-conditions__text_lightColor ">Отмена и изменение
+                            длительности
+                            визитов</h4>
+                        <ul class="block-conditions__list block-conditions__indent-large">
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large block-conditions__text_lightColor ">
+                                Бесплатная отмена визитов осуществляется не позднее, чем за 2 дня до запланированной
+                                даты.
+                            </li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large block-conditions__text_lightColor ">
+                                Если отмена происходит за один день до визита, то вы оплачиваете половину стоимости
+                                рабочего
+                                времени няни, если день в день — то полную стоимость запланированного рабочего времени
+                                няни
+                                в семье. </li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large block-conditions__text_lightColor ">
+                                Сокращать время визита бесплатно, так же как и отменять его, можно не позднее, чем за 2
+                                дня
+                                до запланированной даты. Накануне и в день визита сокращать время визита нельзя. </li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large block-conditions__text_lightColor ">
+                                Если отмена визита происходит накануне по вине Сервиса и у Сервиса нет свободной няни на
+                                замену, то за следующий равнозначный визит вы платите половину стоимости. Если отмена
+                                происходит в день визита, то Сервис предоставит один бесплатный визит с запланированным
+                                количеством часов в другой день. </li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large block-conditions__text_lightColor ">
+                                Няни сервиса работают на условиях взаимозаменяемости. То есть за одним ребенком
+                                закрепляется
+                                несколько нянь для замещения друг друга на случай отсутствия. </li>
+
+                        </ul>
+                        <div class="block-conditions__table-border">
+                            <div class="block-conditions__table-indent">
+                                <p
+                                    class="block-conditions_text block-conditions__text_lightColor  block-conditions__indent-large">
+                                    Мы создали правила отмены визитов такими, чтобы использование сервиса было
+                                    комфортным
+                                    как для родителей, так и для нянь. </p>
+                                <p
+                                    class="block-conditions_text block-conditions__text_lightColor  block-conditions__indent-large">
+                                    Если няня отменяет визит за день или день в день, мы стараемся найти замену, чтобы
+                                    родителям не приходилось экстренно менять свои планы. К сожалению, иногда мы не
+                                    можем
+                                    найти свободную няню, и тогда компенсируем возникшие неудобства визитом с
+                                    запланированным ранее количеством часов в другой день за счет сервиса. </p>
+                                <p
+                                    class="block-conditions_text block-conditions__text_lightColor  block-conditions__indent-large">
+                                    В случае отмены визита со стороны родителей за день или день в день у няни нет
+                                    возможности взять другой визит на это время, и она теряет возможность заработать.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="block-conditions__background_color ">
+                    <div class="container__row">
+                        <h4 class="block-conditions__h4 block-conditions__text_darkColor ">Оплата</h4>
+                        <ul class="block-conditions__list block-conditions__list_indent-large">
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large  block-conditions__text_darkColor ">
+                                Стоимость часа рассчитывается в зависимости от количества часов в неделю, чем больше
+                                часов,
+                                тем ниже стоимость. С тарифами вы можете ознакомиться <a href="#tariffs"
+                                    class="block-conditions__link">здесь</a> </li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large block-conditions__text_darkColor ">
+                                Оплата услуг няни осуществляется через личный кабинет в конце каждой недели по
+                                фактическому
+                                количеству отработанных часов.</li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large  block-conditions__text_darkColor ">
+                                15 минут сверх согласованного времени бесплатны. С 16 минуты время работы няни
+                                округляется
+                                до получаса, с 31 минуты — до часа.</li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large  block-conditions__text_darkColor ">
+                                Если няня опоздала на визит более чем на 15 минут, вы не оплачиваете первый час ее
+                                работы.
+                            </li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large  block-conditions__text_darkColor ">
+                                По договоренности с координатором вы можете оплатить услуги Сервиса заранее, например,
+                                на
+                                месяц вперед.</li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large  block-conditions__text_darkColor ">
+                                Если вы оплачиваете услуги Сервиса заранее, например, на месяц вперед, то мы ведем учет
+                                отработанных в вашей семье часов и в конце месяца согласуем с вами фактически
+                                отработанное
+                                количество времени.</li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large block-conditions__text_darkColor ">
+                                Если у вас останутся неотработанные часы, мы можем их перенести на следующий месяц или
+                                вернуть деньги вам на счет. Если по истечении месяца няня отработает у вас большее
+                                количество часов, чем вы оплатили заранее, то мы согласуем доплату в соответствии с
+                                отработанными дополнительно часами.</li>
+                            <li
+                                class="block-conditions__list-item block-conditions__indent-large block-conditions__text_darkColor ">
+                                Мы с пониманием относимся к возникновению потребности в отсрочке платежа, поэтому если у
+                                вас
+                                возникла такая ситуация, то обязательно свяжитесь с координатором Сервиса для
+                                согласования
+                                отсрочки сроком до двух календарных недель.</li>
+                        </ul>
+                        <div class="block-conditions__wapper ">
+                            <div class="block-conditions__wrapper-icon">
+                                <svg x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24"
+                                    style="enable-background:new 0 0 24 24;">
+                                    <circle style="fill:#ffffff;" cx="12.125" cy="12.125" r="12"></circle>
+                                    <g>
+                                        <path style="fill:#ff6c70;"
+                                            d="M10.922,6.486c0-0.728,0.406-1.091,1.217-1.091s1.215,0.363,1.215,1.091c0,0.347-0.102,0.617-0.304,0.81 c-0.202,0.193-0.507,0.289-0.911,0.289C11.328,7.585,10.922,7.219,10.922,6.486z M13.252,17.792h-2.234V9.604h2.234V17.792z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="block-conditions__wrapper-text">
+                                <p
+                                    class="block-conditions_text block-conditions__text_lightColor  block-conditions__indent-large">
+                                    Оплата визитов няни осуществляется только через платежную систему, размещенную на
+                                    сайте
+                                    в личном кабинете. Расчеты наличными запрещены. В случае нарушения этого правила,
+                                    Клиент
+                                    отключается от Сервиса и Сервис перестает работать с няней, нарушившей правила.</p>
+                                <p
+                                    class="block-conditions_text block-conditions__text_lightColor  block-conditions__indent-large">
+                                    Если у вас возникают вопросы по заказу, оплате и работе Сервиса, обращайтесь на
+                                    электронную почту. <a href="mailto:mailto:info@mynanny.pro"
+                                        class="block-conditions_text block-conditions__text_lightColor block-conditions__link_decoration">
+                                        info@mynanny.pro </a> или по телефону
+                                    <a href="tel:+74951368007"
+                                        class="block-conditions_text block-conditions__text_lightColor ">+7(495)136-80-07</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="container">
+        <div class="block-footer">
+            <div class="container__row">
+                <div class="block-footer__items">
+                    <a href="#" class="block-footer__item1">Пользовательское соглашение (Публичная оферта) с
+                        заказчиком
+                        (клиентом)</a>
+                    <a href="#" class="block-footer__item2">Пользовательское соглашение (Публичная оферта) с
+                        исполнителем
+                        (няней)</a>
+                    <a href="https://mynanny.pro/organization-details" class="block-footer__item3">Сведения об
+                        организации</a>
+                </div>
+
+                <div class="block-footer__bottom">
+                    <a class="block-footer__privacy" href="https://mynanny.pro/policy">Политика
+                        конфиденциальности</a>
+                    <div class="block-footer__year">&#169; 2021</div>
+                    <div class="block-footer__dev">разработка: <a class="block-footer__design"
+                            href="https://lede.pro/">LeDesign</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

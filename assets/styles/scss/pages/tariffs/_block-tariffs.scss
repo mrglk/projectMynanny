@@ -1,0 +1,771 @@
+.blockdif {
+    background-color: $defaultColor;
+}
+
+.container__row {
+    width: 100%;
+    margin: auto;
+
+}
+
+.block-tariffs {
+
+    &__header,
+    &__p {
+        color: white;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    &__header {
+        font-weight: 600;
+        font-size: 2.5rem;
+        padding-top: 6%;
+    }
+
+    &__p {
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+}
+
+
+
+.table-hours__header,
+.table-hours__columns {
+    background-color: $backgroundColor;
+    font-weight: 600;
+}
+
+.table-hours {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-bottom: 2rem;
+
+    &__header {
+        text-align: left;
+    }
+
+    &__header_p {
+        margin-top: -2.5rem;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+
+    &__columns,
+    &__rows {
+        text-align: left;
+    }
+
+    &__rows {
+        background-color: white;
+    }
+
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+}
+
+.table-hours__columns_item,
+.new-hours__columns_item {
+    padding: 1%;
+}
+
+.table-hours__rows_item {
+    padding: 1%;
+}
+
+/*таблица планшет*/
+
+.table-hours-tablet__header,
+.table-hours-tablet__columns {
+    background-color: $backgroundColor;
+    font-weight: 600;
+}
+
+.table-hours-tablet {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-bottom: 2rem;
+
+    &__header {
+        text-align: left;
+    }
+
+    &__header_p {
+        margin-top: -2.5rem;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+
+
+        @media screen and (max-width: $tablet) {
+            font-size: 1.3rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 1rem;
+        }
+    }
+
+    &__columns,
+    &__rows {
+        text-align: left;
+    }
+
+    &__rows {
+        background-color: white;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+
+    @media screen and (max-width: $tablet) {
+        font-size: 0.85rem;
+    }
+
+    @media screen and (max-width: $mobile) {
+        font-size: 0.8rem;
+    }
+
+}
+
+.table-hours-tablet__columns_item,
+.new-hours-tablet__columns_item {
+    padding: 2%;
+}
+
+.table-hours-tablet__rows_item {
+    padding: 1%;
+}
+
+/*таблица десктоп*/
+.new-hours {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding-bottom: 20px;
+
+
+    &__header {
+        text-align: left;
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    &__header_p {
+        margin-top: -2.5rem;
+        margin-left: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    &__columns,
+    &__rows {
+        text-align: left;
+    }
+
+    @media screen and (max-width: $mobile),
+    (max-width: $tablet) {
+        display: none;
+    }
+}
+
+.new-hours__header,
+.new-hours__columns {
+    background-color: $baseColor;
+    color: white;
+    font-weight: 600;
+}
+
+.cross-image {
+    width: 2.5rem;
+}
+
+.new-hours__data {
+    font-weight: 400;
+    border-bottom: 0.1px solid rgb(236, 233, 233);
+    padding: 1%;
+    background-color: white;
+}
+
+.new-hours-tables {
+    padding-bottom: 5%;
+}
+
+/*таблица для планшетов*/
+.new-hours-tablet {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding-bottom: 2%;
+
+
+
+
+    &__header {
+        text-align: left;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+
+    &__header_p {
+        margin-top: -2.5rem;
+        margin-left: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    &__columns,
+    &__rows {
+        text-align: left;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+
+    @media screen and (min-width: $tablet),
+    (max-width: $mobile) {
+        display: none;
+    }
+
+    @media screen and (max-width: $tablet) {
+        font-size: 0.8rem;
+    }
+
+}
+
+.new-hours-tablet__header {
+    background-color: $baseColor;
+    color: white;
+    font-weight: 600;
+}
+
+.cross-image {
+    width: 2.5rem;
+
+    @media screen and (max-width: $tablet) {
+        width: 2rem;
+    }
+}
+
+.new-hours-tablet__data,
+.new-hours-tablet__columns {
+    font-weight: 400;
+    padding: 2%;
+    background-color: white;
+    color: black;
+}
+
+.new-hours-tablet__columns {
+    font-weight: 600;
+    color: $baseColor;
+    padding-right: 3%;
+}
+
+/*таблица для мобильной*/
+
+.new-hours-mobile {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    padding-bottom: 2%;
+
+
+
+    &__header {
+        text-align: left;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+
+    &__header_p {
+        margin-top: -2.5rem;
+        margin-left: 3.5rem;
+        font-size: 1.5rem;
+    }
+
+    &__columns,
+    &__rows {
+        text-align: left;
+    }
+
+    @media screen and (min-width: $mobile) {
+        display: none;
+    }
+
+    @media screen and (max-width: $mobile) {
+        font-size: 0.8rem;
+    }
+
+}
+
+.new-hours-mobile__header {
+    background-color: $baseColor;
+    color: white;
+    font-weight: 600;
+}
+
+.cross-image {
+    width: 2.5rem;
+
+    @media screen and (max-width: $tablet) {
+        width: 2rem;
+    }
+}
+
+
+.cross-image {
+    width: 2.5rem;
+
+    @media screen and (max-width: $mobile) {
+        width: 2rem;
+    }
+}
+
+.new-hours-mobile__data,
+.new-hours-mobile__columns {
+    font-weight: 450;
+    padding: 2%;
+    background-color: white;
+    color: black;
+    border-bottom: 0.1px solid rgb(236, 233, 233);
+}
+
+.new-hours-mobile__columns {
+    font-weight: 600;
+    color: $baseColor;
+    padding-right: 3%;
+}
+
+/*вкладки*/
+.cities {
+    max-width: 100%;
+    text-align: center;
+
+}
+
+.cities>input[type="radio"] {
+    display: none;
+}
+
+.cities>input[type="radio"]:checked+label {
+    background-color: $accentColor_hover;
+}
+
+.cities>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4 {
+    display: block;
+}
+
+.cities>label {
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+    background-color: $backgroundColor;
+    padding: 0.9rem 1.9rem;
+    font-size: 1.12rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 3rem;
+
+    @media screen and (max-width: $tablet) {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        padding: 0.7rem 0.4rem;
+
+    }
+
+    @media screen and (max-width: $mobile) {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        padding: 0.7rem 0.1rem;
+    }
+}
+
+.moscow,
+.piter {
+    margin-bottom: 0;
+}
+
+.cities>label:first-of-type {
+    margin-left: 0;
+}
+
+/*блок Санкт Петербург*/
+
+.full,
+.part,
+.onetime,
+.byhours,
+.night {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 20% 30%;
+    background-color: white;
+    margin: 1%;
+    padding: 1% 0;
+
+}
+
+
+
+.full-header,
+.part-header,
+.onetime-header,
+.byhours-header,
+.night-header {
+    display: flex;
+    grid-area: 1/1/2/3;
+    justify-content: start;
+
+    &__img {
+        width: 4rem;
+
+        @media screen and (max-width: $tablet) {
+            width: 3rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            width: 2.5rem;
+        }
+    }
+
+    &__h {
+        margin-top: 2.2rem;
+        font-weight: 600;
+        font-size: 1.4rem;
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 1rem;
+            font-weight: 600;
+            font-size: 1.2rem;
+
+        }
+
+        @media screen and (max-width: $mobile) {
+            margin-top: 1rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: $smallMobile) {
+            margin-top: 0.9rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+    }
+
+}
+
+.full-p1,
+.part-p1,
+.onetime-p1,
+.byhours-p1,
+.night-p1 {
+    display: flex;
+    grid-area: 2/1/3/3;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    margin: 0 1.5rem;
+
+    &__price {
+        font-weight: 600;
+        font-size: 1.45rem;
+
+        @media screen and (max-width: $tablet) {
+            font-size: 1.2rem;
+
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 1rem;
+        }
+
+
+        @media screen and (max-width: $smallMobile) {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media screen and (max-width: $tablet) {
+        font-size: 1.1rem;
+
+    }
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        font-size: 0.9rem;
+    }
+}
+
+.full-p2,
+.part-p2,
+.onetime-p2,
+.byhours-p2,
+.night-p2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5rem;
+    grid-area: 3/1/4/3;
+    font-size: 1.25rem;
+
+    @media screen and (max-width: $tablet) {
+        font-size: 1.1rem;
+
+    }
+
+    @media screen and (max-width: $mobile) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        font-size: 0.9rem;
+    }
+}
+
+.cards-tariffs {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, 50%);
+    grid-gap: 3%;
+    background-color: $defaultColor;
+    height: auto;
+    padding-bottom: 30%;
+
+    @media screen and (max-width: $tablet) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 16%);
+    }
+}
+
+.full {
+    grid-area: 1/1/2/2;
+
+
+}
+
+.part {
+    grid-area: 1/2/2/3;
+
+    @media screen and (max-width: $tablet) {
+        grid-area: 2/1/3/2;
+    }
+}
+
+.onetime {
+    grid-area: 2/1/3/2;
+
+    @media screen and (max-width: $tablet) {
+        grid-area: 3/1/4/2;
+    }
+}
+
+.byhours {
+    grid-area: 2/2/3/3;
+
+    @media screen and (max-width: $tablet) {
+        grid-area: 4/1/5/2;
+    }
+}
+
+.night {
+    grid-area: 3/1/4/2;
+    background-color: #292f36;
+
+    &-header {
+        color: $accentColor;
+    }
+
+    @media screen and (max-width: $tablet) {
+        grid-area: 5/1/6/2;
+    }
+}
+
+.child {
+    grid-area: 3/2/4/3;
+
+    @media screen and (max-width: $tablet) {
+        grid-area: 6/1/7/2;
+    }
+}
+
+
+.night-p1,
+.night-p2 {
+    color: white;
+}
+
+.child {
+    border: 2px solid #ffe66d;
+    width: 100%;
+    margin: 1%;
+    padding: 1% 0;
+    text-align: left;
+
+
+}
+
+.child-header {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 450;
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 0.5rem;
+        font-size: 0.95rem;
+
+    }
+
+    @media screen and (max-width: $mobile) {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        margin-top: 0.4rem;
+        font-size: 0.75rem;
+    }
+}
+
+.child-p1 {
+    font-size: 1rem;
+    font-weight: 450;
+    margin: 1.5rem 1.5rem;
+    line-height: 1.7;
+
+
+    @media screen and (max-width: $tablet) {
+        margin: 0.5rem 1rem;
+        font-size: 0.95rem;
+        padding-bottom: 1.5rem;
+
+    }
+
+    @media screen and (max-width: $mobile) {
+        margin: 0.5rem 0.7rem;
+        font-size: 0.8rem;
+        padding-bottom: 10rem;
+    }
+
+    @media screen and (max-width: $smallMobile) {
+        margin: 0.4rem 0.7rem;
+        font-size: 0.75rem;
+        padding-bottom: 15rem;
+    }
+}
+
+.buton {
+    display: inline-block;
+    box-sizing: border-box;
+    color: $darkColor;
+    font-size: 1.1rem;
+    line-height: 1.55;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.1rem 3.4rem;
+    border: none;
+    margin-top: 2%;
+    margin-bottom: 1%;
+
+    &_defaultcolor {
+        background: $accentColor;
+
+        &:hover {
+            background: $accentColor;
+            transition: background-color 0.4s ease;
+        }
+
+    }
+
+    &_accentСolor {
+        background: $accentColor;
+
+        &:hover {
+            background: $accentColor_hover;
+            transition: background-color 0.4s ease;
+        }
+    }
+
+    &_defaultcolor-accentСolor {
+        background: $accentColor;
+
+        &:hover {
+            background: $accentColor_hover;
+            color: $darkColor;
+            transition: background-color 0.4s ease;
+            transition: color 0.4s ease;
+        }
+
+    }
+}
+
+.container__row_wide {
+    width: 95%;
+    margin: auto;
+    max-width: 1600px;
+    min-height: 80px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+​ .header__img {
+    width: 240px;
+    height: auto;
+}
+
+​ .header__menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+​ .header__item {
+    font-size: 14px;
+    text-decoration: none;
+
+    ​ &:hover {
+        cursor: pointer;
+    }
+}
+
+​ .header__page {
+    margin-right: 20px;
+    color: $darkColor;
+
+    ​ &:hover {
+        padding-bottom: 3px;
+        border-bottom: 2px solid $defaultColor;
+    }
+}

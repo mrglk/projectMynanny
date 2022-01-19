@@ -1,0 +1,335 @@
+.blockteam {
+    background-color: $lightColor;
+}
+
+.block-nashakomanda {
+
+    &__header,
+    &__p {
+        color: $darkColor;
+    }
+
+    &__header {
+        font-weight: 600;
+        font-size: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        @media (max-width: $tablet) {
+            font-size: 2rem;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: $smallMobile) {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__p {
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding-bottom: 2rem;
+
+        @media (max-width: $mobile) {
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: $smallMobile) {
+            font-size: 0.7rem;
+        }
+    }
+
+}
+
+.block-nashakomanda__blocks {
+    max-width: 100%;
+    text-align: center;
+}
+
+.block-nashakomanda__blocks>input[type="radio"] {
+    display: none;
+}
+
+.block-nashakomanda__blocks>input[type="radio"]:checked+label {
+    background-color: $darkColor;
+    color: $lightColor;
+}
+
+.block-nashakomanda__blocks>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4,
+#tab-btn-5:checked~#content-5 {
+    display: block;
+}
+
+.block-nashakomanda__blocks>label {
+    display: inline-block;
+    text-align: center;
+    padding: 0.9rem 3.7rem;
+    font-size: 1.12rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.block-nashakomanda__blocks>label:first-of-type {
+    margin-left: 0;
+}
+
+
+// кнопка показать все/показать меньше
+.zagruska-proizvod-container,
+.zagruska-proizvod-container2 {
+    position: relative;
+}
+
+.zagruska-proizvod-container ul,
+.zagruska-proizvod-container2 ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.zagruska-proizvod-container ul:after,
+.zagruska-proizvod-container2 ul:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.zagruska-proizvod-container ul li,
+.zagruska-proizvod-container2 ul li {
+    width: 17vw;
+    height: 40vw;
+    margin: 2rem 0.5rem 2rem;
+    color: $darkColor;
+    float: left;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: $tablet) {
+        margin-bottom: 3rem;
+    }
+
+    @media (max-width: $mobile) {
+        width: 33vw;
+        height: 50vw;
+        margin-bottom: 8rem;
+    }
+
+    @media (max-width: $smallMobile) {
+        width: 60vw;
+        height: 65vw;
+        margin: 3rem 0 2rem;
+    }
+}
+
+.zagruska-proizvod-container ul li:nth-child(1n + 9),
+.zagruska-proizvod-container2 ul li:nth-child(1n + 9) {
+    max-height: 0;
+    opacity: 0;
+    transition: 0.1s ease-in;
+    margin: 0;
+}
+
+.zagruska-proizvod-container .zagruska-proizvod-btn,
+.zagruska-proizvod-container2 .zagruska-proizvod-btn2 {
+    width: 11rem;
+    margin: 0 auto;
+    display: block;
+    border: 0.1rem solid $darkColor;
+    font-size: 1.12rem;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: 1.1rem 4rem;
+    margin-bottom: 3rem;
+
+    @media (max-width: $smallMobile) {
+        padding: 1.1rem 0.5rem;
+    }
+}
+
+.zagruska-proizvod-container .zagruska-proizvod-btn:hover,
+.zagruska-proizvod-container2 .zagruska-proizvod-btn2:hover {
+    background-color: $darkColor;
+    color: $lightColor;
+}
+
+.zagruska-proizvod-container .zagruska-proizvod-btn .loaded,
+.zagruska-proizvod-container2 .zagruska-proizvod-btn2 .loaded2 {
+    display: none;
+}
+
+.zagruska-proizvod-container #zagruska-proizvod,
+.zagruska-proizvod-container2 #zagruska-proizvod2 {
+    display: none;
+}
+
+.zagruska-proizvod-container #zagruska-proizvod:checked~ul li:nth-child(1n + 9),
+.zagruska-proizvod-container2 #zagruska-proizvod2:checked~ul li:nth-child(1n + 9) {
+    max-height: 999rem;
+    opacity: 1;
+    transition: 0.2s ease-in;
+    width: 17vw;
+    height: 40vw;
+    margin: 2rem 0.5rem 2rem;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 1rem;
+    }
+
+    @media (max-width: $tablet) {
+        margin-bottom: 3rem;
+    }
+
+    @media (max-width: $mobile) {
+        width: 33vw;
+        height: 50vw;
+        margin-bottom: 8rem;
+    }
+
+    @media (max-width: $smallMobile) {
+        width: 60vw;
+        height: 65vw;
+        margin: 3rem 0 2rem;
+    }
+}
+
+.zagruska-proizvod-container #zagruska-proizvod:checked~.zagruska-proizvod-btn .loaded,
+.zagruska-proizvod-container2 #zagruska-proizvod2:checked~.zagruska-proizvod-btn2 .loaded2 {
+    display: block;
+}
+
+.zagruska-proizvod-container #zagruska-proizvod:checked~.zagruska-proizvod-btn .unloaded,
+.zagruska-proizvod-container2 #zagruska-proizvod2:checked~.zagruska-proizvod-btn2 .unloaded2 {
+    display: none;
+}
+
+// ---
+.team-member__name {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.team-member__text {
+    font-weight: 500;
+    font-size: 0.9rem;
+    height: 3rem;
+
+    @media (max-width: $mobile) {
+        height: 4rem;
+    }
+
+    @media (max-width: $smallMobile) {
+        height: 3rem;
+    }
+}
+
+.team-member {
+    overflow: hidden;
+}
+
+.team-member__image img {
+    height: 26vw;
+    width: auto;
+    margin-left: -10vw;
+
+    @media (max-width: $mobile) {
+        height: 40vw;
+        margin-left: -12vw;
+    }
+}
+
+.team-member__image img#chelny_4,
+.team-member__image img#chelny_5,
+.team-member__image img#moscow_2,
+.team-member__image img#moscow_5,
+.team-member__image img#moscow_6,
+// .team-member__image img#moscow_8,
+.team-member__image img#moscow_9,
+.team-member__image img#moscow_10,
+.team-member__image img#moscow_11,
+.team-member__image img#moscow_13,
+.team-member__image img#moscow_14,
+.team-member__image img#moscow_15,
+.team-member__image img#moscow_16,
+.team-member__image img#moscow_18,
+.team-member__image img#moscow_19,
+.team-member__image img#moscow_20,
+.team-member__image img#moscow_21,
+.team-member__image img#moscow_23,
+.team-member__image img#moscow_24,
+.team-member__image img#moscow_25,
+.team-member__image img#moscow_26,
+.team-member__image img#moscow_27 {
+    margin-left: -2vw;
+}
+
+// --
+.team-member__button {
+    display: inline-block;
+    box-sizing: border-box;
+    color: $lightColor;
+    background-color: $baseColor;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 2.1rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-top: auto;
+
+    @media (max-width: $tablet) {
+        padding: 1rem;
+    }
+
+    @media (max-width: $smallMobile) {
+        padding: 0.3rem 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+}
+
+// --
+.soon-content__img {
+    width: 20rem;
+    height: auto;
+    margin-left: 27vw;
+
+    @media (max-width: $tablet) {
+        margin-left: 17vw;
+    }
+
+    @media (max-width: $mobile) {
+        width: 15rem;
+    }
+
+    @media (max-width: $smallMobile) {
+        margin-left: 2vw;
+    }
+}
+
+.soon-content__p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+}
