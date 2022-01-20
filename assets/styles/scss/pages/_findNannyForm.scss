@@ -17,10 +17,77 @@ input:focus {
     background-color: white;
 }
 
+.h1Text {
+    animation-name: forms;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    visibility: visible
+}
+
+.h1Text {
+    font-size: 2.5rem;
+
+    @media screen and (max-width:$tablet) {
+        font-size: 2.2rem;
+    }
+
+    @media screen and (max-width:$mobile) {
+        font-size: 1.8rem;
+    }
+
+    @media screen and (max-width:$smallMobile) {
+        font-size: 1.3rem;
+    }
+}
+
+.pText {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+
+    @media screen and (max-width:$tablet) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width:$mobile) {
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width:$smallMobile) {
+        font-size: 0.8rem;
+    }
+}
+
+.pText {
+    animation-name: forms;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    visibility: visible
+}
+
+@keyframes forms {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
+input {
+    animation-name: forms;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    visibility: visible
+}
+
+
+
 input,
 fieldset {
     border: 0;
-    background-color: rgba(0, 0, 0, 0);
     outline: 0;
 }
 
@@ -36,7 +103,7 @@ input[type=date] {
 }
 
 .schedule {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
 .inputsForm {
@@ -67,13 +134,15 @@ input[type=date] {
 }
 
 .radioVars {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .schedule,
 .othersVar {
     font-size: 0.7rem;
+    color: rgb(158, 151, 151);
 }
 
 #other {
@@ -123,4 +192,8 @@ input[type=date] {
     @media screen and (max-width: $tablet) {
         display: none;
     }
+}
+
+.findNanny-footer {
+    padding: 4rem;
 }

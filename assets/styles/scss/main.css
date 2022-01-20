@@ -6110,10 +6110,106 @@ input:focus {
   background-color: white;
 }
 
+.h1Text {
+  -webkit-animation-name: forms;
+          animation-name: forms;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  visibility: visible;
+}
+
+.h1Text {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 959px) {
+  .h1Text {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .h1Text {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .h1Text {
+    font-size: 1.3rem;
+  }
+}
+
+.pText {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 959px) {
+  .pText {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .pText {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .pText {
+    font-size: 0.8rem;
+  }
+}
+
+.pText {
+  -webkit-animation-name: forms;
+          animation-name: forms;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  visibility: visible;
+}
+
+@-webkit-keyframes forms {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes forms {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+input {
+  -webkit-animation-name: forms;
+          animation-name: forms;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  visibility: visible;
+}
+
 input,
 fieldset {
   border: 0;
-  background-color: rgba(0, 0, 0, 0);
   outline: 0;
 }
 
@@ -6129,7 +6225,7 @@ input[type=date] {
 }
 
 .schedule {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .inputsForm {
@@ -6160,13 +6256,15 @@ input[type=date] {
 }
 
 .radioVars {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .schedule,
 .othersVar {
   font-size: 0.7rem;
+  color: #9e9797;
 }
 
 #other {
@@ -6216,6 +6314,10 @@ input[type=date] {
   .btnBack {
     display: none;
   }
+}
+
+.findNanny-footer {
+  padding: 4rem;
 }
 
 .container {
