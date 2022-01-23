@@ -5386,6 +5386,51 @@ input[type=date] {
   padding: 4rem;
 }
 
+.formOff {
+  display: none;
+}
+
+.borderErr {
+  border: 2px solid red;
+}
+
+.applicationSentOff {
+  display: none;
+}
+
+.applicationSent {
+  background-color: #4dcdc4;
+  padding: 3rem;
+  margin-top: 2rem;
+}
+
+.applicationSentText {
+  color: white;
+  text-align: center;
+}
+
+.applicationSentHref {
+  color: white;
+}
+
+.errorSentOff {
+  display: none;
+}
+
+.errorSent {
+  background-color: #4dcdc4;
+  padding: 3rem;
+}
+
+.errorSentText {
+  color: white;
+  text-align: center;
+}
+
+.errorSentHref {
+  color: white;
+}
+
 .container {
   width: 100%;
 }

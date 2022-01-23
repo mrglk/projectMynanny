@@ -12,10 +12,10 @@ back = () => {
 
 document.getElementById("sendButton").addEventListener("click", (event) => {
   let resultValidate = validate();
-  console.log("im here!1");
   if (resultValidate) {
-    console.log("im here!2");
     submitForm();
+  } else {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 });
 
@@ -25,88 +25,108 @@ validate = () => {
   let indexFormat = /^\d{6}$/;
 
   let a = document.forms["nannyForm"]["name"].value;
-  if (a == "") {
+  if(a == "") {
     document.getElementById('errName').textContent="Обязательно для заполнения";
+    document.getElementById('errNameBorder').classList.add('borderErr');
     return false;
   } else {
     document.getElementById('errName').textContent='';
+    document.getElementById('errNameBorder').classList.remove('borderErr');
   }
 
   let b = document.forms["nannyForm"]["surname"].value;
-  if (b == "") {
+  if(b == "") {
     document.getElementById('errSurname').textContent="Обязательно для заполнения";
+    document.getElementById('errSurnameBorder').classList.add('borderErr');
     return false;
   } else {
     document.getElementById('errSurname').textContent='';
+    document.getElementById('errSurnameBorder').classList.remove('borderErr');
   }
 
   let с = document.forms["nannyForm"]["email"].value;
-  if (с == "") {
+  if(с == "") {
     document.getElementById('errEmail').textContent="Обязательно для заполнения";
+    document.getElementById('errEmailBorder').classList.add('borderErr');
     return false;
   } else if( !document.getElementById('email').value.match(mailFormat) ) {
-    console.log("не верно");
-    document.getElementById('errEmail').textContent="Неверный формат Email. Пример: example-678@mail.com";
-    document.getElementById('email').value= '';
-    return false;
+      document.getElementById('errEmail').textContent="Неверный формат Email. Пример: example-678@mail.com";
+      document.getElementById('errEmailBorder').classList.add('borderErr');
+      document.getElementById('email').value= '';
+      return false;
   } else {
     document.getElementById('errEmail').textContent='';
+    document.getElementById('errEmailBorder').classList.remove('borderErr');
   }
   
   let d = document.forms["nannyForm"]["mobile"].value;
-  if (d == "") {
+  if(d == "") {
     document.getElementById('errMobile').textContent="Обязательно для заполнения";
+    document.getElementById('errMobileBorder').classList.add('borderErr');
     return false;
   } else if( !document.getElementById('mobile').value.match(phoneFormat) ) {
-    document.getElementById('errMobile').textContent="Неверный формат телефона. Пример: +7 xxx xxx xx xx";
-    document.getElementById('mobile').value = '';
-    return false;
+      document.getElementById('errMobile').textContent="Неверный формат телефона. Пример: +7 xxx xxx xx xx";
+      document.getElementById('errMobileBorder').classList.add('borderErr');
+      document.getElementById('mobile').value = '';
+      return false;
   } else {
     document.getElementById('errMobile').textContent='';
+    document.getElementById('errMobileBorder').classList.remove('borderErr');
   }
 
   let f = document.forms["nannyForm"]["child"].value;
   if (f == "") {
     document.getElementById('errChild').textContent="Обязательно для заполнения";
+    document.getElementById('errChildBorder').classList.add('borderErr');
     return false;
   } else {
     document.getElementById('errChild').textContent='';
+    document.getElementById('errChildBorder').classList.remove('borderErr');
   }
 
   let g = document.forms["nannyForm"]["birth"].value;
   if (g == "") {
     document.getElementById('errBirth').textContent="Обязательно для заполнения";
+    document.getElementById('errBirthBorder').classList.add('borderErr');
     return false;
   } else {
     document.getElementById('errBirth').textContent='';
+    document.getElementById('errBirthBorder').classList.remove('borderErr');
   }
 
   let h = document.forms["nannyForm"]["city"].value;
   if (h == "") {
-    document.getElementById('errIndex').textContent="Обязательно для заполнения";
-    return false;
-  } else if( !document.getElementById('index').value.match(indexFormat) ) {
-    document.getElementById('errIndex').textContent="Неверный формат индекса. Пример: 123654";
-    document.getElementById('index').value='';
+    document.getElementById('errCity').textContent="Обязательно для заполнения";
+    document.getElementById('errCityBorder').classList.add('borderErr');
     return false;
   } else {
-    document.getElementById('errIndex').textContent='';
+    document.getElementById('errCity').textContent='';
+    document.getElementById('errCityBorder').classList.remove('borderErr');
   }
 
   let k = document.forms["nannyForm"]["index"].value;
   if (k == "") {
-    document.getElementById('errCity').textContent="Обязательно для заполнения";
+    document.getElementById('errIndex').textContent="Обязательно для заполнения";
+    document.getElementById('errIndexBorder').classList.add('borderErr');
+    return false;
+  } else if( !document.getElementById('index').value.match(indexFormat) ) {
+    document.getElementById('errIndex').textContent="Неверный формат индекса. Пример: 123654";
+    document.getElementById('errIndexBorder').classList.add('borderErr');
+    document.getElementById('index').value='';
     return false;
   } else {
-    document.getElementById('errCity').textContent='';
+    document.getElementById('errIndex').textContent='';
+    document.getElementById('errIndexBorder').classList.remove('borderErr');
   }
 
   let l = document.forms["nannyForm"]["adress"].value;
   if (l == "") {
     document.getElementById('errAdress').textContent="Обязательно для заполнения";
+    document.getElementById('errAdressBorder').classList.add('borderErr');
     return false;
   } else {
     document.getElementById('errAdress').textContent='';
+    document.getElementById('errAdressBorder').classList.remove('borderErr');
   }
 
   return true;
@@ -119,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 openCity = (event, cityName) => {
-    if(cityName === 'Moscow') {
+  if(cityName === 'Moscow') {
     location.hash = 'Moscow';
     document.getElementById("h1Text").innerHTML = "Найти няню в Москве";
     document.getElementById("city").value = "Москва";
@@ -143,64 +163,38 @@ openCity = (event, cityName) => {
 }
 
 submitForm = (event) => {
-  console.log("im here!3");
-  // event.preventDefault();
   formData = new FormData(formElementQuestionnaire);
 
-  formData.append("name", document.getElementById("name").value);
-  formData.append("surname", document.getElementById("surname").value);
-  formData.append("email", document.getElementById("email").value);
-  formData.append("mobile", document.getElementById("mobile").value);
-  formData.append("child", document.getElementById("child").value);
-
-  formData.append("med", document.getElementById("med").value);
-  formData.append("city", document.getElementById("city").value);
-  formData.append("index", document.getElementById("index").value);
-  formData.append("adress", document.getElementById("adress").value);
-
-  let finalSchedule = null;
-  let schedule = document.getElementsByName("schedule");
-  for (let i = 0; schedule[i]; ++i) {
-    if (schedule[i].checked) {
-      finalSchedule = schedule[i].value;
-      break;
-    }
+  for(let value of formData.values()) {
+    console.log(value);
   }
-  formData.set("schedule", schedule);
-
-  formData.append("expect", document.getElementById("expect").value);
-  formData.append("agreement", document.getElementById("agreement").checked);
 
   fetch('https://api.star-c.ru/webhook/mynanny', {
           method: 'POST',
           body: formData,
-          // headers: {            
-          //   'Access-Control-Allow-Origin':'*',
-          //   'Content-Type':'application/json;charset=utf-8'
-          // }
+          mode: 'no-cors'
       })
+
       .then(response => response.json())
+      
       .then(data => {
-          // clearInput();
-          // alert("бум");
+        console.log(data);
+        document.getElementById("applicationSent").classList.remove("applicationSentOff");
+        document.getElementById("applicationSent").classList.add("applicationSent");
+        document.getElementById("tabCity").classList.add("formOff");
+        document.getElementById("formElementQuestionnaire").classList.add("formOff");
+        alert("Ура");
       })
-      .catch(err => console.log(err));
-  // console.log(FormData);
-};
 
-// function openCity(evt, cityName) {
-//   let i, tabcontent, tablinks;
-
-//   tabcontent = document.getElementsByClassName("tabcontent");
-//   for (i = 0; i < tabcontent.length; i++) {
-//     tabcontent[i].style.display = "none";
-//   }
-
-//   tablinks = document.getElementsByClassName("tablinks");
-//   for (i = 0; i < tablinks.length; i++) {
-//     tablinks[i].className = tablinks[i].className.replace(" active", "");
-//   }
-
-//   document.getElementById(cityName).style.display = "block";
-//   evt.currentTarget.className += " active";
-// }
+      .catch(error =>{
+        if(error){                
+          console.log(error.message);
+          console.log(error.name);
+          document.getElementById("errorSent").classList.remove("errorSentOff");
+          document.getElementById("errorSent").classList.add("errorSent");
+          document.getElementById("tabCity").classList.add("formOff");
+          document.getElementById("formElementQuestionnaire").classList.add("formOff");
+          alert("не Ура");
+        }  
+      })
+}

@@ -69,11 +69,11 @@
     <div class="mainForm">
 
       <div class="tab" id="tabCity">
-        <button class="tablinks" data-city="Moscow" id="button"onclick="openCity(event, 'Moscow')">Москва</button>
-        <button class="tablinks" data-city="SaintPetersburg" onclick="openCity(event, 'SaintPetersburg')">Санкт-Петербург</button>
-        <button class="tablinks" data-city="NaberezhnyeChelny" onclick="openCity(event, 'NaberezhnyeChelny')">Набережные Челны</button>
-        <button class="tablinks" data-city="Kazan" onclick="openCity(event, 'Kazan')">Казань</button>
-        <button class="tablinks" data-city="Barnaul" onclick="openCity(event, 'Barnaul')">Барнаул</button>
+        <button class="tablinks" onclick="openCity(event, 'Moscow')">Москва</button>
+        <button class="tablinks" onclick="openCity(event, 'SaintPetersburg')">Санкт-Петербург</button>
+        <button class="tablinks" onclick="openCity(event, 'NaberezhnyeChelny')">Набережные Челны</button>
+        <button class="tablinks" onclick="openCity(event, 'Kazan')">Казань</button>
+        <button class="tablinks" onclick="openCity(event, 'Barnaul')">Барнаул</button>
       </div>
 
       <div class="tabcontent">
@@ -86,37 +86,58 @@
                 <a class="linksreg" href="https://mynanny.pro/candidate-application-form">ссылке</a>
             </p>
             <hr class="inputsForm">
-            <input type="text" placeholder="Ваше имя" name="name" id="name" required />
-            <p class="dataError" id="errName"></p>
+            <div id="errNameBorder">
+              <input type="text" placeholder="Ваше имя" name="name" id="name" required />
+              <p class="dataError" id="errName"></p>
+            </div>
+            
+            <div id="errSurnameBorder">
+              <input type="text" placeholder="Ваша фамилия" name="surname" id="surname" required />
+              <p class="dataError" id="errSurname"></p>
+            </div>
 
-            <input type="text" placeholder="Ваша фамилия" name="surname" id="surname" required />
-            <p class="dataError" id="errSurname"></p>
+            <div id="errEmailBorder">
+              <input type="text" placeholder="Ваш e-mail" name="email" id="email" required />
+              <p class="dataError" id="errEmail"></p>
+            </div>
 
-            <input type="text" placeholder="Ваш e-mail" name="email" id="email" required />
-            <p class="dataError" id="errEmail"></p>
+            <div id="errMobileBorder">
+              <input type="tel" placeholder="+7 (999) 999-99-99" name="mobile" id="mobile" required />
+              <p class="dataError" id="errMobile"></p>
+            </div>
 
-            <input type="tel" placeholder="+7 (999) 999-99-99" name="mobile" id="mobile" required />
-            <p class="dataError" id="errMobile"></p>
+            <div id="errChildBorder">
+              <input type="text" placeholder="Как зовут ребенка?" name="child" id="child" required/>
+              <p class="dataError" id="errChild"></p>
+            </div>
 
-            <input type="text" placeholder="Как зовут ребенка?" name="child" id="child" required/>
-            <p class="dataError" id="errChild"></p>
+            <div id="errBirthBorder">
+              <label class="labelDate" for="date">Дата рождения: 
+                <!-- <input type="date" name="birth" min="1922-01-01" max="2022-12-31" id="start"/> -->
+                <input type="text" name="birth" value="09-10-1992" id="start"/>
+              </label>
+              <p class="dataError" id="errBirth"></p>
+            </div>
 
-            <label class="labelDate" for="date">Дата рождения: 
-              <input type="date" name="birth" value="Дата рождения" min="1922-01-01" max="2022-12-31" id="start"/>
-            </label>
-            <p class="dataError" id="errBirth"></p>
+            <div id="errMedBorder">
+              <input type="text" placeholder="Диагноз, особенности" name="med" id="med"/>
+              <p class="dataError" id="errMed"></p>
+            </div>
 
-            <input type="text" placeholder="Диагноз, особенности" name="med" id="med"/>
-            <p class="dataError" id="errMed"></p>
+            <div id="errCityBorder">
+              <input type="text" placeholder="Город" name="city" id="city" required/>
+              <p class="dataError" id="errCity"></p>
+            </div>
 
-            <input type="text" placeholder="Город" name="city" id="city" required/>
-            <p class="dataError" id="errCity"></p>
+            <div id="errIndexBorder">
+              <input type="text" placeholder="Почтовый индекс" maxlength="6" name="index" id="index" required/>
+              <p class="dataError" id="errIndex"></p>
+            </div>
 
-            <input type="text" placeholder="Почтовый индекс" maxlength="6" name="index" id="index" required/>
-            <p class="dataError" id="errIndex"></p>
-
-            <input type="text" placeholder="Адрес проживания" name="adress" id="adress" required/>
-            <p class="dataError" id="errAdress"></p>
+            <div id="errAdressBorder">
+              <input type="text" placeholder="Адрес проживания" name="adress" id="adress" required/>
+              <p class="dataError" id="errAdress"></p>
+            </div>
 
             <fieldset>
               <p class="radioVars">Няня с каким графиком работы вам нужна?</p>   
@@ -124,13 +145,13 @@
               <label for="hours_8-days_5">8 часов 5 дней в неделю</label><br>
 
               <input type="radio" class="schedule" name="schedule" value="6 часов 5 дней в неделю" id="hours_6-days_5" onclick="noshowOther()"/>
-              <label for="hours_8-days_5">6 часов 5 дней в неделю</label><br>
+              <label for="hours_6-days_5">6 часов 5 дней в неделю</label><br>
 
-              <input type="radio" class="schedule" name="schedule" value="8 часов 3 дней в неделю" id="hours_8-days_3" onclick="noshowOther()"/>
-              <label for="hours_8-days_5">8 часов 3 дней в неделю</label><br>
+              <input type="radio" class="schedule" name="schedule" value="8 часов 3 дня в неделю" id="hours_8-days_3" onclick="noshowOther()"/>
+              <label for="hours_8-days_3">8 часов 3 дня в неделю</label><br>
 
-              <input type="radio" class="schedule" name="schedule" value="8 часов 2 дней в неделю" id="hours_8-days_2" onclick="noshowOther()"/>
-              <label for="hours_8-days_5">8 часов 2 дней в неделю</label><br>
+              <input type="radio" class="schedule" name="schedule" value="8 часов 2 дня в неделю" id="hours_8-days_2" onclick="noshowOther()"/>
+              <label for="hours_8-days_2">8 часов 2 дня в неделю</label><br>
 
               <input type="radio" class="othersVar" name="schedule" value="Свой вариант" id="your_own_version" onclick="noshowOther()"/>
               <label for="your_own_version">Другое – свой вариант</label><br>
@@ -144,174 +165,26 @@
           </div>
         </form>
       </div>
+      
+      <div class="applicationSentOff" id="applicationSent">
+        <p class="applicationSentText">
+          Заявка успешно отправлена. Координатор свяжется с вами в течение двух дней для уточнения деталей.
+          <br>
+          Оплата услуг няни осуществляется через личный кабинет в конце каждой недели. 
+          <br>
+          Логин и пароль уже у вас на почте.
+          <br><br>
+          <a class="applicationSentHref" href="https://app.star-c.ru/">Войти тут</a>
+        </p>
+      </div>
 
-      <!-- <div id="SaintPetersburg" class="tabcontent cityForm">
-        <form name="nannyForm" id="SaintPetersburgForm">
-          <div class="signinforms">
-            <h1 class="h1Text">Найти няню в Санкт-Петербурге</h1>
-            <p class="pText">Пожалуйста, заполните анкету для формирования заявки на няню и автоматической регистрации в личном кабинете.
-              <br><br>Хотите оставить отклик на вакансию няни? Пройдите по <a class="linksreg" href="https://mynanny.pro/candidate-application-form">ссылке</a>
-            </p>
-            <hr class="inputsForm">
-            <input type="text" placeholder="Ваше имя" name="name" id="name" required>
-            <input type="text" placeholder="Ваша фамилия" name="surname" id="surname" required>
-            <input type="text" placeholder="Ваш e-mail" name="email" id="email" required>
-            <input type="tel" placeholder="+7 (999) 999-99-99" name="mobile" id="mobile" required>
-            <input type="text" placeholder="Как зовут ребенка?" name="child" id="child" required>
-            <label class="labelDate" for="date">Дата рождения: </label>
-            <input type="date" name="birth" value="Дата рождения" min="1900-01-01" max="2022-12-31" id="start">
-            <input type="text" placeholder="Диагноз, особенности" name="med" id="med" >
-            <input type="text" placeholder="Город" name="city" id="city" required>
-            <input type="number" placeholder="Почтовый индекс" name="index" id="index" required>
-            <input type="text" placeholder="Адрес проживания" name="adress" id="adress" required>
-            <fieldset>
-              <p class="radioVars">Няня с каким графиком работы вам нужна?</p>   
-              <input type="radio" class="schedule" name="schedule" value="1" onclick="noshowOther()"/>
-              8 часов 5 дней в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="2" onclick="noshowOther()"/> 
-              6 часов 5 дней в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="3" onclick="noshowOther()"/>
-              8 часов 3 дня в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="4" onclick="noshowOther()"/>
-              8 часов 5 дней в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="5" onclick="noshowOther()"/>
-              8 часов 2 дня в неделю<br>
-              <input type="radio" class="othersVar" name="schedule" value="6" onclick="showOther()"/>
-              Другое - свой вариант<br>
-              <input type="text" placeholder="Напишите свой график здесь" id="other">
-            </fieldset>
-            <input type="text" placeholder="Ожидания родителей по уходу за ребенком" name="expect" maxlength="200" >
-            <input type="checkbox" checked="checked" name="agreement" style="margin-bottom:15px"> Я согласен с <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты
-            <button type="submit" class="registerbtn" onclick="validate()">Отправить</button>
-          </div>
-        </form>
-      </div> -->
-
-      <!-- <div id="NaberezhnyeChelny" class="tabcontent cityForm">
-        <form name="nannyForm" id="NaberezhnyeChelnyForm">
-          <div class="signinforms">
-            <h1 class="h1Text">Найти няню в Набережных челнах</h1>
-            <p class="pText">Пожалуйста, заполните анкету для формирования заявки на няню и автоматической регистрации в личном кабинете.
-              <br><br>Хотите оставить отклик на вакансию няни? Пройдите по <a class="linksreg" href="https://mynanny.pro/candidate-application-form">ссылке</a>
-            </p>
-            <hr class="inputsForm">
-            <input type="text" placeholder="Ваше имя" name="name" id="name" required>
-            <input type="text" placeholder="Ваша фамилия" name="surname" id="surname" required>
-            <input type="text" placeholder="Ваш e-mail" name="email" id="email" required>
-            <input type="tel" placeholder="+7 (999) 999-99-99" name="mobile" id="mobile" required>
-            <input type="text" placeholder="Как зовут ребенка?" name="child" id="child" required>
-            <label class="labelDate" for="date">Дата рождения: </label>
-            <input type="date" name="birth" value="Дата рождения" min="1900-01-01" max="2022-12-31" id="start">
-            <input type="text" placeholder="Диагноз, особенности" name="med" id="med" >
-            <input type="text" placeholder="Город" name="city" id="city" required>
-            <input type="number" placeholder="Почтовый индекс" name="index" id="index" required>
-            <input type="text" placeholder="Адрес проживания" name="adress" id="adress" required>
-            <fieldset>
-              <p class="radioVars">Няня с каким графиком работы вам нужна?</p>   
-              <input type="radio" class="schedule" name="schedule" value="1" onclick="noshowOther()"/>
-              8 часов 5 дней в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="2" onclick="noshowOther()"/> 
-              6 часов 5 дней в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="3" onclick="noshowOther()"/>
-              8 часов 3 дня в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="4" onclick="noshowOther()"/>
-              8 часов 5 дней в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="5" onclick="noshowOther()"/>
-              8 часов 2 дня в неделю<br>
-              <input type="radio" class="othersVar" name="schedule" value="6" onclick="showOther()"/>
-              Другое - свой вариант<br>
-              <input type="text" placeholder="Напишите свой график здесь" id="other">
-            </fieldset>
-            <input type="text" placeholder="Ожидания родителей по уходу за ребенком" name="expect" maxlength="200" >
-            <input type="checkbox" checked="checked" name="agreement" style="margin-bottom:15px"> Я согласен с <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты
-            <button type="submit" class="registerbtn" onclick="validate()">Отправить</button>
-          </div>
-        </form>
-      </div> -->
-
-      <!-- <div id="Kazan" class="tabcontent cityForm">
-        <form name="nannyForm" id="KazanForm"> 
-          <div class="signinforms">
-            <h1 class="h1Text">Найти няню в Казани</h1>
-            <p class="pText">Пожалуйста, заполните анкету для формирования заявки на няню и автоматической регистрации в личном кабинете.
-              <br><br>Хотите оставить отклик на вакансию няни? Пройдите по <a class="linksreg" href="https://mynanny.pro/candidate-application-form">ссылке</a>
-            </p>
-            <hr class="inputsForm">
-            <input type="text" placeholder="Ваше имя" name="name" id="name" required>
-            <input type="text" placeholder="Ваша фамилия" name="surname" id="surname" required>
-            <input type="text" placeholder="Ваш e-mail" name="email" id="email" required>
-            <input type="tel" placeholder="+7 (999) 999-99-99" name="mobile" id="mobile" required>
-            <input type="text" placeholder="Как зовут ребенка?" name="child" id="child" required>
-            <label class="labelDate" for="date">Дата рождения: </label>
-            <input type="date" name="birth" value="Дата рождения" min="1900-01-01" max="2022-12-31" id="start">
-            <input type="text" placeholder="Диагноз, особенности" name="med" id="med" >
-            <input type="text" placeholder="Город" name="city" id="city" required>
-            <input type="number" placeholder="Почтовый индекс" name="index" id="index" required>
-            <input type="text" placeholder="Адрес проживания" name="adress" id="adress" required>
-            <fieldset>
-            <p class="radioVars">Няня с каким графиком работы вам нужна?</p>   
-                  <input type="radio" class="schedule" name="schedule" value="1" onclick="noshowOther()"/>
-                  8 часов 5 дней в неделю<br>
-                <input type="radio" class="schedule" name="schedule" value="2" onclick="noshowOther()"/> 
-                6 часов 5 дней в неделю<br>
-                <input type="radio" class="schedule" name="schedule" value="3" onclick="noshowOther()"/>
-                8 часов 3 дня в неделю<br>
-                <input type="radio" class="schedule" name="schedule" value="4" onclick="noshowOther()"/>
-                8 часов 5 дней в неделю<br>
-                <input type="radio" class="schedule" name="schedule" value="5" onclick="noshowOther()"/>
-                8 часов 2 дня в неделю<br>
-                <input type="radio" class="othersVar" name="schedule" value="6" onclick="showOther()"/>
-                Другое - свой вариант<br>
-                <input type="text" placeholder="Напишите свой график здесь" id="other">
-            </fieldset>
-            <input type="text" placeholder="Ожидания родителей по уходу за ребенком" name="expect" maxlength="200" >
-            <input type="checkbox" checked="checked" name="agreement" style="margin-bottom:15px"> Я согласен с <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты
-            <button type="submit" class="registerbtn" onclick="validate()">Отправить</button>
-          </div>
-        </form>
-      </div> -->
-
-      <!-- <div id="Barnaul" class="tabcontent cityForm">
-        <form name="nannyForm" id="BarnaulForm">
-          <div class="signinforms">
-            <h1 class="h1Text">Найти няню в Барнауле</h1>
-            <p class="pText">Пожалуйста, заполните анкету для формирования заявки на няню и автоматической регистрации в личном кабинете.
-              <br><br>Хотите оставить отклик на вакансию няни? Пройдите по <a class="linksreg" href="https://mynanny.pro/candidate-application-form">ссылке</a>
-            </p>
-            <hr class="inputsForm">
-            <input type="text" placeholder="Ваше имя" name="name" id="name" required>
-            <input type="text" placeholder="Ваша фамилия" name="surname" id="surname" required>
-            <input type="text" placeholder="Ваш e-mail" name="email" id="email" required>
-            <input type="tel" placeholder="+7 (999) 999-99-99" name="mobile" id="mobile" required>
-            <input type="text" placeholder="Как зовут ребенка?" name="child" id="child" required>
-            <label class="labelDate" for="date">Дата рождения: </label>
-            <input type="date" name="birth" value="Дата рождения" min="1900-01-01" max="2022-12-31" id="start">
-            <input type="text" placeholder="Диагноз, особенности" name="med" id="med" >
-            <input type="text" placeholder="Город" name="city" id="city" required>
-            <input type="number" placeholder="Почтовый индекс" name="index" id="index" required>
-            <input type="text" placeholder="Адрес проживания" name="adress" id="adress" required>
-            <fieldset>
-              <p class="radioVars">Няня с каким графиком работы вам нужна?</p>   
-              <input type="radio" class="schedule" name="schedule" value="1" onclick="noshowOther()"/>
-              8 часов 5 дней в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="2" onclick="noshowOther()"/> 
-              6 часов 5 дней в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="3" onclick="noshowOther()"/>
-              8 часов 3 дня в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="4" onclick="noshowOther()"/>
-              8 часов 5 дней в неделю<br>
-              <input type="radio" class="schedule" name="schedule" value="5" onclick="noshowOther()"/>
-              8 часов 2 дня в неделю<br>
-              <input type="radio" class="othersVar" name="schedule" value="6" onclick="showOther()"/>
-              Другое - свой вариант<br>
-              <input type="text" placeholder="Напишите свой график здесь" id="other">
-            </fieldset>
-            <input type="text" placeholder="Ожидания родителей по уходу за ребенком" name="expect" maxlength="200" >
-            <input type="checkbox" checked="checked" name="agreement" style="margin-bottom:15px"> Я согласен с <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты
-            <button type="submit" class="registerbtn" onclick="processForm()">Отправить</button>
-          </div>
-        </form>
-      </div> -->
+      <div class="errorSentOff" id="errorSent">
+        <p class="errorSentText">
+          Что-то пошло не так... Пожалуйста, попробуйте снова.
+          <br><br>
+          <a class="errorSentHref" href="../findNannyForm/index.html">Перейти...</a>
+        </p>
+      </div>
 
     </div>
   </div>

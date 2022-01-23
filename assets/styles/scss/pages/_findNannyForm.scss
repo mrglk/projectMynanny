@@ -211,15 +211,6 @@ input[type=date] {
     color: #ff0008;
 }
 
-// .tablinks.active {
-//     background-color: white;
-//     color: #ff6c70;
-// }
-
-// .tablinks.hover {
-//     background-color: #ff6c70;
-// }
-
 .cityForm {
     display: none;
 }
@@ -240,4 +231,49 @@ input[type=date] {
 
 .findNanny-footer {
     padding: 4rem;
+}
+
+.formOff {
+    display: none;
+}
+
+.borderErr {
+    border: 2px solid red;
+}
+
+.applicationSentOff {
+    display: none;
+}
+
+.applicationSent{
+    background-color: rgb(77, 205, 196);
+    padding: 3rem;
+    margin-top: 2rem;
+}
+
+.applicationSentText {
+    color: white;
+    text-align: center;
+}
+
+.applicationSentHref {
+    color: white;
+}
+
+.errorSentOff {
+    display: none;
+}
+
+.errorSent{
+    background-color: rgb(77, 205, 196);
+    padding: 3rem;
+}
+
+.errorSentText {
+    color: white;
+    text-align: center;
+}
+
+.errorSentHref {
+    color: white;
 }
