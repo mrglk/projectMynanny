@@ -168,7 +168,8 @@ submitForm = (event) => {
   for(let value of formData.values()) {
     console.log(value);
   }
-
+  
+  // https://httpbin.org/post
   fetch('https://api.star-c.ru/webhook/mynanny', {
           method: 'POST',
           body: formData,
@@ -176,6 +177,7 @@ submitForm = (event) => {
       })
 
       .then(response => response.json())
+      // .then(response => response.text())
       
       .then(data => {
         console.log(data);
@@ -184,7 +186,18 @@ submitForm = (event) => {
         document.getElementById("tabCity").classList.add("formOff");
         document.getElementById("formElementQuestionnaire").classList.add("formOff");
         alert("Ура");
-      })
+      //   console.log(data);
+      //   data 
+      //   ? (
+      //     console.log('true'),
+      //     JSON.parse(data),
+      //     document.getElementById("applicationSent").classList.remove("applicationSentOff"),
+      //     document.getElementById("applicationSent").classList.add("applicationSent"),
+      //     document.getElementById("tabCity").classList.add("formOff"),
+      //     document.getElementById("formElementQuestionnaire").classList.add("formOff"),
+      //     alert("Ура"))
+      //   : console.log('false');
+    })
 
       .catch(error =>{
         if(error){                

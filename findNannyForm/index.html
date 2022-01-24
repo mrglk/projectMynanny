@@ -113,8 +113,8 @@
 
             <div id="errBirthBorder">
               <label class="labelDate" for="date">Дата рождения: 
-                <!-- <input type="date" name="birth" min="1922-01-01" max="2022-12-31" id="start"/> -->
-                <input type="text" name="birth" value="09-10-1992" id="start"/>
+                <input type="date" name="birth" min="1922-01-01" max="" id="start"/>
+                <!-- <input type="text" name="birth" value="09-10-1992" id="start"/> -->
               </label>
               <p class="dataError" id="errBirth"></p>
             </div>
@@ -153,15 +153,17 @@
               <input type="radio" class="schedule" name="schedule" value="8 часов 2 дня в неделю" id="hours_8-days_2" onclick="noshowOther()"/>
               <label for="hours_8-days_2">8 часов 2 дня в неделю</label><br>
 
-              <input type="radio" class="othersVar" name="schedule" value="Свой вариант" id="your_own_version" onclick="noshowOther()"/>
+              <input type="radio" class="othersVar" name="schedule" value="Свой вариант" id="your_own_version" onclick="showOther()"/>
               <label for="your_own_version">Другое – свой вариант</label><br>
-              <input type="text" placeholder="Напишите свой график здесь" id="other">
+              <input type="text" placeholder="Напишите свой график здесь" id="other">      
             </fieldset>
+
             <input type="text" placeholder="Ожидания родителей по уходу за ребенком" name="expect" id="expect" maxlength="200" />
+
             <input type="checkbox" checked="checked" name="agreement" style="margin-bottom:15px" id="agreement"/> Я согласен с 
-            <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты              
-            <!-- <button type="submit" class="registerbtn" onclick="validate()">Отправить</button> -->
-            <button type="button" class="registerbtn" id="sendButton">Отправить</button>
+            <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты                       
+            <button type="button" class="registerbtn" id="sendButton">Отправить</button><!-- type="submit" -->
+            
           </div>
         </form>
       </div>
