@@ -6,9 +6,10 @@
     <title>Анкета для родителей</title>
     <link rel="stylesheet" href="../assets/styles/normalize.css">
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,
+      wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,
+      200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="../assets/styles/scss/main.css">
 </head>
 <body>
@@ -87,40 +88,39 @@
             </p>
             <hr class="inputsForm">
             <div id="errNameBorder">
-              <input type="text" placeholder="Ваше имя" name="name" id="name" required />
+              <input type="text" placeholder="Ваше имя" name="Name" id="Name" required />
               <p class="dataError" id="errName"></p>
             </div>
             
             <div id="errSurnameBorder">
-              <input type="text" placeholder="Ваша фамилия" name="surname" id="surname" required />
+              <input type="text" placeholder="Ваша фамилия" name="LastName" id="LastName" required />
               <p class="dataError" id="errSurname"></p>
             </div>
 
             <div id="errEmailBorder">
-              <input type="text" placeholder="Ваш e-mail" name="email" id="email" required />
+              <input type="text" placeholder="Ваш e-mail" name="Email" id="Email" required />
               <p class="dataError" id="errEmail"></p>
             </div>
 
             <div id="errMobileBorder">
-              <input type="tel" placeholder="+7 (999) 999-99-99" name="mobile" id="mobile" required />
+              <input type="tel" placeholder="+7 (999) 999-99-99" name="phone" id="phone" required />
               <p class="dataError" id="errMobile"></p>
             </div>
 
             <div id="errChildBorder">
-              <input type="text" placeholder="Как зовут ребенка?" name="child" id="child" required/>
+              <input type="text" placeholder="Как зовут ребенка?" name="kids-name" id="kids-name" required/>
               <p class="dataError" id="errChild"></p>
             </div>
 
             <div id="errBirthBorder">
               <label class="labelDate" for="date">Дата рождения: 
-                <input type="date" name="birth" min="1922-01-01" max="" id="start"/>
-                <!-- <input type="text" name="birth" value="09-10-1992" id="start"/> -->
+                <input type="date" name="Date" min="1922-01-01" max="" id="Date"/>
               </label>
               <p class="dataError" id="errBirth"></p>
             </div>
 
             <div id="errMedBorder">
-              <input type="text" placeholder="Диагноз, особенности" name="med" id="med"/>
+              <input type="text" placeholder="Диагноз, особенности" name="diagnosis" id="diagnosis"/>
               <p class="dataError" id="errMed"></p>
             </div>
 
@@ -130,37 +130,37 @@
             </div>
 
             <div id="errIndexBorder">
-              <input type="text" placeholder="Почтовый индекс" maxlength="6" name="index" id="index" required/>
+              <input type="text" placeholder="Почтовый индекс" maxlength="6" name="post-index" id="post-index" required/>
               <p class="dataError" id="errIndex"></p>
             </div>
 
             <div id="errAdressBorder">
-              <input type="text" placeholder="Адрес проживания" name="adress" id="adress" required/>
+              <input type="text" placeholder="Адрес проживания" name="address" id="address" required/>
               <p class="dataError" id="errAdress"></p>
             </div>
 
             <fieldset>
               <p class="radioVars">Няня с каким графиком работы вам нужна?</p>   
-              <input type="radio" class="schedule" name="schedule" value="8 часов 5 дней в неделю" id="hours_8-days_5" checked onclick="noshowOther()"/>
+              <input type="radio" class="schedule" name="Schedule" value="8 часов 5 дней в неделю" checked onclick="noshowOther()"/>
               <label for="hours_8-days_5">8 часов 5 дней в неделю</label><br>
 
-              <input type="radio" class="schedule" name="schedule" value="6 часов 5 дней в неделю" id="hours_6-days_5" onclick="noshowOther()"/>
+              <input type="radio" class="schedule" name="Schedule" value="6 часов 5 дней в неделю" onclick="noshowOther()"/>
               <label for="hours_6-days_5">6 часов 5 дней в неделю</label><br>
 
-              <input type="radio" class="schedule" name="schedule" value="8 часов 3 дня в неделю" id="hours_8-days_3" onclick="noshowOther()"/>
+              <input type="radio" class="schedule" name="Schedule" value="8 часов 3 дня в неделю" onclick="noshowOther()"/>
               <label for="hours_8-days_3">8 часов 3 дня в неделю</label><br>
 
-              <input type="radio" class="schedule" name="schedule" value="8 часов 2 дня в неделю" id="hours_8-days_2" onclick="noshowOther()"/>
+              <input type="radio" class="schedule" name="Schedule" value="8 часов 2 дня в неделю" onclick="noshowOther()"/>
               <label for="hours_8-days_2">8 часов 2 дня в неделю</label><br>
 
-              <input type="radio" class="othersVar" name="schedule" value="Свой вариант" id="your_own_version" onclick="showOther()"/>
+              <input type="radio" class="othersVar" name="myversion" value="Свой вариант" id="myversion" onclick="showOther()"/>
               <label for="your_own_version">Другое – свой вариант</label><br>
-              <input type="text" placeholder="Напишите свой график здесь" id="other">      
+              <input type="text" placeholder="Напишите свой график здесь" id="myschedule">      
             </fieldset>
 
-            <input type="text" placeholder="Ожидания родителей по уходу за ребенком" name="expect" id="expect" maxlength="200" />
+            <input type="text" placeholder="Ожидания родителей по уходу за ребенком" name="expectations" id="expectations" maxlength="200" />
 
-            <input type="checkbox" checked="checked" name="agreement" style="margin-bottom:15px" id="agreement"/> Я согласен с 
+            <input type="checkbox" checked="checked" name="Checkbox" style="margin-bottom:15px" id="Checkbox"/> Я согласен с 
             <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты                       
             <button type="button" class="registerbtn" id="sendButton">Отправить</button><!-- type="submit" -->
             
