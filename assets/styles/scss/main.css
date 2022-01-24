@@ -4945,7 +4945,7 @@ li {
   align-items: center;
 }
 
-a img {
+a .partners__img {
   width: 260px;
 }
 
@@ -4960,7 +4960,7 @@ a img {
 }
 
 @media screen and (min-width: 901px) and (max-width: 1024px) {
-  a img {
+  a .partners__img {
     max-width: 200px;
   }
 
@@ -4975,7 +4975,7 @@ a img {
   }
 }
 @media screen and (min-width: 701px) and (max-width: 900px) {
-  a img {
+  a .partners__img {
     max-width: 150px;
   }
 
@@ -5011,8 +5011,7 @@ a img {
     padding-left: 20px;
     padding-right: 20px;
   }
-
-  a img {
+  a .partners__img {
     max-width: 100%;
   }
 
@@ -5048,8 +5047,7 @@ a img {
     padding-left: 20px;
     padding-right: 20px;
   }
-
-  a img {
+  a .partners__img {
     max-width: 100%;
   }
 
