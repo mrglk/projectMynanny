@@ -3,15 +3,14 @@
     overflow: auto;
 }
 
-input:focus {
-    font-size: 0.7rem;
-    opacity: 1;
-}
-
 .mainForm {
     margin: 3% 20%;
     padding: 3rem;
-    background-color: white;    
+    background-color: white;
+}
+
+#myschedule {
+    display: none;
 }
 
 .signinforms {
@@ -166,6 +165,7 @@ input[type=date] {
     margin-bottom: 1rem;
 }
 
+
 .schedule,
 .othersVar {
     font-size: 0.7rem;
@@ -200,7 +200,7 @@ input[type=date] {
     color: #ff6c70;
 }
 
-.dataError{
+.dataError {
     color: #ff0008;
 }
 
@@ -238,7 +238,7 @@ input[type=date] {
     display: none;
 }
 
-.applicationSent{
+.applicationSent {
     background-color: rgb(77, 205, 196);
     padding: 3rem;
     margin-top: 2rem;
@@ -257,7 +257,7 @@ input[type=date] {
     display: none;
 }
 
-.errorSent{
+.errorSent {
     background-color: rgb(77, 205, 196);
     padding: 3rem;
 }
@@ -269,4 +269,29 @@ input[type=date] {
 
 .errorSentHref {
     color: white;
+}
+
+
+.floating-label-group {
+    position: relative;
+
+    .floating-label {
+        font-size: 1.1rem;
+        color: gray;
+        position: absolute;
+        pointer-events: none;
+        top: 0.8rem;
+        left: 0.8rem;
+        transition: all 0.1s ease;
+    }
+
+    input:focus~.floating-label,
+    input:not(:focus):valid~.floating-label {
+        top: -0.5rem;
+        bottom: 0px;
+        left: 0px;
+        font-size: 0.8rem;
+        opacity: 1;
+        color: gray;
+    }
 }

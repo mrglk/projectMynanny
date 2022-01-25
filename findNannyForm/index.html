@@ -87,55 +87,64 @@
                 <a class="linksreg" href="https://mynanny.pro/candidate-application-form">ссылке</a>
             </p>
             <hr class="inputsForm">
-            <div id="errNameBorder">
-              <input type="text" placeholder="Ваше имя" name="Name" id="Name" required />
+            <div id="errNameBorder" class="floating-label-group">
+              <input type="text" name="Name" id="Name" required />
+              <label class="floating-label">Ваше имя</label>
               <p class="dataError" id="errName"></p>
             </div>
             
-            <div id="errSurnameBorder">
-              <input type="text" placeholder="Ваша фамилия" name="LastName" id="LastName" required />
+            <div id="errSurnameBorder" class="floating-label-group">
+              <input type="text" name="LastName" id="LastName" required />
+              <label class="floating-label">Ваша фамилия</label>
               <p class="dataError" id="errSurname"></p>
             </div>
 
-            <div id="errEmailBorder">
-              <input type="text" placeholder="Ваш e-mail" name="Email" id="Email" required />
+            <div id="errEmailBorder"class="floating-label-group">
+              <input type="text" name="Email" id="Email" required />
+              <label class="floating-label">Ваш e-mail</label>
               <p class="dataError" id="errEmail"></p>
             </div>
 
-            <div id="errMobileBorder">
-              <input type="tel" placeholder="+7 (999) 999-99-99" name="phone" id="phone" required />
+            <div id="errMobileBorder" class="floating-label-group">
+              <input type="tel" name="phone" id="phone" required />
+              <label class="floating-label">+7 (999) 999-99-99</label>
               <p class="dataError" id="errMobile"></p>
             </div>
 
-            <div id="errChildBorder">
-              <input type="text" placeholder="Как зовут ребенка?" name="kids-name" id="kids-name" required/>
+            <div id="errChildBorder" class="floating-label-group">
+              <input type="text" name="kids-name" id="kids-name" required/>
+              <label class="floating-label">Как зовут ребенка?</label>
               <p class="dataError" id="errChild"></p>
             </div>
 
-            <div id="errBirthBorder">
+            <div id="errBirthBorder" class="floating-label-group">
               <label class="labelDate" for="date">Дата рождения: 
                 <input type="date" name="Date" min="1922-01-01" max="" id="Date"/>
               </label>
               <p class="dataError" id="errBirth"></p>
             </div>
 
-            <div id="errMedBorder">
-              <input type="text" placeholder="Диагноз, особенности" name="diagnosis" id="diagnosis"/>
+            <div id="errMedBorder" class="floating-label-group">
+              <input type="text" name="diagnosis" id="diagnosis" required/>
+              <label class="floating-label">Диагноз, особенности</label>
               <p class="dataError" id="errMed"></p>
             </div>
 
-            <div id="errCityBorder">
-              <input type="text" placeholder="Город" name="city" id="city" required/>
+            <div id="errCityBorder" class="floating-label-group">
+              <input type="text" name="city" id="city" required/>
+              <label class="floating-label">Город</label>
               <p class="dataError" id="errCity"></p>
             </div>
 
-            <div id="errIndexBorder">
-              <input type="text" placeholder="Почтовый индекс" maxlength="6" name="post-index" id="post-index" required/>
+            <div id="errIndexBorder" class="floating-label-group">
+              <input type="text" maxlength="6" name="post-index" id="post-index" required/>
+              <label class="floating-label">Почтовый индекс</label>
               <p class="dataError" id="errIndex"></p>
             </div>
 
-            <div id="errAdressBorder">
-              <input type="text" placeholder="Адрес проживания" name="address" id="address" required/>
+            <div id="errAdressBorder" class="floating-label-group">
+              <input type="text" name="address" id="address" required/>
+              <label class="floating-label">Адрес проживания</label>
               <p class="dataError" id="errAdress"></p>
             </div>
 
@@ -153,17 +162,17 @@
               <input type="radio" class="schedule" name="Schedule" value="8 часов 2 дня в неделю" onclick="noshowOther()"/>
               <label for="hours_8-days_2">8 часов 2 дня в неделю</label><br>
 
-              <input type="radio" class="othersVar" name="myversion" value="Свой вариант" id="myversion" onclick="showOther()"/>
+              <input type="radio" class="othersVar" name="Schedule" value="Свой вариант" id="myversion" onclick="showOther()"/>
               <label for="your_own_version">Другое – свой вариант</label><br>
-              <input type="text" placeholder="Напишите свой график здесь" id="myschedule">      
+              <input type="text" placeholder="Напишите свой график здесь" id="myschedule">  
+                 
             </fieldset>
-
-            <input type="text" placeholder="Ожидания родителей по уходу за ребенком" name="expectations" id="expectations" maxlength="200" />
-
-            <input type="checkbox" checked="checked" name="Checkbox" style="margin-bottom:15px" id="Checkbox"/> Я согласен с 
-            <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты                       
+<div class="floating-label-group">
+            <input type="text" name="expectations" id="expectations" maxlength="200" required/>
+            <label class="floating-label">Ожидания родителей по уходу за ребенком</label>
+          </div>
+            <input type="checkbox" checked="checked" name="Checkbox" style="margin-bottom:15px" id="Checkbox"/> Я согласен с <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты                       
             <button type="button" class="registerbtn" id="sendButton">Отправить</button><!-- type="submit" -->
-            
           </div>
         </form>
       </div>
