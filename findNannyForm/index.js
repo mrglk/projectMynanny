@@ -1,9 +1,9 @@
 function showOther() {
-  document.getElementById("myschedule").style.visibility = "visible";
+  document.getElementById("myschedule").style.display = "block";
 }
 
 function noshowOther() {
-  document.getElementById("myschedule").style.visibility = "hidden";
+  document.getElementById("myschedule").style.display = "none";
 }
 
 back = () => {
