@@ -73,11 +73,11 @@
     <div class="mainForm">
 
       <div class="tab" id="tabCity">
-        <button class="tablinks" onclick="openCity(event, 'Moscow')">Москва</button>
-        <button class="tablinks" onclick="openCity(event, 'SaintPetersburg')">Санкт-Петербург</button>
-        <button class="tablinks" onclick="openCity(event, 'NaberezhnyeChelny')">Набережные Челны</button>
-        <button class="tablinks" onclick="openCity(event, 'Kazan')">Казань</button>
-        <button class="tablinks" onclick="openCity(event, 'Barnaul')">Барнаул</button>
+        <button class="tablinks" onclick="openCity('Moscow')">Москва</button>
+        <button class="tablinks" onclick="openCity('SaintPetersburg')">Санкт-Петербург</button>
+        <button class="tablinks" onclick="openCity('NaberezhnyeChelny')">Набережные Челны</button>
+        <button class="tablinks" onclick="openCity('Kazan')">Казань</button>
+        <button class="tablinks" onclick="openCity('Barnaul')">Барнаул</button>
       </div>
 
       <div class="tabcontent">
@@ -92,64 +92,64 @@
             <hr class="inputsForm">
             <div id="errNameBorder" class="floating-label-group">
               <input type="text" name="Name" id="Name" required />
-              <label class="floating-label">Ваше имя</label>
-              <p class="dataError" id="errName"></p>
+              <label class="floating-label">Ваше имя</label>              
             </div>
+            <p class="dataError" id="errName"></p>
             
             <div id="errSurnameBorder" class="floating-label-group">
               <input type="text" name="LastName" id="LastName" required />
-              <label class="floating-label">Ваша фамилия</label>
-              <p class="dataError" id="errSurname"></p>
+              <label class="floating-label">Ваша фамилия</label>              
             </div>
+            <p class="dataError" id="errSurname"></p>
 
             <div id="errEmailBorder"class="floating-label-group">
               <input type="text" name="Email" id="Email" required />
-              <label class="floating-label">Ваш e-mail</label>
-              <p class="dataError" id="errEmail"></p>
+              <label class="floating-label">Ваш e-mail</label>              
             </div>
+            <p class="dataError" id="errEmail"></p>
 
             <div id="errMobileBorder" class="floating-label-group">
               <input type="tel" name="phone" id="phone" required />
-              <label class="floating-label">+7 (999) 999-99-99</label>
-              <p class="dataError" id="errMobile"></p>
+              <label class="floating-label">+7 (999) 999-99-99</label>              
             </div>
+            <p class="dataError" id="errMobile"></p>
 
             <div id="errChildBorder" class="floating-label-group">
               <input type="text" name="kids-name" id="kids-name" required/>
-              <label class="floating-label">Как зовут ребенка?</label>
-              <p class="dataError" id="errChild"></p>
+              <label class="floating-label">Как зовут ребенка?</label>              
             </div>
+            <p class="dataError" id="errChild"></p>
 
             <div id="errBirthBorder" class="floating-label-group">
               <label class="labelDate" for="date">Дата рождения: 
                 <input type="date" name="Date" min="1922-01-01" max="" id="Date"/>
-              </label>
-              <p class="dataError" id="errBirth"></p>
+              </label>              
             </div>
+            <p class="dataError" id="errBirth"></p>
 
             <div id="errMedBorder" class="floating-label-group">
               <input type="text" name="diagnosis" id="diagnosis" required/>
-              <label class="floating-label">Диагноз, особенности</label>
-              <p class="dataError" id="errMed"></p>
+              <label class="floating-label">Диагноз, особенности</label>              
             </div>
+            <p class="dataError" id="errMed"></p>
 
             <div id="errCityBorder" class="floating-label-group">
               <input type="text" name="city" id="city" required/>
-              <label class="floating-label">Город</label>
-              <p class="dataError" id="errCity"></p>
+              <label class="floating-label">Город</label>              
             </div>
+            <p class="dataError" id="errCity"></p>
 
             <div id="errIndexBorder" class="floating-label-group">
               <input type="text" maxlength="6" name="post-index" id="post-index" required/>
-              <label class="floating-label">Почтовый индекс</label>
-              <p class="dataError" id="errIndex"></p>
+              <label class="floating-label">Почтовый индекс</label>              
             </div>
+            <p class="dataError" id="errIndex"></p>
 
             <div id="errAdressBorder" class="floating-label-group">
               <input type="text" name="address" id="address" required/>
-              <label class="floating-label">Адрес проживания</label>
-              <p class="dataError" id="errAdress"></p>
+              <label class="floating-label">Адрес проживания</label>              
             </div>
+            <p class="dataError" id="errAdress"></p>
 
             <fieldset>
               <p class="radioVars">Няня с каким графиком работы вам нужна?</p>   
@@ -167,13 +167,12 @@
 
               <input type="radio" class="othersVar" name="Schedule" value="Свой вариант" id="myversion" onclick="showOther()"/>
               <label for="your_own_version">Другое – свой вариант</label><br>
-              <input type="text" placeholder="Напишите свой график здесь" id="myschedule">  
-                 
+              <input type="text" placeholder="Напишите свой график здесь" id="myschedule">            
             </fieldset>
-<div class="floating-label-group">
-            <input type="text" name="expectations" id="expectations" maxlength="200" required/>
-            <label class="floating-label">Ожидания родителей по уходу за ребенком</label>
-          </div>
+            <div class="floating-label-group">
+              <input type="text" name="expectations" id="expectations" maxlength="200" required/>
+              <label class="floating-label">Ожидания родителей по уходу за ребенком</label>
+            </div>
             <input type="checkbox" checked="checked" name="Checkbox" style="margin-bottom:15px" id="Checkbox"/> Я согласен с <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты                       
             <button type="button" class="registerbtn" id="sendButton">Отправить</button><!-- type="submit" -->
           </div>
