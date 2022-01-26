@@ -91,62 +91,62 @@
             </p>
             <hr class="inputsForm">
             <div id="errNameBorder" class="floating-label-group">
-              <input type="text" name="Name" id="Name" class="inputClass" required />
+              <input type="text" name="Name" id="Name" class="inputClass" oninput="dataError('errName')" required />
               <label class="floating-label">Ваше имя</label>
               <p class="dataError" id="errName"></p>
             </div>
             
             <div id="errSurnameBorder" class="floating-label-group">
-              <input type="text" name="LastName" id="LastName" class="inputClass" required />
+              <input type="text" name="LastName" id="LastName" class="inputClass" oninput="dataError('errSurname')" required />
               <label class="floating-label">Ваша фамилия</label>
               <p class="dataError" id="errSurname"></p>
             </div>
 
             <div id="errEmailBorder"class="floating-label-group">
-              <input type="text" name="Email" id="Email" class="inputClass" required />
+              <input type="text" name="Email" id="Email" class="inputClass" oninput="dataError('errEmail')" required />
               <label class="floating-label">Ваш e-mail</label>
               <p class="dataError" id="errEmail"></p>
             </div>
 
             <div id="errMobileBorder" class="floating-label-group">
-              <input type="tel" name="phone" id="phone" class="inputClass" required />
+              <input type="tel" name="phone" id="phone" class="inputClass" oninput="dataError('errMobile')" required />
               <label class="floating-label">+7 (999) 999-99-99</label>
               <p class="dataError" id="errMobile"></p>
             </div>
 
             <div id="errChildBorder" class="floating-label-group">
-              <input type="text" name="kids-name" id="kids-name" class="inputClass" required/>
+              <input type="text" name="kids-name" id="kids-name" class="inputClass" oninput="dataError('errChild')" required/>
               <label class="floating-label">Как зовут ребенка?</label>
               <p class="dataError" id="errChild"></p>
             </div>
 
             <div id="errBirthBorder" class="floating-label-group">
               <label class="labelDate" for="date">Дата рождения: 
-                <input type="date" name="Date" min="1922-01-01" max="" id="Date" class="inputClass" required/>
+                <input type="date" name="Date" min="1922-01-01" max="" id="Date" class="inputClass" oninput="dataError('errBirth')" required/>
               </label>
               <p class="dataError" id="errBirth"></p>
             </div>
 
             <div id="errMedBorder" class="floating-label-group">
-              <input type="text" name="diagnosis" id="diagnosis" class="inputClass" required/>
+              <input type="text" name="diagnosis" id="diagnosis" class="inputClass" oninput="dataError('errMed')" required/>
               <label class="floating-label">Диагноз, особенности</label>
               <p class="dataError" id="errMed"></p>
             </div>
 
             <div id="errCityBorder" class="floating-label-group">
-              <input type="text" name="city" id="city" class="inputClass" required/>
+              <input type="text" name="city" id="city" class="inputClass" oninput="dataError('errCity')" required/>
               <label class="floating-label">Город</label>
               <p class="dataError" id="errCity"></p>
             </div>
 
             <div id="errIndexBorder" class="floating-label-group">
-              <input type="text" maxlength="6" name="post-index" id="post-index" class="inputClass" required/>
+              <input type="text" maxlength="6" name="post-index" id="post-index" class="inputClass" oninput="dataError('errIndex')" required/>
               <label class="floating-label">Почтовый индекс</label>
               <p class="dataError" id="errIndex"></p>
             </div>
 
             <div id="errAdressBorder" class="floating-label-group">
-              <input type="text" name="address" id="address" class="inputClass" required/>
+              <input type="text" name="address" id="address" class="inputClass" oninput="dataError('errAdress')" required/>
               <label class="floating-label">Адрес проживания</label>
               <p class="dataError" id="errAdress"></p>
             </div>
@@ -169,10 +169,10 @@
               <label for="your_own_version">Другое – свой вариант</label><br>
               <input type="text" placeholder="Напишите свой график здесь" id="myschedule">            
             </fieldset>
-<div class="floating-label-group">
-            <input type="text" name="expectations" id="expectations" maxlength="200" class="inputClass" required/>
-            <label class="floating-label">Ожидания родителей по уходу за ребенком</label>
-          </div>
+            <div class="floating-label-group">
+              <input type="text" name="expectations" id="expectations" maxlength="200" class="inputClass" required/>
+              <label class="floating-label">Ожидания родителей по уходу за ребенком</label>
+            </div>
             <input type="checkbox" checked="checked" name="Checkbox" style="margin-bottom:15px" id="Checkbox"/> Я согласен с <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты                       
             <button type="button" class="registerbtn" id="sendButton">Отправить</button>
           </div>
