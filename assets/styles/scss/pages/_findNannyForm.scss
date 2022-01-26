@@ -117,6 +117,20 @@ fieldset {
     outline: 0;
 }
 
+.borderErr {
+    border: 1px solid red;
+
+}
+
+input:valid {
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.inputClass {
+    border-bottom: 1px solid black;
+}
+
 input[type=text],
 input[type=tel],
 input[type=number],
@@ -125,7 +139,6 @@ input[type=date] {
     padding: 0.8rem;
     margin: 5px 0 22px 0;
     display: inline-block;
-    border-bottom: 1px solid black;
 }
 
 .schedule {
@@ -203,7 +216,8 @@ input[type=date] {
 
 .dataError {
     color: #ff0008;
-    margin-bottom: 15px;
+    margin-top: -0.8rem;
+
 }
 
 .cityForm {
@@ -232,9 +246,7 @@ input[type=date] {
     display: none;
 }
 
-.borderErr {
-    border: 2px solid red;
-}
+
 
 .applicationSentOff {
     display: none;
