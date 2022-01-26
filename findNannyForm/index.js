@@ -78,7 +78,7 @@ validate = () => {
   if(a == "") {
     document.getElementById('errName').textContent="Обязательно для заполнения";
     document.getElementById('Name').classList.add('borderErr');
-    document.getElementById('Name').classList.remove('inputClass')
+    document.getElementById('Name').classList.remove('inputClass');
     errorCount = true;
   } else {
     document.getElementById('errName').textContent='';
@@ -91,7 +91,7 @@ validate = () => {
   if(b == "") {
     document.getElementById('errSurname').textContent="Обязательно для заполнения";
     document.getElementById('LastName').classList.add('borderErr');
-    document.getElementById('LastName').classList.remove('inputClass')
+    document.getElementById('LastName').classList.remove('inputClass');
     errorCount = true;
   } else {
     document.getElementById('errSurname').textContent='';
@@ -104,7 +104,7 @@ validate = () => {
   if(с == "") {
     document.getElementById('errEmail').textContent="Обязательно для заполнения";
     document.getElementById('Email').classList.add('borderErr');
-    document.getElementById('Email').classList.remove('inputClass')
+    document.getElementById('Email').classList.remove('inputClass');
     errorCount = true;
   } else if( !document.getElementById('Email').value.match(mailFormat) ) {
       document.getElementById('errEmail').textContent="Неверный формат Email. Пример: example-678@mail.com";
@@ -128,7 +128,7 @@ validate = () => {
   } else if( !document.getElementById('phone').value.match(phoneFormat) ) {
       document.getElementById('errMobile').textContent="Неверный формат телефона. Пример: +7 xxx xxx xx xx";
       document.getElementById('phone').classList.add('borderErr');
-      document.getElementById('phone').classList.remove('inputClass')
+      document.getElementById('phone').classList.remove('inputClass');
       document.getElementById('phone').value = '';
       errorCount = true;
   } else {
@@ -243,7 +243,10 @@ openCity = (cityName) => {
     document.getElementById("city").value = "Барнаул";
   }
 }
-
+/*valid = () => {
+  let Form =  document.forms["nannyForm"]["Name"].value;
+if (Form.checkValidity()==true) {document.getElementById('errName').textContent="";}
+} */
 submitForm = (event) => {
   event.preventDefault();
   formData = new FormData(formElementQuestionnaire);
