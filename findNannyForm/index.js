@@ -60,15 +60,6 @@ back = () => {
   window.location.href = "../index.html";
 };
 
-document.getElementById("sendButton").addEventListener("click", (event) => {
-  let resultValidate = validate();
-  if (resultValidate && !errorCount) {
-    submitForm();
-  } else {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-  }
-});
-
 validate = () => {
   let mailFormat = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i;
   let phoneFormat = /^((8|\+7)[\- ]?)?(\(?\d{3,4}\)?[\- ]?)?[\d\- ]{5,10}$/;
@@ -111,7 +102,8 @@ validate = () => {
       document.getElementById('Email').classList.add('borderErr');
       document.getElementById('Email').classList.remove('inputClass');
       document.getElementById('Email').value= '';
-      errorCount = false;
+      errorCount = true;
+      return false;
   } else {
     document.getElementById('errEmail').textContent='';
     document.getElementById('Email').classList.remove('borderErr');
@@ -131,11 +123,12 @@ validate = () => {
       document.getElementById('phone').classList.remove('inputClass');
       document.getElementById('phone').value = '';
       errorCount = true;
+      return false;
   } else {
     document.getElementById('errMobile').textContent='';
     document.getElementById('phone').classList.remove('borderErr');
     document.getElementById('phone').classList.add('inputClass');
-    errorCount=false;
+    errorCount = false;
   }
 
   let f = document.forms["nannyForm"]["kids-name"].value;
@@ -190,11 +183,12 @@ validate = () => {
     document.getElementById('post-index').classList.remove('inputClass');
     document.getElementById('post-index').value='';
     errorCount = true;
+    return false;
   } else {
     document.getElementById('errIndex').textContent='';
     document.getElementById('post-index').classList.remove('borderErr');
     document.getElementById('post-index').classList.add('inputClass');
-    errorCount=false;
+    errorCount = false;
   }
 
   let l = document.forms["nannyForm"]["address"].value;
@@ -210,8 +204,17 @@ validate = () => {
     errorCount = false;
   }
 
-  errorCount = false;
+  return true;
 }
+
+document.getElementById("sendButton").addEventListener("click", (event) => {
+  let resultValidate = validate();
+  if (resultValidate && !errorCount) {
+    submitForm();
+  } else {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
+});
 
 document.addEventListener("DOMContentLoaded", function (event) {
   location.hash = 'Moscow';
@@ -243,12 +246,14 @@ openCity = (cityName) => {
     document.getElementById("city").value = "Барнаул";
   }
 }
-/*valid = () => {
-  let Form =  document.forms["nannyForm"]["Name"].value;
-if (Form.checkValidity()==true) {document.getElementById('errName').textContent="";}
-} */
+
+dataError = (item) => {
+  if(errorCount){
+    document.getElementById(item).textContent=""
+  }
+}
+
 submitForm = (event) => {
-  event.preventDefault();
   formData = new FormData(formElementQuestionnaire);
 
   for(let value of formData.values()) {
@@ -278,5 +283,6 @@ submitForm = (event) => {
           document.getElementById("tabCity").classList.add("formOff");
           document.getElementById("formElementQuestionnaire").classList.add("formOff");
         }  
-      })
+  });
+  event.preventDefault();
 }
