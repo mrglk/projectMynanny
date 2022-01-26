@@ -1,4 +1,53 @@
 let errorCount = false;
+
+const inputPhone = document.getElementById("phone");
+
+const prefixNumber = (str) => {
+  if (str === "7") {
+    return "7 (";
+  }
+  if (str === "8") {
+    return "8 (";
+  }
+  if (str === "9") {
+    return "7 (9";
+  }
+  return "7 (";
+};
+
+inputPhone.addEventListener("input", (e) => {
+  const value = inputPhone.value.replace(/\D+/g, "");
+  const numberLength = 11;
+
+  let result;
+  if (inputPhone.value.includes("+8") || inputPhone.value[0] === "8") {
+    result = "";
+  } else {
+    result = "+";
+  }
+
+  for (let i = 0; i < value.length && i < numberLength; i++) {
+    switch (i) {
+      case 0:
+        result += prefixNumber(value[i]);
+        continue;
+      case 4:
+        result += ") ";
+        break;
+      case 7:
+        result += "-";
+        break;
+      case 9:
+        result += "-";
+        break;
+      default:
+        break;
+    }
+    result += value[i];
+  }
+  inputPhone.value = result;
+});
+
 function showOther() {
   document.getElementById("myschedule").style.display = "block";
 }
@@ -147,6 +196,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   location.hash = 'Moscow';
   document.getElementById("h1Text").innerHTML = "Найти няню в Москве";
   document.getElementById("city").value = "Москва";
+  
 });
 
 openCity = (cityName) => {
@@ -174,7 +224,7 @@ openCity = (cityName) => {
 }
 
 submitForm = (event) => {
-  // event.preventDefault();
+  event.preventDefault();
   formData = new FormData(formElementQuestionnaire);
 
   for(let value of formData.values()) {
