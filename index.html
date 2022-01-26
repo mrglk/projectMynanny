@@ -16,249 +16,241 @@
 
 <body>
 
-    <header class="header container">
-        <div class="header__inner container__row_wide">
-            <div class="header__logo">
-                <a href="index.html"><img class="header__img" src="./assets/images/nanny-logo.svg" alt="Логотип"></a>
+    <div class="wrapper">
+        <header class="header container">
+            <div class="header__inner container__row_wide">
+                <div class="header__logo">
+                    <a href="index.html"><img class="header__img" src="./assets/images/nanny-logo.svg"
+                            alt="Логотип"></a>
+                </div>
+                <div class="header__menu">
+                    <input class="header__check" id="header__toggle" type="checkbox" />
+                    <label class="header__btn" for="header__toggle">
+                        <span></span>
+                    </label>
+                    <nav class="header__links">
+                        <div>
+                            <a class="header__item header__page header__page_active" href="index.html">Главная</a>
+                            <a class="header__item header__page" href="./tariffs/index.html">Тарифы</a>
+                            <a class="header__item header__page" href="./ourteam/index.html">Наша команда</a>
+                            <a class="header__item header__page" href="./nannies/index.html">Стать няней</a>
+                            <a class="header__item header__page" href="./faq/index.html">FAQ</a>
+                            <a class="header__item header__page" href="./partners/index.html">Партнеры</a>
+                            <a class="header__item header__page" href="./contacts/index.html">Контакты</a>
+                            <a class="header__item header__buttons btn btn_defaultcolor btn_small"
+                                href="./findNannyForm/index.html">Найти няню</a>
+                            <a class="header__item header__buttons btn btn_lightColor-darkСolor btn_small"
+                                href="https://app.star-c.ru/">Войти <span class="mobile__hidden">→</span></a>
+                        </div>
+                        <div class="header__social desktop__hidden">
+                            <a href="https://www.facebook.com/mynannypro/">
+                                <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                    enable-background="new 0 0 48 48" xml:space="preserve">
+                                    <path style="fill:#4dcdc4;"
+                                        d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/mynanny.pro/">
+                                <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
+                                    xml:space="preserve">
+                                    <path style="fill:#4dcdc4;"
+                                        d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z">
+                                    </path>
+                                    <path style="fill:#4dcdc4;"
+                                        d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z">
+                                    </path>
+                                    <path style="fill:#4dcdc4;"
+                                        d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <div class="header__menu">
-                <input class="header__check" id="header__toggle" type="checkbox" />
-                <label class="header__btn" for="header__toggle">
-                    <span></span>
-                </label>
-                <nav class="header__links">
-                    <div>
-                        <a class="header__item header__page header__page_active" href="index.html">Главная</a>
-                        <a class="header__item header__page" href="./tariffs/index.html">Тарифы</a>
-                        <a class="header__item header__page" href="./ourteam/index.html">Наша команда</a>
-                        <a class="header__item header__page" href="./nannies/index.html">Стать няней</a>
-                        <a class="header__item header__page" href="./faq/index.html">FAQ</a>
-                        <a class="header__item header__page" href="./partners/index.html">Партнеры</a>
-                        <a class="header__item header__page" href="./contacts/index.html">Контакты</a>
-                        <a class="header__item header__buttons btn btn_defaultcolor btn_small"
-                            href="./findNannyForm/index.html">Найти няню</a>
-                        <a class="header__item header__buttons btn btn_lightColor-darkСolor btn_small"
-                            href="https://app.star-c.ru/">Войти <span class="mobile__hidden">→</span></a>
-                    </div>
-                    <div class="header__social desktop__hidden">
-                        <a href="https://www.facebook.com/mynannypro/">
-                            <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                                enable-background="new 0 0 48 48" xml:space="preserve">
-                                <path style="fill:#4dcdc4;"
-                                    d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z">
-                                </path>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/mynanny.pro/">
-                            <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
-                                xml:space="preserve">
-                                <path style="fill:#4dcdc4;"
-                                    d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z">
-                                </path>
-                                <path style="fill:#4dcdc4;"
-                                    d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z">
-                                </path>
-                                <path style="fill:#4dcdc4;"
-                                    d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <main class="container">
-        <div class="container">
-            <div class="block-whowe_wrapper">
-                <div class="container__row ">
-
-                    <div class="block-whowe">
-                        <div class="block-whowe__slogan ">
-                            <div class="block-whowe__slogan_slider block-whowe__slogan_background ">
-                                <div class="block-whowe__slogan1">
-                                    <h1 class="block-whowe_h1">Находим </h1>
-                                    <p class="block-whowe_p"> подход к особенностям каждого ребенка. С любовью и
-                                        вниманием
-                                    </p>
-                                </div>
-                                <div class="block-whowe__slogan2">
-                                    <h1 class="block-whowe_h1">Освобождаем </h1>
-                                    <p class="block-whowe_p">время для важных и приятных дел</p>
-                                </div>
-                                <div class="block-whowe__slogan3 ">
-                                    <h1 class="block-whowe_h1">Помогаем </h1>
-                                    <p class="block-whowe_p">маме отдохнуть, папе выспаться, бабушке и дедушке
-                                        улыбнуться
-                                    </p>
+        </header>
+        <main class="container">
+            <div class="container">
+                <div class="block-whowe_wrapper">
+                    <div class="container__row ">
+                        <div class="block-whowe">
+                            <div class="block-whowe__slogan ">
+                                <div class="block-whowe__slogan_slider block-whowe__slogan_background ">
+                                    <div class="block-whowe__slogan1">
+                                        <h1 class="block-whowe_h1">Находим </h1>
+                                        <p class="block-whowe_p"> подход к особенностям каждого ребенка. С любовью и
+                                            вниманием
+                                        </p>
+                                    </div>
+                                    <div class="block-whowe__slogan2">
+                                        <h1 class="block-whowe_h1">Освобождаем </h1>
+                                        <p class="block-whowe_p">время для важных и приятных дел</p>
+                                    </div>
+                                    <div class="block-whowe__slogan3 ">
+                                        <h1 class="block-whowe_h1">Помогаем </h1>
+                                        <p class="block-whowe_p">маме отдохнуть, папе выспаться, бабушке и дедушке
+                                            улыбнуться
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="block-whowe__image block-whowe__image_background">
-
-                            <img src="./assets/images/img_page1/fon_dots.svg" alt="dots" class="block-whowe__img-dots">
-
-                            <img src="./assets/images/img_page1/1.jpg" alt="image1" class="block-whowe__img1">
-
-
-                        </div>
-                        <div class="block-whowe__text">
-                            <h4 class="block-whowe__h4"> Подберем няню для особого ребенка на разовый визит, частичную
-                                или
-                                полную занятость</h4>
-                            <div class="block-whowe__inner">
-
-                                <a href="./findNannyForm/index.html" class="btn btn_defaultcolor-accentСolor"> Найти
-                                    няню</a>
-                                <p class="block-whowe__p-text">
-                                    Работаем в Москве, Санкт-Петербурге <br>и Набережных Челнах
-                                </p>
+                            <div class="block-whowe__image block-whowe__image_background">
+                                <img src="./assets/images/img_page1/fon_dots.svg" alt="dots"
+                                    class="block-whowe__img-dots">
+                                <img src="./assets/images/img_page1/1.jpg" alt="image1" class="block-whowe__img1">
+                            </div>
+                            <div class="block-whowe__text">
+                                <h4 class="block-whowe__h4"> Подберем няню для особого ребенка на разовый визит,
+                                    частичную
+                                    или
+                                    полную занятость</h4>
+                                <div class="block-whowe__inner">
+                                    <a href="./findNannyForm/index.html" class="btn btn_defaultcolor-accentСolor"> Найти
+                                        няню</a>
+                                    <p class="block-whowe__p-text">
+                                        Работаем в Москве, Санкт-Петербурге <br>и Набережных Челнах
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="container">
-            <div class="block-whatwedo container__row">
-                <div class="block-whatwedo__h1">Мы подбираем нянь на разную занятость</div>
-                <div class="block-whatwedo__h2">Минимальная продолжительность визита - 3 часа.</div>
-                <div class="single-visits">
-                    <div class="single-visis__header">
-                        <div class="single-visits__img"><img class="img-heart" src="./assets/images/heart2.svg"
-                                width="70rem" alt="heart"></div>
-                        <div class="single-visits__h3">Разовые <br> визиты</div>
+            <div class="container">
+                <div class="block-whatwedo container__row">
+                    <div class="block-whatwedo__h1">Мы подбираем нянь на разную занятость</div>
+                    <div class="block-whatwedo__h2">Минимальная продолжительность визита - 3 часа.</div>
+                    <div class="single-visits">
+                        <div class="single-visis__header">
+                            <div class="single-visits__img"><img class="img-heart" src="./assets/images/heart2.svg"
+                                    width="70rem" alt="heart"></div>
+                            <div class="single-visits__h3">Разовые <br> визиты</div>
+                        </div>
+                        <div class="single-visits__p">Вы можете запланировать визит накануне или заранее</div>
+                        <div class="single-visits__list">
+                            <div class="single-visits__list_h3">Это удобно,когда</div>
+                            <ul class="single-visits__list_point">
+                                <li class="li"><span>Ваша постоянная няня в отпуске, болеет или не может выйти на работу
+                                        по
+                                        другим причинам</span></li>
+                                <li class="li"></span>Вам нужно съездить по делам, а оставить ребенка не с кем</span>
+                                </li>
+                                <li class="li"></span>Вам нужно сопровождение няни в поездках по городу или на
+                                    мероприятии</span></li>
+                                <li class="li"></span>Вам хочется посвятить время себе или провести его с
+                                    близкими</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="single-visits__p">Вы можете запланировать визит накануне или заранее</div>
-                    <div class="single-visits__list">
-                        <div class="single-visits__list_h3">Это удобно,когда</div>
-                        <ul class="single-visits__list_point">
-                            <li class="li"><span>Ваша постоянная няня в отпуске, болеет или не может выйти на работу по
-                                    другим причинам</span></li>
-                            <li class="li"></span>Вам нужно съездить по делам, а оставить ребенка не с кем</span></li>
-                            <li class="li"></span>Вам нужно сопровождение няни в поездках по городу или на
-                                мероприятии</span></li>
-                            <li class="li"></span>Вам хочется посвятить время себе или провести его с близкими</span>
-                            </li>
-                        </ul>
+                    <div class="regular-visits">
+                        <div class="regular-visits__header">
+                            <div class="regular-visits__img"><img class="img-heart" src="./assets/images/heart.svg"
+                                    width="70rem" alt="heart"></div>
+                            <div class="regular-visits__h3">Регулярные<br> визиты</div>
+                        </div>
+                        <div class="regular-visits__p">Мы сможем сформировать регулярный или плавающий график визитов
+                            няни
+                        </div>
+                        <div class="regular-visits__list">
+                            <div class="regular-visits__list_h3">Это удобно,когда</div>
+                            <ul class="regular-visits__list_point">
+                                <li class="li2"><span>Вы работаете</span></li>
+                                <li></span>Вам нужна регулярная помощь няни для ухода за ребенком</span></li>
+                                <li></span>Вы ищете няню для регулярного сопровождения ребенка в детский сад, школу или
+                                    на
+                                    занятия</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="regular-visits">
-                    <div class="regular-visits__header">
-                        <div class="regular-visits__img"><img class="img-heart" src="./assets/images/heart.svg"
-                                width="70rem" alt="heart"></div>
-                        <div class="regular-visits__h3">Регулярные<br> визиты</div>
-                    </div>
-                    <div class="regular-visits__p">Мы сможем сформировать регулярный или плавающий график визитов няни
-                    </div>
-                    <div class="regular-visits__list">
-                        <div class="regular-visits__list_h3">Это удобно,когда</div>
-                        <ul class="regular-visits__list_point">
-                            <li class="li2"><span>Вы работаете</span></li>
-                            <li></span>Вам нужна регулярная помощь няни для ухода за ребенком</span></li>
-                            <li></span>Вы ищете няню для регулярного сопровождения ребенка в детский сад, школу или на
-                                занятия</span></li>
-                        </ul>
+            </div>
+            <div class="container">
+                <div class="container__row">
+                    <div class="block-howwework">
+                        <div class="block-howwework__h2">
+                            Воспользоваться сервисом легко:
+                        </div>
+                        <p class="block-howwework__p">Вам не нужно самостоятельно выбирать няню, мы сделаем это для вас.
+                            <br>
+                            Вы можете посмотреть анкеты некоторых нянь сервиса в разделе
+                        </p>
+                        <a class="block-howwework__link" href="page3.html">Наша команда</a>
+                        <div class="block-howwework__container-grid">
+                            <div class="block-howwework__element block-howwework__element_animation1">
+                                <img class="block-howwework__img" src="./assets/images/img_page1/num1.svg" alt="num1"
+                                    height="70px" width="70px">
+                                <p class="block-howwework__text">Заполните</p> <a
+                                    class="block-howwework__link block-howwework__link_smallsize" href="#">анкету</a>
+                            </div>
+                            <div class="block-howwework__element block-howwework__element_animation2">
+                                <img class="block-howwework__img" src="./assets/images/img_page1/num2.svg" alt="num2"
+                                    height="70px" width="70px">
+                                <p class="block-howwework__text">Дождитесь звонка нашего координатора для уточнения
+                                    деталей
+                                    и
+                                    формирования заявки. Мы свяжемся с вами в течение 2 рабочих дней</p>
+                            </div>
+                            <div class="block-howwework__element block-howwework__element_animation3">
+                                <img class="block-howwework__img" src="./assets/images/img_page1/num3.svg" alt="num3"
+                                    height="70px" width="70px">
+                                <p class="block-howwework__text">Мы подберем для вас подходящую няню, покажем вам ее
+                                    анкету
+                                    и
+                                    организуем предварительное знакомство по телефону или видеосвязи </p>
+                            </div>
+                            <div class="block-howwework__element block-howwework__element_animation4">
+                                <img class="block-howwework__img" src="./assets/images/img_page1/num4.svg" alt="num4"
+                                    height="70px" width="70px">
+                                <p class="block-howwework__text">Мы организуем бесплатный визит-знакомство, на котором
+                                    вы
+                                    сможете
+                                    принять решение о дальнейшем сотрудничестве</p>
+                            </div>
+                            <div class="block-howwework__element block-howwework__element_animation5">
+                                <img src="./assets/images/img_page1/num5.svg" class="block-howwework__img" alt="num5"
+                                    height="70px" width="70px">
+                                <p class="block-howwework__text">Вы оплачиваете услуги няни через личный кабинет в конце
+                                    каждой
+                                    недели согласно тарифам</p>
+                            </div>
+                            <div class="block-howwework__element block-howwework__element_animation6">
+                                <img src="./assets/images/img_page1/num6.svg" class="block-howwework__img" alt="num6"
+                                    height="70px" width="70px">
+                                <p class="block-howwework__text">Мы cопровождаем вас и няню на протяжении всего
+                                    взаимодействия с
+                                    сервисом: собираем обратную связь, следим за качеством услуг и подбираем замены</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="container">
-            <div class="container__row">
-                <div class="block-howwework">
-                    <div class="block-howwework__h2">
-                        Воспользоваться сервисом легко:
+        </main>
+        <footer class="container">
+            <div class="block-footer">
+                <div class="container__row">
+                    <div class="block-footer__items">
+                        <a href="#" class="block-footer__item1">Пользовательское соглашение (Публичная оферта) с
+                            заказчиком
+                            (клиентом)</a>
+                        <a href="#" class="block-footer__item2">Пользовательское соглашение (Публичная оферта) с
+                            исполнителем
+                            (няней)</a>
+                        <a href="https://mynanny.pro/organization-details" class="block-footer__item3">Сведения об
+                            организации</a>
                     </div>
-                    <p class="block-howwework__p">Вам не нужно самостоятельно выбирать няню, мы сделаем это для вас.
-                        <br>
-                        Вы можете посмотреть анкеты некоторых нянь сервиса в разделе
-                    </p>
-                    <a class="block-howwework__link" href="page3.html">Наша команда</a>
-                    <div class="block-howwework__container-grid">
-                        <div class="block-howwework__element block-howwework__element_animation1">
-                            <img class="block-howwework__img" src="./assets/images/img_page1/num1.svg" alt="num1"
-                                height="70px" width="70px">
-                            <p class="block-howwework__text">Заполните</p> <a
-                                class="block-howwework__link block-howwework__link_smallsize" href="#">анкету</a>
-                        </div>
-
-                        <div class="block-howwework__element block-howwework__element_animation2">
-                            <img class="block-howwework__img" src="./assets/images/img_page1/num2.svg" alt="num2"
-                                height="70px" width="70px">
-                            <p class="block-howwework__text">Дождитесь звонка нашего координатора для уточнения деталей
-                                и
-                                формирования заявки. Мы свяжемся с вами в течение 2 рабочих дней</p>
-                        </div>
-
-                        <div class="block-howwework__element block-howwework__element_animation3">
-                            <img class="block-howwework__img" src="./assets/images/img_page1/num3.svg" alt="num3"
-                                height="70px" width="70px">
-                            <p class="block-howwework__text">Мы подберем для вас подходящую няню, покажем вам ее анкету
-                                и
-                                организуем предварительное знакомство по телефону или видеосвязи </p>
-                        </div>
-
-                        <div class="block-howwework__element block-howwework__element_animation4">
-                            <img class="block-howwework__img" src="./assets/images/img_page1/num4.svg" alt="num4"
-                                height="70px" width="70px">
-                            <p class="block-howwework__text">Мы организуем бесплатный визит-знакомство, на котором вы
-                                сможете
-                                принять решение о дальнейшем сотрудничестве</p>
-                        </div>
-
-                        <div class="block-howwework__element block-howwework__element_animation5">
-                            <img src="./assets/images/img_page1/num5.svg" class="block-howwework__img" alt="num5"
-                                height="70px" width="70px">
-                            <p class="block-howwework__text">Вы оплачиваете услуги няни через личный кабинет в конце
-                                каждой
-                                недели согласно тарифам</p>
-                        </div>
-
-                        <div class="block-howwework__element block-howwework__element_animation6">
-                            <img src="./assets/images/img_page1/num6.svg" class="block-howwework__img" alt="num6"
-                                height="70px" width="70px">
-                            <p class="block-howwework__text">Мы cопровождаем вас и няню на протяжении всего
-                                взаимодействия с
-                                сервисом: собираем обратную связь, следим за качеством услуг и подбираем замены</p>
-                        </div>
+                    <div class="block-footer__bottom">
+                        <a class="block-footer__privacy" href="https://mynanny.pro/policy">Политика
+                            конфиденциальности</a>
+                        <div class="block-footer__year">&#169; 2021</div>
+                        <div class="block-footer__dev">разработка: <a class="block-footer__design"
+                                href="https://lede.pro/">LeDesign</a></div>
                     </div>
-
-
-
-                </div>
-
-            </div>
-        </div>
-    </main>
-    <footer class="container">
-        <div class="block-footer">
-            <div class="container__row">
-                <div class="block-footer__items">
-                    <a href="#" class="block-footer__item1">Пользовательское соглашение (Публичная оферта) с
-                        заказчиком
-                        (клиентом)</a>
-                    <a href="#" class="block-footer__item2">Пользовательское соглашение (Публичная оферта) с
-                        исполнителем
-                        (няней)</a>
-                    <a href="https://mynanny.pro/organization-details" class="block-footer__item3">Сведения об
-                        организации</a>
-                </div>
-
-                <div class="block-footer__bottom">
-                    <a class="block-footer__privacy" href="https://mynanny.pro/policy">Политика
-                        конфиденциальности</a>
-                    <div class="block-footer__year">&#169; 2021</div>
-                    <div class="block-footer__dev">разработка: <a class="block-footer__design"
-                            href="https://lede.pro/">LeDesign</a></div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 
 </html>

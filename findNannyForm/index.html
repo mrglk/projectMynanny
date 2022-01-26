@@ -1,218 +1,215 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Анкета для родителей</title>
-    <link rel="stylesheet" href="../assets/styles/normalize.css">
-    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
-    <link
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анкета для родителей</title>
+  <link rel="stylesheet" href="../assets/styles/normalize.css">
+  <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+  <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="../assets/styles/scss/main.css">
+  <link rel="stylesheet" href="../assets/styles/scss/main.css">
 </head>
+
 <body>
-  <header class="header container">
-    <div class="header__inner container__row_wide">
+  <div class="wrapper">
+    <header class="header container">
+      <div class="header__inner container__row_wide">
         <div class="header__logo">
-            <a href="../index.html"><img class="header__img" src="../assets/images/nanny-logo.svg"
-                    alt="Логотип"></a>
+          <a href="../index.html"><img class="header__img" src="../assets/images/nanny-logo.svg" alt="Логотип"></a>
         </div>
         <div class="header__menu">
-            <input class="header__check" id="header__toggle" type="checkbox" />
-            <label class="header__btn" for="header__toggle">
-                <span></span>
-            </label>
-            <nav class="header__links">
-                <div>
-                    <a class="header__item header__page" href="../index.html">Главная</a>
-                    <a class="header__item header__page" href="../tariffs/index.html">Тарифы</a>
-                    <a class="header__item header__page" href="../ourteam/index.html">Наша команда</a>
-                    <a class="header__item header__page" href="../index.html">Стать няней</a>
-                    <a class="header__item header__page" href="../faq/index.html">FAQ</a>
-                    <a class="header__item header__page" href="../partners/index.html">Партнеры</a>
-                    <a class="header__item header__page header__page_active"
-                        href="../contacts/index.html">Контакты</a>
-                    <a class="header__item header__buttons btn btn_defaultcolor btn_small"
-                        href="../findNannyForm/index.html">Найти
-                        няню</a>
-                    <a class="header__item header__buttons btn btn_lightColor-darkСolor btn_small"
-                        href="https://app.star-c.ru/">Войти <span class="mobile__hidden">→</span></a>
-                </div>
-                <div class="header__social desktop__hidden">
-                    <a href="https://www.facebook.com/mynannypro/">
-                        <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                            enable-background="new 0 0 48 48" xml:space="preserve">
-                            <path style="fill:#4dcdc4;"
-                                d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/mynanny.pro/">
-                        <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"
-                            xml:space="preserve">
-                            <path style="fill:#4dcdc4;"
-                                d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z">
-                            </path>
-                            <path style="fill:#4dcdc4;"
-                                d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z">
-                            </path>
-                            <path style="fill:#4dcdc4;"
-                                d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-            </nav>
+          <input class="header__check" id="header__toggle" type="checkbox" />
+          <label class="header__btn" for="header__toggle">
+            <span></span>
+          </label>
+          <nav class="header__links">
+            <div>
+              <a class="header__item header__page" href="../index.html">Главная</a>
+              <a class="header__item header__page" href="../tariffs/index.html">Тарифы</a>
+              <a class="header__item header__page" href="../ourteam/index.html">Наша команда</a>
+              <a class="header__item header__page" href="../index.html">Стать няней</a>
+              <a class="header__item header__page" href="../faq/index.html">FAQ</a>
+              <a class="header__item header__page" href="../partners/index.html">Партнеры</a>
+              <a class="header__item header__page header__page_active" href="../contacts/index.html">Контакты</a>
+              <a class="header__item header__buttons btn btn_defaultcolor btn_small"
+                href="../findNannyForm/index.html">Найти
+                няню</a>
+              <a class="header__item header__buttons btn btn_lightColor-darkСolor btn_small"
+                href="https://app.star-c.ru/">Войти <span class="mobile__hidden">→</span></a>
+            </div>
+            <div class="header__social desktop__hidden">
+              <a href="https://www.facebook.com/mynannypro/">
+                <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                  enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path style="fill:#4dcdc4;"
+                    d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z">
+                  </path>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/mynanny.pro/">
+                <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" xml:space="preserve">
+                  <path style="fill:#4dcdc4;"
+                    d="M15,11.014 C12.801,11.014 11.015,12.797 11.015,15 C11.015,17.202 12.802,18.987 15,18.987 C17.199,18.987 18.987,17.202 18.987,15 C18.987,12.797 17.199,11.014 15,11.014 L15,11.014 Z M15,17.606 C13.556,17.606 12.393,16.439 12.393,15 C12.393,13.561 13.556,12.394 15,12.394 C16.429,12.394 17.607,13.561 17.607,15 C17.607,16.439 16.444,17.606 15,17.606 L15,17.606 Z">
+                  </path>
+                  <path style="fill:#4dcdc4;"
+                    d="M19.385,9.556 C18.872,9.556 18.465,9.964 18.465,10.477 C18.465,10.989 18.872,11.396 19.385,11.396 C19.898,11.396 20.306,10.989 20.306,10.477 C20.306,9.964 19.897,9.556 19.385,9.556 L19.385,9.556 Z">
+                  </path>
+                  <path style="fill:#4dcdc4;"
+                    d="M15.002,0.15 C6.798,0.15 0.149,6.797 0.149,15 C0.149,23.201 6.798,29.85 15.002,29.85 C23.201,29.85 29.852,23.202 29.852,15 C29.852,6.797 23.201,0.15 15.002,0.15 L15.002,0.15 Z M22.666,18.265 C22.666,20.688 20.687,22.666 18.25,22.666 L11.75,22.666 C9.312,22.666 7.333,20.687 7.333,18.28 L7.333,11.734 C7.333,9.312 9.311,7.334 11.75,7.334 L18.25,7.334 C20.688,7.334 22.666,9.312 22.666,11.734 L22.666,18.265 L22.666,18.265 Z">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </nav>
         </div>
-    </div>
-</header>
-
-  <div class="findForm">
-    <button class="btnBack" onclick="back()"> &#8592 Назад</button>
-    <div class="mainForm">
-
-      <div class="tab" id="tabCity">
-        <button class="tablinks" onclick="openCity('Moscow')">Москва</button>
-        <button class="tablinks" onclick="openCity('SaintPetersburg')">Санкт-Петербург</button>
-        <button class="tablinks" onclick="openCity('NaberezhnyeChelny')">Набережные Челны</button>
-        <button class="tablinks" onclick="openCity('Kazan')">Казань</button>
-        <button class="tablinks" onclick="openCity('Barnaul')">Барнаул</button>
       </div>
-
-      <div class="tabcontent">
-        <form name="nannyForm" id="formElementQuestionnaire">
-          <div class="signinforms">
-            <h1 class="h1Text" id="h1Text"></h1>
-            <p class="pText">Пожалуйста, заполните анкету для формирования заявки на няню и автоматической регистрации 
+    </header>
+    <div class="findForm">
+      <button class="btnBack" onclick="back()"> &#8592 Назад</button>
+      <div class="mainForm">
+        <div class="tab" id="tabCity">
+          <button class="tablinks" onclick="openCity('Moscow')">Москва</button>
+          <button class="tablinks" onclick="openCity('SaintPetersburg')">Санкт-Петербург</button>
+          <button class="tablinks" onclick="openCity('NaberezhnyeChelny')">Набережные Челны</button>
+          <button class="tablinks" onclick="openCity('Kazan')">Казань</button>
+          <button class="tablinks" onclick="openCity('Barnaul')">Барнаул</button>
+        </div>
+        <div class="tabcontent">
+          <form name="nannyForm" id="formElementQuestionnaire">
+            <div class="signinforms">
+              <h1 class="h1Text" id="h1Text"></h1>
+              <p class="pText">Пожалуйста, заполните анкету для формирования заявки на няню и автоматической регистрации
                 в личном кабинете.
-                <br><br>Хотите оставить отклик на вакансию няни? Пройдите по 
+                <br><br>Хотите оставить отклик на вакансию няни? Пройдите по
                 <a class="linksreg" href="https://mynanny.pro/candidate-application-form">ссылке</a>
-            </p>
-            <hr class="inputsForm">
-            <div id="errNameBorder" class="floating-label-group">
-              <input type="text" name="Name" id="Name" class="inputClass" oninput="dataError('errName')" required />
-              <label class="floating-label">Ваше имя</label>
-              <p class="dataError" id="errName"></p>
+              </p>
+              <hr class="inputsForm">
+              <div id="errNameBorder" class="floating-label-group">
+                <input type="text" name="Name" id="Name" class="inputClass" oninput="dataError('errName')" required />
+                <label class="floating-label">Ваше имя</label>
+                <p class="dataError" id="errName"></p>
+              </div>
+
+              <div id="errSurnameBorder" class="floating-label-group">
+                <input type="text" name="LastName" id="LastName" class="inputClass" oninput="dataError('errSurname')"
+                  required />
+                <label class="floating-label">Ваша фамилия</label>
+                <p class="dataError" id="errSurname"></p>
+              </div>
+              <div id="errEmailBorder" class="floating-label-group">
+                <input type="text" name="Email" id="Email" class="inputClass" oninput="dataError('errEmail')"
+                  required />
+                <label class="floating-label">Ваш e-mail</label>
+                <p class="dataError" id="errEmail"></p>
+              </div>
+              <div id="errMobileBorder" class="floating-label-group">
+                <input type="tel" name="phone" id="phone" class="inputClass" oninput="dataError('errMobile')"
+                  required />
+                <label class="floating-label">+7 (999) 999-99-99</label>
+                <p class="dataError" id="errMobile"></p>
+              </div>
+              <div id="errChildBorder" class="floating-label-group">
+                <input type="text" name="kids-name" id="kids-name" class="inputClass" oninput="dataError('errChild')"
+                  required />
+                <label class="floating-label">Как зовут ребенка?</label>
+                <p class="dataError" id="errChild"></p>
+              </div>
+              <div id="errBirthBorder" class="floating-label-group">
+                <label class="labelDate" for="date">Дата рождения:
+                  <input type="date" name="Date" min="1922-01-01" max="" id="Date" class="inputClass"
+                    oninput="dataError('errBirth')" required />
+                </label>
+                <p class="dataError" id="errBirth"></p>
+              </div>
+              <div id="errMedBorder" class="floating-label-group">
+                <input type="text" name="diagnosis" id="diagnosis" class="inputClass" oninput="dataError('errMed')"
+                  required />
+                <label class="floating-label">Диагноз, особенности</label>
+                <p class="dataError" id="errMed"></p>
+              </div>
+              <div id="errCityBorder" class="floating-label-group">
+                <input type="text" name="city" id="city" class="inputClass" oninput="dataError('errCity')" required />
+                <label class="floating-label">Город</label>
+                <p class="dataError" id="errCity"></p>
+              </div>
+              <div id="errIndexBorder" class="floating-label-group">
+                <input type="text" maxlength="6" name="post-index" id="post-index" class="inputClass"
+                  oninput="dataError('errIndex')" required />
+                <label class="floating-label">Почтовый индекс</label>
+                <p class="dataError" id="errIndex"></p>
+              </div>
+              <div id="errAdressBorder" class="floating-label-group">
+                <input type="text" name="address" id="address" class="inputClass" oninput="dataError('errAdress')"
+                  required />
+                <label class="floating-label">Адрес проживания</label>
+                <p class="dataError" id="errAdress"></p>
+              </div>
+              <fieldset>
+                <p class="radioVars">Няня с каким графиком работы вам нужна?</p>
+                <input type="radio" class="schedule" name="Schedule" value="8 часов 5 дней в неделю" checked
+                  onclick="noshowOther()" />
+                <label for="hours_8-days_5">8 часов 5 дней в неделю</label><br>
+                <input type="radio" class="schedule" name="Schedule" value="6 часов 5 дней в неделю"
+                  onclick="noshowOther()" />
+                <label for="hours_6-days_5">6 часов 5 дней в неделю</label><br>
+                <input type="radio" class="schedule" name="Schedule" value="8 часов 3 дня в неделю"
+                  onclick="noshowOther()" />
+                <label for="hours_8-days_3">8 часов 3 дня в неделю</label><br>
+                <input type="radio" class="schedule" name="Schedule" value="8 часов 2 дня в неделю"
+                  onclick="noshowOther()" />
+                <label for="hours_8-days_2">8 часов 2 дня в неделю</label><br>
+                <input type="radio" class="othersVar" name="Schedule" value="Свой вариант" id="myversion"
+                  onclick="showOther()" />
+                <label for="your_own_version">Другое – свой вариант</label><br>
+                <input type="text" placeholder="Напишите свой график здесь" id="myschedule">
+              </fieldset>
+              <div class="floating-label-group">
+                <input type="text" name="expectations" id="expectations" maxlength="200" class="inputClass" required />
+                <label class="floating-label">Ожидания родителей по уходу за ребенком</label>
+              </div>
+              <input type="checkbox" checked="checked" name="Checkbox" style="margin-bottom:15px" id="Checkbox" /> Я
+              согласен с <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты
+              <button type="button" class="registerbtn" id="sendButton">Отправить</button>
             </div>
-            
-            <div id="errSurnameBorder" class="floating-label-group">
-              <input type="text" name="LastName" id="LastName" class="inputClass" oninput="dataError('errSurname')" required />
-              <label class="floating-label">Ваша фамилия</label>
-              <p class="dataError" id="errSurname"></p>
-            </div>
+          </form>
+        </div>
 
-            <div id="errEmailBorder"class="floating-label-group">
-              <input type="text" name="Email" id="Email" class="inputClass" oninput="dataError('errEmail')" required />
-              <label class="floating-label">Ваш e-mail</label>
-              <p class="dataError" id="errEmail"></p>
-            </div>
-
-            <div id="errMobileBorder" class="floating-label-group">
-              <input type="tel" name="phone" id="phone" class="inputClass" oninput="dataError('errMobile')" required />
-              <label class="floating-label">+7 (999) 999-99-99</label>
-              <p class="dataError" id="errMobile"></p>
-            </div>
-
-            <div id="errChildBorder" class="floating-label-group">
-              <input type="text" name="kids-name" id="kids-name" class="inputClass" oninput="dataError('errChild')" required/>
-              <label class="floating-label">Как зовут ребенка?</label>
-              <p class="dataError" id="errChild"></p>
-            </div>
-
-            <div id="errBirthBorder" class="floating-label-group">
-              <label class="labelDate" for="date">Дата рождения: 
-                <input type="date" name="Date" min="1922-01-01" max="" id="Date" class="inputClass" oninput="dataError('errBirth')" required/>
-              </label>
-              <p class="dataError" id="errBirth"></p>
-            </div>
-
-            <div id="errMedBorder" class="floating-label-group">
-              <input type="text" name="diagnosis" id="diagnosis" class="inputClass" oninput="dataError('errMed')" required/>
-              <label class="floating-label">Диагноз, особенности</label>
-              <p class="dataError" id="errMed"></p>
-            </div>
-
-            <div id="errCityBorder" class="floating-label-group">
-              <input type="text" name="city" id="city" class="inputClass" oninput="dataError('errCity')" required/>
-              <label class="floating-label">Город</label>
-              <p class="dataError" id="errCity"></p>
-            </div>
-
-            <div id="errIndexBorder" class="floating-label-group">
-              <input type="text" maxlength="6" name="post-index" id="post-index" class="inputClass" oninput="dataError('errIndex')" required/>
-              <label class="floating-label">Почтовый индекс</label>
-              <p class="dataError" id="errIndex"></p>
-            </div>
-
-            <div id="errAdressBorder" class="floating-label-group">
-              <input type="text" name="address" id="address" class="inputClass" oninput="dataError('errAdress')" required/>
-              <label class="floating-label">Адрес проживания</label>
-              <p class="dataError" id="errAdress"></p>
-            </div>
-
-            <fieldset>
-              <p class="radioVars">Няня с каким графиком работы вам нужна?</p>   
-              <input type="radio" class="schedule" name="Schedule" value="8 часов 5 дней в неделю" checked onclick="noshowOther()"/>
-              <label for="hours_8-days_5">8 часов 5 дней в неделю</label><br>
-
-              <input type="radio" class="schedule" name="Schedule" value="6 часов 5 дней в неделю" onclick="noshowOther()"/>
-              <label for="hours_6-days_5">6 часов 5 дней в неделю</label><br>
-
-              <input type="radio" class="schedule" name="Schedule" value="8 часов 3 дня в неделю" onclick="noshowOther()"/>
-              <label for="hours_8-days_3">8 часов 3 дня в неделю</label><br>
-
-              <input type="radio" class="schedule" name="Schedule" value="8 часов 2 дня в неделю" onclick="noshowOther()"/>
-              <label for="hours_8-days_2">8 часов 2 дня в неделю</label><br>
-
-              <input type="radio" class="othersVar" name="Schedule" value="Свой вариант" id="myversion" onclick="showOther()"/>
-              <label for="your_own_version">Другое – свой вариант</label><br>
-              <input type="text" placeholder="Напишите свой график здесь" id="myschedule">            
-            </fieldset>
-            <div class="floating-label-group">
-              <input type="text" name="expectations" id="expectations" maxlength="200" class="inputClass" required/>
-              <label class="floating-label">Ожидания родителей по уходу за ребенком</label>
-            </div>
-            <input type="checkbox" checked="checked" name="Checkbox" style="margin-bottom:15px" id="Checkbox"/> Я согласен с <a href="https://mynanny.pro/policy">политикой конфиденциальности</a> и условиями оферты                       
-            <button type="button" class="registerbtn" id="sendButton">Отправить</button>
-          </div>
-        </form>
+        <div class="applicationSentOff" id="applicationSent">
+          <p class="applicationSentText">
+            Заявка успешно отправлена. Координатор свяжется с вами в течение двух дней для уточнения деталей.
+            <br>
+            Оплата услуг няни осуществляется через личный кабинет в конце каждой недели.
+            <br>
+            Логин и пароль уже у вас на почте.
+            <br><br>
+            <a class="applicationSentHref" href="https://app.star-c.ru/">Войти тут</a>
+          </p>
+        </div>
+        <div class="errorSentOff" id="errorSent">
+          <p class="errorSentText">
+            Что-то пошло не так... Пожалуйста, попробуйте снова.
+            <br><br>
+            <a class="errorSentHref" href="../findNannyForm/index.html">Перейти...</a>
+          </p>
+        </div>
       </div>
-      
-      <div class="applicationSentOff" id="applicationSent">
-        <p class="applicationSentText">
-          Заявка успешно отправлена. Координатор свяжется с вами в течение двух дней для уточнения деталей.
-          <br>
-          Оплата услуг няни осуществляется через личный кабинет в конце каждой недели. 
-          <br>
-          Логин и пароль уже у вас на почте.
-          <br><br>
-          <a class="applicationSentHref" href="https://app.star-c.ru/">Войти тут</a>
-        </p>
-      </div>
-
-      <div class="errorSentOff" id="errorSent">
-        <p class="errorSentText">
-          Что-то пошло не так... Пожалуйста, попробуйте снова.
-          <br><br>
-          <a class="errorSentHref" href="../findNannyForm/index.html">Перейти...</a>
-        </p>
-      </div>
-
     </div>
+    <footer class="findNanny-footer">
+      <div class="block-footer__bottom">
+        <a class="block-footer__privacy" href="https://mynanny.pro/policy">Политика
+          конфиденциальности</a>
+        <div class="block-footer__year">&#169; 2021</div>
+        <div class="block-footer__dev">разработка: <a class="block-footer__design" href="https://lede.pro/">LeDesign</a>
+        </div>
+      </div>
+    </footer>
   </div>
-
-  <footer class="findNanny-footer">
-  <div class="block-footer__bottom">
-    <a class="block-footer__privacy" href="https://mynanny.pro/policy">Политика
-        конфиденциальности</a>
-    <div class="block-footer__year">&#169; 2021</div>
-    <div class="block-footer__dev">разработка: <a class="block-footer__design"
-            href="https://lede.pro/">LeDesign</a></div>
-  </div>
-  </footer>
 
   <script src="index.js"></script>
 
 </body>
+
 </html>
