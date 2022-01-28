@@ -131,17 +131,17 @@ validate = () => {
     errorCount = false;
   }
 
-  let f = document.forms["nannyForm"]["kids-name"].value;
+  let f = document.forms["nannyForm"]["kidsname"].value;
   if (f == "") {
     document.getElementById('errChild').textContent="Обязательно для заполнения";
-    document.getElementById('kids-name').classList.add('borderErr');
-    document.getElementById('kids-name').classList.remove('inputClass');
-    document.getElementById('kids-name').value = '';
+    document.getElementById('kidsname').classList.add('borderErr');
+    document.getElementById('kidsname').classList.remove('inputClass');
+    document.getElementById('kidsname').value = '';
     errorCount = true;
   } else {
     document.getElementById('errChild').textContent='';
-    document.getElementById('kids-name').classList.remove('borderErr');
-    document.getElementById('kids-name').classList.add('inputClass');
+    document.getElementById('kidsname').classList.remove('borderErr');
+    document.getElementById('kidsname').classList.add('inputClass');
     errorCount = false;
   }
 
@@ -171,23 +171,23 @@ validate = () => {
     errorCount = false;
   }
 
-  let k = document.forms["nannyForm"]["post-index"].value;
+  let k = document.forms["nannyForm"]["postindex"].value;
   if (k == "") {
     document.getElementById('errIndex').textContent="Обязательно для заполнения";
-    document.getElementById('post-index').classList.add('borderErr');
-    document.getElementById('post-index').classList.remove('inputClass');
+    document.getElementById('postindex').classList.add('borderErr');
+    document.getElementById('postindex').classList.remove('inputClass');
     errorCount = true;
-  } else if( !document.getElementById('post-index').value.match(indexFormat) ) {
+  } else if( !document.getElementById('postindex').value.match(indexFormat) ) {
     document.getElementById('errIndex').textContent="Неверный формат индекса. Пример: 123654";
-    document.getElementById('post-index').classList.add('borderErr');
-    document.getElementById('post-index').classList.remove('inputClass');
-    document.getElementById('post-index').value='';
+    document.getElementById('postindex').classList.add('borderErr');
+    document.getElementById('postindex').classList.remove('inputClass');
+    document.getElementById('postindex').value='';
     errorCount = true;
     return false;
   } else {
     document.getElementById('errIndex').textContent='';
-    document.getElementById('post-index').classList.remove('borderErr');
-    document.getElementById('post-index').classList.add('inputClass');
+    document.getElementById('postindex').classList.remove('borderErr');
+    document.getElementById('postindex').classList.add('inputClass');
     errorCount = false;
   }
 
@@ -255,6 +255,12 @@ dataError = (item) => {
 
 submitForm = (event) => {
   formData = new FormData(formElementQuestionnaire);
+
+  if(document.getElementById('myversion').checked) {
+    formData.append("myschedule", document.getElementById('myschedule').value);
+  }
+
+  formData.append("orgid", 16);
 
   for(let value of formData.values()) {
     console.log(value);
