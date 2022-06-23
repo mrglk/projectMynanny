@@ -2,8 +2,14 @@
 
 В проекте реализована адаптивная валидная верстка сайта с формой отправки заявки.
 
-![myNanny480 (1)](https://user-images.githubusercontent.com/91153046/175287865-99aa41d9-a218-46d2-a24a-c7142849128b.gif)
+![myNanny480 (1)](https://user-images.githubusercontent.com/91153046/175288898-583050d8-e71a-4296-82cf-e1de4d5383d9.gif)
 
 ### Демо
 
 https://mrglk.github.io/projectMynanny/index.html
+
+### Используемые технологии
+
+* HTML5/СSS3
+* SAAS
+* JavaScript (форма)
